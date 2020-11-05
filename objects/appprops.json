@@ -1,0 +1,30 @@
+[
+  {
+    "qProperty": {
+      "qInfo": {
+        "qId": "4990811c-2956-4fd3-84e9-02fd1b2d8ec5",
+        "qType": "appprops"
+      },
+      "qMetaDef": {},
+      "sheetTitleBgColor": {
+        "color": "#46c646",
+        "index": 2
+      },
+      "sheetTitleGradientColor": {
+        "color": "#46c646",
+        "index": 2
+      },
+      "sheetTitleColor": "#ffffff",
+      "sheetLogoThumbnail": {
+        "qStaticContentUrlDef": {
+          "qUrl": "/content/Default/logo_ruralbrasil.png"
+        }
+      },
+      "sheetLogoPosition": "center",
+      "rtl": false,
+      "theme": "card",
+      "defaultBookmarkId": null
+    },
+    "qChildren": []
+  }
+]

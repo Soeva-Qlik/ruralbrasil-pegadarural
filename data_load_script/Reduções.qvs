@@ -1,0 +1,8 @@
+///$tab Reduções
+SET vWhereVisitas = cancelada='Não Cancelada' and YEAR(datahorainicio)>2018;
+
+SET vWhereFaturado = YEAR(DataEmissao) >2017;
+
+SET vWhereOrçamento = 1=1;
+
+SET vWhereAtendimento = YEAR(DataAtendimento) >2018;

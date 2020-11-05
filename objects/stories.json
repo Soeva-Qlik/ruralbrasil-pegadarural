@@ -1,0 +1,919 @@
+[
+  {
+    "qProperty": {
+      "qInfo": {
+        "qId": "8b2975ff-76c8-4ecf-a484-2227fd7203a0",
+        "qType": "story"
+      },
+      "qMetaDef": {
+        "title": "Minha nova história",
+        "description": ""
+      },
+      "thumbnail": {
+        "qStaticContentUrlDef": {}
+      },
+      "qChildListDef": {
+        "qData": {
+          "title": "/title",
+          "rank": "/rank"
+        }
+      }
+    },
+    "qChildren": [
+      {
+        "qProperty": {
+          "qInfo": {
+            "qId": "CyWXE",
+            "qType": "slide"
+          },
+          "qMetaDef": {},
+          "rank": -1,
+          "qChildListDef": {
+            "qData": {
+              "title": "/title",
+              "sheetId": "/sheetId",
+              "ratio": "/ratio",
+              "position": "/position",
+              "dataPath": "/dataPath",
+              "srcPath": "/srcPath",
+              "visualization": "/visualization",
+              "visualizationType": "/visualizationType",
+              "style": "/style"
+            }
+          }
+        },
+        "qChildren": [
+          {
+            "qProperty": {
+              "qInfo": {
+                "qId": "JnXrfge",
+                "qType": "slideitem"
+              },
+              "qMetaDef": {},
+              "qEmbeddedSnapshotDef": {},
+              "title": "",
+              "sheetId": "",
+              "ratio": true,
+              "position": {
+                "top": "33.33333%",
+                "left": "16.66667%",
+                "width": "72.91667%",
+                "height": "55.55556%",
+                "z-index": 4,
+                "right": "auto"
+              },
+              "visualization": "snapshot",
+              "visualizationType": "combochart",
+              "style": {
+                "id": "f23b5345-bc67-4870-92ec-3afcac29b455"
+              }
+            },
+            "qChildren": [],
+            "qEmbeddedSnapshotRef": {
+              "qProperties": {
+                "qInfo": {
+                  "qId": "536e70c7-73cc-4662-99ec-abce2651f151",
+                  "qType": "embeddedsnapshot"
+                },
+                "qMetaDef": {
+                  "title": "",
+                  "description": "",
+                  "annotation": ""
+                },
+                "creationDate": "2019-12-27T19:15:36.797Z",
+                "qMeta": {
+                  "privileges": [
+                    "read",
+                    "update",
+                    "delete",
+                    "exportdata"
+                  ]
+                },
+                "qSelectionInfo": {},
+                "qHyperCube": {
+                  "qSize": {
+                    "qcx": 5,
+                    "qcy": 8
+                  },
+                  "qDimensionInfo": [
+                    {
+                      "qFallbackTitle": "Classificacao",
+                      "qApprMaxGlyphCount": 17,
+                      "qCardinal": 8,
+                      "qSortIndicator": "A",
+                      "qGroupFallbackTitles": [
+                        "Classificacao"
+                      ],
+                      "qGroupPos": 0,
+                      "qStateCounts": {
+                        "qLocked": 0,
+                        "qSelected": 0,
+                        "qOption": 8,
+                        "qDeselected": 0,
+                        "qAlternative": 0,
+                        "qExcluded": 0,
+                        "qSelectedExcluded": 0,
+                        "qLockedExcluded": 0
+                      },
+                      "qTags": [
+                        "$numeric",
+                        "$integer"
+                      ],
+                      "qDimensionType": "D",
+                      "qGrouping": "N",
+                      "qNumFormat": {
+                        "qType": "U",
+                        "qnDec": 10,
+                        "qUseThou": 0
+                      },
+                      "qIsAutoFormat": true,
+                      "qGroupFieldDefs": [
+                        "=AGGR(\r\nIF(SUM({<FlagClientePossuiVenda={1},parceiroCRM={\t$(=CONCAT(DISTINCT IF(AGGR(SUM(valortotalCRM),parceiroCRM)>0,CHR(39)&parceiroCRM&CHR(39)),','))}>} [ValorPotencialTecnológico])\t< 1,DUAL('Potencial Zerado',1),\nIF(SUM({<FlagClientePossuiVenda={1},parceiroCRM={\t$(=CONCAT(DISTINCT IF(AGGR(SUM(valortotalCRM),parceiroCRM)>0,CHR(39)&parceiroCRM&CHR(39)),','))}>} [ValorPotencialTecnológico]) < 500000,DUAL('Inferior 500Mil',2),\nIF(SUM({<FlagClientePossuiVenda={1},parceiroCRM={\t$(=CONCAT(DISTINCT IF(AGGR(SUM(valortotalCRM),parceiroCRM)>0,CHR(39)&parceiroCRM&CHR(39)),','))}>} [ValorPotencialTecnológico]) < 1000000,DUAL('500mil a 1 Mio',3),\nIF(SUM({<FlagClientePossuiVenda={1},parceiroCRM={\t$(=CONCAT(DISTINCT IF(AGGR(SUM(valortotalCRM),parceiroCRM)>0,CHR(39)&parceiroCRM&CHR(39)),','))}>} [ValorPotencialTecnológico]) < 2000000,DUAL('1 a 2 Mio',4),\nIF(SUM({<FlagClientePossuiVenda={1},parceiroCRM={\t$(=CONCAT(DISTINCT IF(AGGR(SUM(valortotalCRM),parceiroCRM)>0,CHR(39)&parceiroCRM&CHR(39)),','))}>} [ValorPotencialTecnológico]) < 3000000,DUAL('2 a 3 Mio',5),\nIF(SUM({<FlagClientePossuiVenda={1},parceiroCRM={\t$(=CONCAT(DISTINCT IF(AGGR(SUM(valortotalCRM),parceiroCRM)>0,CHR(39)&parceiroCRM&CHR(39)),','))}>} [ValorPotencialTecnológico]) < 5000000,DUAL('3 a 5 Mio',6),\nIF(SUM({<FlagClientePossuiVenda={1},parceiroCRM={\t$(=CONCAT(DISTINCT IF(AGGR(SUM(valortotalCRM),parceiroCRM)>0,CHR(39)&parceiroCRM&CHR(39)),','))}>} [ValorPotencialTecnológico]) < 10000000,DUAL('5 a 10 Mio',7),\nIF(SUM({<FlagClientePossuiVenda={1},parceiroCRM={\t$(=CONCAT(DISTINCT IF(AGGR(SUM(valortotalCRM),parceiroCRM)>0,CHR(39)&parceiroCRM&CHR(39)),','))}>} [ValorPotencialTecnológico]) >=10000000,\nDUAL('Superior a 10 Mio',8),\n)))))))),parceiroCRM)"
+                      ],
+                      "qMin": 1,
+                      "qMax": 8,
+                      "qContinuousAxes": true,
+                      "qAttrExprInfo": [],
+                      "qAttrDimInfo": [],
+                      "qIsCalculated": true,
+                      "qCardinalities": {
+                        "qCardinal": 8,
+                        "qHypercubeCardinal": 8,
+                        "qAllValuesCardinal": -1
+                      },
+                      "autoSort": true,
+                      "cId": "gaacJTh",
+                      "othersLabel": "Outros"
+                    }
+                  ],
+                  "qMeasureInfo": [
+                    {
+                      "qFallbackTitle": "POTENCIAL CLIENTE RB",
+                      "qApprMaxGlyphCount": 13,
+                      "qCardinal": 0,
+                      "qSortIndicator": "D",
+                      "qNumFormat": {
+                        "qType": "U",
+                        "qnDec": 0,
+                        "qUseThou": 0
+                      },
+                      "qMin": 0,
+                      "qMax": 339245156,
+                      "qIsAutoFormat": true,
+                      "qAttrExprInfo": [],
+                      "qAttrDimInfo": [],
+                      "qLibraryId": "PxEEXKQ",
+                      "qTrendLines": [],
+                      "coloring": {
+                        "baseColor": {
+                          "color": "#276e27",
+                          "index": 3
+                        }
+                      },
+                      "autoSort": true,
+                      "cId": "mLCJkQ",
+                      "numFormatFromTemplate": true,
+                      "series": {
+                        "type": "bar",
+                        "axis": 0,
+                        "marker": "circle",
+                        "markerFill": true
+                      },
+                      "isCustomFormatted": false
+                    },
+                    {
+                      "qFallbackTitle": "Margem %",
+                      "qApprMaxGlyphCount": 5,
+                      "qCardinal": 0,
+                      "qSortIndicator": "D",
+                      "qNumFormat": {
+                        "qType": "F",
+                        "qnDec": 2,
+                        "qUseThou": 0,
+                        "qFmt": "0,0%",
+                        "qDec": ",",
+                        "qThou": "."
+                      },
+                      "qMin": 0.02719469917281503,
+                      "qMax": 0.11350363515358164,
+                      "qAttrExprInfo": [],
+                      "qAttrDimInfo": [],
+                      "qLibraryId": "EXbmJW",
+                      "qTrendLines": [],
+                      "coloring": {
+                        "baseColor": {
+                          "color": "#f93f17",
+                          "index": 10
+                        }
+                      },
+                      "autoSort": true,
+                      "cId": "TcNkjb",
+                      "numFormatFromTemplate": true,
+                      "series": {
+                        "type": "line",
+                        "axis": 1,
+                        "marker": "circle",
+                        "markerFill": true
+                      },
+                      "isCustomFormatted": false
+                    },
+                    {
+                      "qFallbackTitle": "TOTAL PEDIDO",
+                      "qApprMaxGlyphCount": 15,
+                      "qCardinal": 0,
+                      "qSortIndicator": "D",
+                      "qNumFormat": {
+                        "qType": "U",
+                        "qnDec": 0,
+                        "qUseThou": 0
+                      },
+                      "qMin": 36311885.643436,
+                      "qMax": 90186736.7541207,
+                      "qIsAutoFormat": true,
+                      "qAttrExprInfo": [],
+                      "qAttrDimInfo": [],
+                      "qTrendLines": [],
+                      "autoSort": true,
+                      "cId": "pPpXZD",
+                      "numFormatFromTemplate": true,
+                      "series": {
+                        "axis": 1,
+                        "type": "bar"
+                      }
+                    },
+                    {
+                      "qFallbackTitle": "% Participacao",
+                      "qApprMaxGlyphCount": 5,
+                      "qCardinal": 0,
+                      "qSortIndicator": "D",
+                      "qNumFormat": {
+                        "qType": "F",
+                        "qnDec": 2,
+                        "qUseThou": 0,
+                        "qFmt": "0,0%",
+                        "qDec": ",",
+                        "qThou": "."
+                      },
+                      "qMin": 0.11970654655508184,
+                      "qMax": 0.42975013917093596,
+                      "qAttrExprInfo": [],
+                      "qAttrDimInfo": [],
+                      "qTrendLines": [],
+                      "autoSort": true,
+                      "cId": "fKmhnR",
+                      "numFormatFromTemplate": true,
+                      "series": {
+                        "axis": 1,
+                        "type": "line"
+                      },
+                      "isCustomFormatted": false
+                    }
+                  ],
+                  "qEffectiveInterColumnSortOrder": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  "qGrandTotalRow": [
+                    {
+                      "qText": "1726963432,57",
+                      "qNum": 1726963432.569999,
+                      "qElemNumber": -1,
+                      "qState": "X",
+                      "qIsTotalCell": true
+                    },
+                    {
+                      "qText": "7,5%",
+                      "qNum": 0.07503474456653725,
+                      "qElemNumber": -1,
+                      "qState": "X",
+                      "qIsTotalCell": true
+                    },
+                    {
+                      "qText": "516541243,20267",
+                      "qNum": 516541243.20267314,
+                      "qElemNumber": -1,
+                      "qState": "X",
+                      "qIsTotalCell": true
+                    },
+                    {
+                      "qText": "29,9%",
+                      "qNum": 0.29910375255252325,
+                      "qElemNumber": -1,
+                      "qState": "X",
+                      "qIsTotalCell": true
+                    }
+                  ],
+                  "qDataPages": [
+                    {
+                      "qMatrix": [
+                        [
+                          {
+                            "qText": "Potencial Zerado",
+                            "qNum": 1,
+                            "qElemNumber": 3,
+                            "qState": "O"
+                          },
+                          {
+                            "qText": "0",
+                            "qNum": 0,
+                            "qElemNumber": 0,
+                            "qState": "L"
+                          },
+                          {
+                            "qText": "7,8%",
+                            "qNum": 0.07779501764962082,
+                            "qElemNumber": 0,
+                            "qState": "L"
+                          },
+                          {
+                            "qText": "90186736,754121",
+                            "qNum": 90186736.7541207,
+                            "qElemNumber": 0,
+                            "qState": "L"
+                          },
+                          {
+                            "qText": "-",
+                            "qNum": "NaN",
+                            "qElemNumber": 0,
+                            "qState": "L",
+                            "qIsNull": true
+                          }
+                        ],
+                        [
+                          {
+                            "qText": "Inferior 500Mil",
+                            "qNum": 2,
+                            "qElemNumber": 1,
+                            "qState": "O"
+                          },
+                          {
+                            "qText": "142841302,12",
+                            "qNum": 142841302.11999997,
+                            "qElemNumber": 0,
+                            "qState": "L"
+                          },
+                          {
+                            "qText": "11,4%",
+                            "qNum": 0.11350363515358164,
+                            "qElemNumber": 0,
+                            "qState": "L"
+                          },
+                          {
+                            "qText": "61386069,465428",
+                            "qNum": 61386069.4654277,
+                            "qElemNumber": 0,
+                            "qState": "L"
+                          },
+                          {
+                            "qText": "43,0%",
+                            "qNum": 0.42975013917093596,
+                            "qElemNumber": 0,
+                            "qState": "L"
+                          }
+                        ],
+                        [
+                          {
+                            "qText": "500mil a 1 Mio",
+                            "qNum": 3,
+                            "qElemNumber": 4,
+                            "qState": "O"
+                          },
+                          {
+                            "qText": "224305524,72",
+                            "qNum": 224305524.71999994,
+                            "qElemNumber": 0,
+                            "qState": "L"
+                          },
+                          {
+                            "qText": "9,3%",
+                            "qNum": 0.09299651019971289,
+                            "qElemNumber": 0,
+                            "qState": "L"
+                          },
+                          {
+                            "qText": "80543130,791063",
+                            "qNum": 80543130.79106347,
+                            "qElemNumber": 0,
+                            "qState": "L"
+                          },
+                          {
+                            "qText": "35,9%",
+                            "qNum": 0.3590777841589291,
+                            "qElemNumber": 0,
+                            "qState": "L"
+                          }
+                        ],
+                        [
+                          {
+                            "qText": "1 a 2 Mio",
+                            "qNum": 4,
+                            "qElemNumber": 2,
+                            "qState": "O"
+                          },
+                          {
+                            "qText": "311930590,69",
+                            "qNum": 311930590.69000006,
+                            "qElemNumber": 0,
+                            "qState": "L"
+                          },
+                          {
+                            "qText": "7,5%",
+                            "qNum": 0.07487858515181645,
+                            "qElemNumber": 0,
+                            "qState": "L"
+                          },
+                          {
+                            "qText": "78934299,604439",
+                            "qNum": 78934299.60443924,
+                            "qElemNumber": 0,
+                            "qState": "L"
+                          },
+                          {
+                            "qText": "25,3%",
+                            "qNum": 0.25305084515704007,
+                            "qElemNumber": 0,
+                            "qState": "L"
+                          }
+                        ],
+                        [
+                          {
+                            "qText": "2 a 3 Mio",
+                            "qNum": 5,
+                            "qElemNumber": 0,
+                            "qState": "O"
+                          },
+                          {
+                            "qText": "174648671,68",
+                            "qNum": 174648671.68,
+                            "qElemNumber": 0,
+                            "qState": "L"
+                          },
+                          {
+                            "qText": "7,0%",
+                            "qNum": 0.07020248639236815,
+                            "qElemNumber": 0,
+                            "qState": "L"
+                          },
+                          {
+                            "qText": "41142353,618311",
+                            "qNum": 41142353.61831099,
+                            "qElemNumber": 0,
+                            "qState": "L"
+                          },
+                          {
+                            "qText": "23,6%",
+                            "qNum": 0.2355720958112642,
+                            "qElemNumber": 0,
+                            "qState": "L"
+                          }
+                        ],
+                        [
+                          {
+                            "qText": "3 a 5 Mio",
+                            "qNum": 6,
+                            "qElemNumber": 5,
+                            "qState": "O"
+                          },
+                          {
+                            "qText": "295647878,88",
+                            "qNum": 295647878.88,
+                            "qElemNumber": 0,
+                            "qState": "L"
+                          },
+                          {
+                            "qText": "5,9%",
+                            "qNum": 0.05863037214965394,
+                            "qElemNumber": 0,
+                            "qState": "L"
+                          },
+                          {
+                            "qText": "87426901,265574",
+                            "qNum": 87426901.26557358,
+                            "qElemNumber": 0,
+                            "qState": "L"
+                          },
+                          {
+                            "qText": "29,6%",
+                            "qNum": 0.2957129325492612,
+                            "qElemNumber": 0,
+                            "qState": "L"
+                          }
+                        ],
+                        [
+                          {
+                            "qText": "5 a 10 Mio",
+                            "qNum": 7,
+                            "qElemNumber": 6,
+                            "qState": "O"
+                          },
+                          {
+                            "qText": "238344308,48",
+                            "qNum": 238344308.48000002,
+                            "qElemNumber": 0,
+                            "qState": "L"
+                          },
+                          {
+                            "qText": "6,2%",
+                            "qNum": 0.06211906282490531,
+                            "qElemNumber": 0,
+                            "qState": "L"
+                          },
+                          {
+                            "qText": "36311885,643436",
+                            "qNum": 36311885.643436,
+                            "qElemNumber": 0,
+                            "qState": "L"
+                          },
+                          {
+                            "qText": "15,2%",
+                            "qNum": 0.15235054646368032,
+                            "qElemNumber": 0,
+                            "qState": "L"
+                          }
+                        ],
+                        [
+                          {
+                            "qText": "Superior a 10 Mio",
+                            "qNum": 8,
+                            "qElemNumber": 7,
+                            "qState": "O"
+                          },
+                          {
+                            "qText": "339245156",
+                            "qNum": 339245156,
+                            "qElemNumber": 0,
+                            "qState": "L"
+                          },
+                          {
+                            "qText": "2,7%",
+                            "qNum": 0.02719469917281503,
+                            "qElemNumber": 0,
+                            "qState": "L"
+                          },
+                          {
+                            "qText": "40609866,0603",
+                            "qNum": 40609866.0603,
+                            "qElemNumber": 0,
+                            "qState": "L"
+                          },
+                          {
+                            "qText": "12,0%",
+                            "qNum": 0.11970654655508184,
+                            "qElemNumber": 0,
+                            "qState": "L"
+                          }
+                        ]
+                      ],
+                      "qTails": [
+                        {
+                          "qUp": 0,
+                          "qDown": 0
+                        }
+                      ],
+                      "qArea": {
+                        "qLeft": 0,
+                        "qTop": 0,
+                        "qWidth": 5,
+                        "qHeight": 8
+                      }
+                    }
+                  ],
+                  "qPivotDataPages": [],
+                  "qStackedDataPages": [],
+                  "qMode": "S",
+                  "qNoOfLeftDims": -1,
+                  "qTreeNodesOnDim": [],
+                  "qColumnOrder": []
+                },
+                "showTitles": true,
+                "title": "",
+                "subtitle": "",
+                "footnote": "",
+                "showDetails": false,
+                "barGrouping": {
+                  "grouping": "grouped"
+                },
+                "orientation": "vertical",
+                "scrollStartPos": 0,
+                "nullMode": "gap",
+                "dataPoint": {
+                  "show": true,
+                  "showLineLabels": true,
+                  "showBarLabels": true
+                },
+                "color": {
+                  "auto": true,
+                  "mode": "primary",
+                  "useBaseColors": "off",
+                  "paletteColor": {
+                    "index": 6
+                  },
+                  "useDimColVal": true,
+                  "useMeasureGradient": true,
+                  "persistent": false,
+                  "expressionIsColor": true,
+                  "expressionLabel": "",
+                  "measureScheme": "sg",
+                  "reverseScheme": false,
+                  "dimensionScheme": "12",
+                  "autoMinMax": true,
+                  "measureMin": 0,
+                  "measureMax": 10
+                },
+                "legend": {
+                  "show": true,
+                  "dock": "auto",
+                  "showTitle": true
+                },
+                "dimensionAxis": {
+                  "continuousAuto": true,
+                  "show": "all",
+                  "label": "auto",
+                  "dock": "near"
+                },
+                "preferContinuousAxis": true,
+                "showMiniChartForContinuousAxis": true,
+                "measureAxes": [
+                  {
+                    "show": "none",
+                    "dock": "near",
+                    "spacing": 1,
+                    "autoMinMax": false,
+                    "minMax": "max",
+                    "min": 0,
+                    "max": "NaN"
+                  },
+                  {
+                    "show": "none",
+                    "dock": "far",
+                    "spacing": 1,
+                    "autoMinMax": false,
+                    "minMax": "min",
+                    "min": -0.5,
+                    "max": 10
+                  }
+                ],
+                "visualization": "combochart",
+                "snapshotData": {
+                  "object": {
+                    "size": {
+                      "w": 1294,
+                      "h": 529
+                    }
+                  },
+                  "rtl": false,
+                  "content": {
+                    "chartData": {
+                      "legendScrollOffset": 0,
+                      "scrollOffset": 0,
+                      "discreteSpacing": 43.375,
+                      "axisInnerOffset": 0,
+                      "hasMiniChart": false,
+                      "viewRange": 24
+                    },
+                    "size": {
+                      "w": 1282,
+                      "h": 504
+                    },
+                    "components": {
+                      "grid": {
+                        "visible": true,
+                        "dock": "center",
+                        "size": {
+                          "w": 1041,
+                          "h": 343
+                        }
+                      },
+                      "colorLegend": {
+                        "visible": true,
+                        "dock": "right",
+                        "size": {
+                          "w": 159,
+                          "h": 343
+                        }
+                      },
+                      "miniChart": {
+                        "visible": false,
+                        "dock": "bottom",
+                        "size": {
+                          "w": 1041,
+                          "h": 0
+                        }
+                      },
+                      "timeAxis": {
+                        "visible": false,
+                        "dock": "bottom",
+                        "size": {
+                          "w": 1041,
+                          "h": 0
+                        }
+                      },
+                      "continuousAxis": {
+                        "visible": false,
+                        "dock": "bottom",
+                        "size": {
+                          "w": 1041,
+                          "h": 0
+                        }
+                      },
+                      "refLineLabels": {
+                        "visible": false,
+                        "dock": "right",
+                        "size": {
+                          "w": 0,
+                          "h": 343
+                        }
+                      },
+                      "axis": {
+                        "visible": false,
+                        "dock": "right",
+                        "size": {
+                          "w": 0,
+                          "h": 343
+                        }
+                      },
+                      "secondaryMeasureAxisTitle": {
+                        "visible": false,
+                        "dock": "right",
+                        "size": {
+                          "w": 0,
+                          "h": 343
+                        }
+                      },
+                      "scrollArea": {
+                        "visible": false,
+                        "dock": "bottom",
+                        "size": {
+                          "w": 1041,
+                          "h": 0
+                        }
+                      },
+                      "refLines": {
+                        "visible": false,
+                        "dock": "center",
+                        "size": {
+                          "w": 1041,
+                          "h": 343
+                        }
+                      },
+                      "dataArea": {
+                        "visible": true,
+                        "dock": "center",
+                        "size": {
+                          "w": 1041,
+                          "h": 343
+                        }
+                      },
+                      "measureAxis": {
+                        "visible": false,
+                        "dock": "left",
+                        "size": {
+                          "w": 0,
+                          "h": 343
+                        }
+                      },
+                      "dimensionAxis": {
+                        "visible": true,
+                        "dock": "bottom",
+                        "size": {
+                          "w": 1041,
+                          "h": 136
+                        }
+                      },
+                      "dimensionAxisTitle": {
+                        "visible": true,
+                        "dock": "bottom",
+                        "size": {
+                          "w": 1041,
+                          "h": 21
+                        }
+                      },
+                      "measureAxisTitle": {
+                        "visible": false,
+                        "dock": "left",
+                        "size": {
+                          "w": 0,
+                          "h": 343
+                        }
+                      }
+                    },
+                    "v": 0.96
+                  },
+                  "parent": {
+                    "h": 585,
+                    "w": 1304
+                  }
+                },
+                "visualizationType": "combochart",
+                "sourceObjectId": "HFBfpB",
+                "sheetId": "6c8c1093-1cb2-460a-950a-b28c2dec973b",
+                "timestamp": 1577474136788,
+                "isClone": false,
+                "supportExport": true
+              },
+              "qBookmark": {
+                "qStateData": [
+                  {
+                    "qStateName": "$",
+                    "qFieldItems": [
+                      {
+                        "qDef": {
+                          "qName": "GrupoProduto",
+                          "qType": "PRESENT"
+                        },
+                        "qSelectInfo": {
+                          "qRangeLo": "NaN",
+                          "qRangeHi": "NaN",
+                          "qNumberFormat": {
+                            "qType": "U",
+                            "qnDec": 10,
+                            "qUseThou": 0
+                          },
+                          "qRangeInfo": [],
+                          "qContinuousRangeInfo": []
+                        },
+                        "qValues": [
+                          {
+                            "qText": "DEFENSIVOS",
+                            "qNumber": "NaN"
+                          }
+                        ],
+                        "qExcludedValues": []
+                      }
+                    ]
+                  }
+                ],
+                "qUtcModifyTime": 43826.6775,
+                "qVariableItems": [
+                  {
+                    "qName": "ClimberCustomReportvZmdzJ",
+                    "qValue": {
+                      "qText": "{\"options\":{\"fieldsAndSortbarVisible\":true,\"activeReportId\":\"5236bb61-e0f5-4886-9600-d0802c0d7b06\",\"cacheId\":1566477483025},\"states\":{\"5236bb61-e0f5-4886-9600-d0802c0d7b06\":{\"qId\":\"5236bb61-e0f5-4886-9600-d0802c0d7b06\",\"title\":\"Relatório Geral\",\"cIds\":[],\"visualizationType\":\"table\",\"visualizationState\":{\"table\":{\"qInterColumnSortOrder\":[],\"columnWidths\":{},\"qSuppressZero\":false,\"totals\":[\"CmnGYS\",\"bQMKdG\",\"pGLWD\",\"mjkTjrJ\",\"QRpw\",\"NFssh\",\"nUbsMs\",\"MANGMB\",\"eQHD\",\"cFWNm\",\"rjZTugj\",\"fAyHQj\"],\"qColumnOrder\":[]}}}}}",
+                      "qNumber": "NaN"
+                    }
+                  },
+                  {
+                    "qName": "ClimberCustomReportkDAgvhW",
+                    "qValue": {
+                      "qNumber": "NaN"
+                    }
+                  }
+                ],
+                "qPatches": []
+              },
+              "qClassicBookmark": {
+                "qUtcModifyTime": 0,
+                "qUtcRecallTime": 0,
+                "qRecallCount": 0,
+                "qFieldItems": [],
+                "qVariableItems": [],
+                "qObjects": [],
+                "qGroups": [],
+                "qShow": {
+                  "qAlways": true,
+                  "qExpression": {}
+                },
+                "qApplyInputFieldValues": true,
+                "qInputFieldItems": [],
+                "qObjectsLayout": [],
+                "qIncludeSelectionState": true,
+                "qAlternateStateData": []
+              }
+            }
+          },
+          {
+            "qProperty": {
+              "qInfo": {
+                "qId": "khAZHm",
+                "qType": "slideitem"
+              },
+              "qMetaDef": {},
+              "qEmbeddedSnapshotDef": {},
+              "title": "",
+              "sheetId": "",
+              "ratio": true,
+              "position": {
+                "top": "11.10807%",
+                "left": "35.41838%",
+                "width": "39.57993%",
+                "height": "10.93446%",
+                "z-index": 5,
+                "right": "auto"
+              },
+              "visualization": "text",
+              "visualizationType": "title",
+              "style": {
+                "color": "#6E6E6E",
+                "text": "SAPATO"
+              }
+            },
+            "qChildren": []
+          }
+        ]
+      }
+    ]
+  }
+]

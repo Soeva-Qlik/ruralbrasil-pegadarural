@@ -1,0 +1,151 @@
+[
+  {
+    "qInfo": {
+      "qId": "30309273-186c-42a3-835d-337ba3626490",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "vWherePedidos",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "YEAR(DataEmissao) >2016"
+  },
+  {
+    "qInfo": {
+      "qId": "43cbe344-17fd-4e42-a569-f02dd79acb58",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "vOrdemAux",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "1",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "441d4e32-5979-4a67-b03c-83fe11538f21",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "vClassificaçãoDinâmicaAux",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "3",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "71828ad5-1e65-4a92-a7bd-46903a28a442",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "vTipoVenda",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "1",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "8af89250-f496-443b-8630-a98cdf65b1b3",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "vClassificaçãoDinâmica",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "% Margem Fat",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "8d19fe93-f395-495c-8d6a-c06527137720",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "vOrdenacaoGraficoVisitas",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "1",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "9248b547-340e-4952-bc99-bf18be9be6a4",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "vOrdem",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "Crescente",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "9858b770-8d77-4d73-85f0-9845d9a29b86",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "vIcone",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "=IF(vOrdenacaoGraficoVisitas=1,'Minus','Plus')",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "ce581e61-41a0-4cad-975a-f617f188bad4",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "vTipoOrdenacaoDinamico",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "pick($(vClassificaçãoDinâmicaAux),\r\nSum(ValorOrcamento),\nsum(ValorReceitaFaturado),\nsum(ValorMargemFaturado)/sum(ValorReceitaFaturado),\nSum(ValorPedidoSaldo),\nsum(ValorMargemSaldo)/sum(ValorPedidoSaldo),\nSum([ValorPotencialTecnológico]),\nsum(ValorArea)\n)\n*\n$(vOrdemAux)",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "d82049a0-3db4-4718-9382-1ca553392d00",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "vCorTabelaDinamica",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "IF(rowno(total)=0 OR isNull(rowno(total)),green(255),\r\nIF(Dimensionality()=1,\ngreen(55)\n))",
+    "tags": []
+  }
+]

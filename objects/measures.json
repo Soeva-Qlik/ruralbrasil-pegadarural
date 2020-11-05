@@ -1,0 +1,431 @@
+[
+  {
+    "qInfo": {
+      "qId": "15bab4e3-8785-4ab4-aec6-249220027dfd",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "ValorMovimento",
+      "qDef": "Sum(ValorPedidoMovimento)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "qLabelExpression": "'VENDAS'",
+      "coloring": {}
+    },
+    "qMetaDef": {
+      "title": "ValorMovimento",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "3996bdaa-3175-4039-a1a8-fca36d3d37c2",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "QtdAtendimentosSemAgenda",
+      "qDef": "COUNT(DISTINCT{<FlagAtendimentoSemAgenda={1}>} IdAtendimento)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "qLabelExpression": "'Qtd Atend. S/ Agenda'",
+      "coloring": {}
+    },
+    "qMetaDef": {
+      "title": "QtdAtendimentosSemAgenda",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "541b873e-da9f-4986-a374-5638a7007380",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "QtdSaldo",
+      "qDef": "Sum({<Ano,Mes>}QtdProdutoSaldo)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "qLabelExpression": "'Saldo Carteira ( Qtd )'",
+      "coloring": {
+        "baseColor": {
+          "color": "#4477aa",
+          "index": 6
+        }
+      }
+    },
+    "qMetaDef": {
+      "title": "QtdSaldo",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "5fc3a5c6-71f9-4627-b6d2-0a2568db7357",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "QtdFaturamento",
+      "qDef": "Sum(QtdProdutoFaturado)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "qLabelExpression": "'Faturamento ( Qtd )'",
+      "coloring": {
+        "baseColor": {
+          "color": "#8dc782",
+          "index": -1
+        }
+      }
+    },
+    "qMetaDef": {
+      "title": "QtdFaturamento",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "CudrTWP",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "VlrFaturamento",
+      "qDef": "Sum(ValorReceitaFaturado)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "qLabelExpression": "'Faturamento (R$)'",
+      "coloring": {
+        "baseColor": {
+          "color": "#8dc782",
+          "index": -1
+        }
+      }
+    },
+    "qMetaDef": {
+      "title": "VlrFaturamento",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "PpXPQ",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "PercMargemFaturamento",
+      "qDef": "sum(ValorMargemFaturado)\r\n/\nsum(ValorReceitaFaturado)\n",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "qLabelExpression": "'% Margem Faturamento (CRM)'",
+      "coloring": {}
+    },
+    "qMetaDef": {
+      "title": "PercMargemFaturamento",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "RNSVY",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "QtdPedidos",
+      "qDef": "COUNT(DISTINCT numero_pedidoCRM)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "qLabelExpression": "'Número de Pedidos'",
+      "coloring": {}
+    },
+    "qMetaDef": {
+      "title": "QtdPedidos",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "Rjbt",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "QtdVisitasRealizadas",
+      "qDef": "Count(DISTINCT idagendaRealizada)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "qLabelExpression": "'VISITAS REALIZADAS'",
+      "coloring": {
+        "baseColor": {
+          "color": "#46c646",
+          "index": 2
+        },
+        "gradient": {
+          "colors": [
+            {
+              "color": "#5aff5a",
+              "index": -1
+            },
+            {
+              "color": "#276e27",
+              "index": 3
+            }
+          ],
+          "breakTypes": [
+            true
+          ],
+          "limits": [
+            0.5
+          ],
+          "limitType": "percent"
+        }
+      }
+    },
+    "qMetaDef": {
+      "title": "QtdVisitasRealizadas",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "WnHKDnE",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "ValorPotencialTecnológico",
+      "qDef": "Sum([ValorPotencialTecnológico])",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "qLabelExpression": "'Potencila Tecnológico Identificado'",
+      "coloring": {}
+    },
+    "qMetaDef": {
+      "title": "ValorPotencialTecnológico",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "YhxVQ",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "QtdClientesComVenda",
+      "qDef": "COUNT(DISTINCT{<FlagPossuiVenda={1}>} parceiroCRM)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "qLabelExpression": "'Nº Clientes c/ Vendas'",
+      "coloring": {}
+    },
+    "qMetaDef": {
+      "title": "QtdClientesComVenda",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "ZJkWKfh",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "ValorOrcamento",
+      "qDef": "Sum(ValorOrcamento)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "qLabelExpression": "'Orçamento",
+      "coloring": {}
+    },
+    "qMetaDef": {
+      "title": "ValorOrcamento",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "ZTehGfP",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "QtdAtendimentos",
+      "qDef": "COUNT(DISTINCT IdAtendimento)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "qLabelExpression": "'Qtd Atendimentos'",
+      "coloring": {
+        "gradient": {
+          "colors": [
+            {
+              "color": "#99caff",
+              "index": -1
+            },
+            {
+              "color": "#4477aa",
+              "index": 6
+            }
+          ],
+          "breakTypes": [
+            true
+          ],
+          "limits": [
+            0.5
+          ],
+          "limitType": "percent"
+        }
+      }
+    },
+    "qMetaDef": {
+      "title": "QtdAtendimentos",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "b772b59a-8bb4-4147-91a6-39938128828a",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "QtdClientesAtendidos",
+      "qDef": "COUNT(DISTINCT{<FlagClienteAtendido={1}>} parceiroCRM)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "qLabelExpression": "'Nº Clientes Atendidos'",
+      "coloring": {}
+    },
+    "qMetaDef": {
+      "title": "QtdClientesAtendidos",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "gQPhHY",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "ValorSaldo",
+      "qDef": "Sum({<Ano,Mes>}ValorPedidoSaldo)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "qLabelExpression": "'Saldo Carteira (R$)'",
+      "coloring": {
+        "baseColor": {
+          "color": "#4477aa",
+          "index": 6
+        }
+      }
+    },
+    "qMetaDef": {
+      "title": "ValorSaldo",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "mVPsLUW",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "ValorÁrea",
+      "qDef": "sum(ValorArea)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "qLabelExpression": "='Area (ha)'",
+      "coloring": {}
+    },
+    "qMetaDef": {
+      "title": "ValorÁrea",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "maaPZ",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "PercMargemSaldo",
+      "qDef": "sum(ValorMargemSaldo)\r\n/\nsum(ValorPedidoSaldo)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "qLabelExpression": "'% Margem Prevista Saldo'",
+      "coloring": {}
+    },
+    "qMetaDef": {
+      "title": "PercMargemSaldo",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "zgKuNp",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "PercShareOfWallet",
+      "qDef": "sum(ValorPedidoMovimento)\r\n/\nsum([ValorPotencialTecnológicoRB])",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "qLabelExpression": "'% Part. Mercado Identificado'",
+      "coloring": {}
+    },
+    "qMetaDef": {
+      "title": "PercShareOfWallet",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "zmGLp",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "QtdVisitasAgendadas",
+      "qDef": "Count(DISTINCT idagenda)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "qLabelExpression": "'VISITAS AGENDADAS'",
+      "coloring": {
+        "baseColor": {
+          "color": "#ffcf02",
+          "index": 8
+        }
+      }
+    },
+    "qMetaDef": {
+      "title": "QtdVisitasAgendadas",
+      "description": "",
+      "tags": []
+    }
+  }
+]

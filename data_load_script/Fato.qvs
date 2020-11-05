@@ -1,0 +1,77 @@
+///$tab Fato
+FatPedidos:
+LOAD
+	recno()	as	%LinkPedidos,
+	SubGrupo,
+    numero_pedidoCRM,
+    CodProdutoSiagri	AS	CodFornecedor,
+    CodProdutoSiagri	AS	CodProduto,
+	IF(DescricaoPedidoTipo<>'Movimento',1)	AS	FlagPossuiVenda,
+    IF(DescricaoPedidoTipo<>'Movimento',QtdProduto,0)	AS	QtdProdutoSaldo,
+    ValorPedidoSaldo,
+	ValorPedidoMovimento,
+    ValorMargemSaldo
+FROM 
+	[lib://1.Transform/CloverCRM/PedidosCRM_SIAGRI_MARGEM.qvd](qvd)
+
+;
+
+Concatenate(FatPedidos)
+LOAD
+	%LinkFaturamento	AS	%LinkPedidos,
+    SubGrupoProduto		AS	SubGrupo,
+	CodProdutoSiagri	AS	CodFornecedor,
+   	CodProdutoSiagri	AS	CodProduto,
+   	1					AS	FlagPossuiVenda,
+    NumeroNotaFiscal,
+	ValorReceitaFaturado,
+    ValorMargemFaturado,
+    QtdProduto			AS	QtdProdutoFaturado
+FROM 
+	[lib://1.Transform/Siagri/FatSaidasFaturadas.qvd](qvd)
+WHERE
+	$(vWhereFaturado)
+;
+
+FatPotencial:
+LOAD
+    %LinkPotencialTecnologico,
+    ValorPotencialTecnológico
+FROM 
+	[lib://1.Transform/CloverCRM/TabPotencialTecnologico.qvd]
+(qvd);
+
+FatAgendamento:
+LOAD
+	IdAgendamento,
+    idagenda,    
+    idagendaRealizada,
+    idagendaNãoRealizada
+FROM 
+	[lib://1.Transform/CloverCRM/AtendimentoPlanejado.qvd](qvd)
+WHERE
+	$(vWhereVisitas)
+;
+
+FatAtendimento:
+LOAD
+	%LinkAtendimento,
+   	FlagAtendimentoSemAgenda,
+    AtividadeVisita,
+    IdAtendimento,
+    1		AS	FlagClienteAtendido
+FROM
+	[lib://1.Transform/CloverCRM/TabAtendimento.qvd](qvd)
+WHERE
+	$(vWhereAtendimento)
+;
+
+FatOrcamento:
+LOAD
+	%LinkOrcamento,
+    ValorOrcamento
+FROM
+	[lib://1.Transform/FatOrcamento.qvd](qvd)
+WHERE
+	$(vWhereOrçamento)	
+;

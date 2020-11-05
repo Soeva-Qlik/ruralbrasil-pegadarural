@@ -1,0 +1,60 @@
+///$tab Dimensões
+TabSegmentacaoParceiro:
+LOAD	DISTINCT
+    %LinkSegmentacaoParceiro,
+    SegmentacaoShareCliente
+FROM 
+	[lib://1.Transform/CloverCRM/TabSegmentacaoCliente.qvd]
+(qvd);
+CONCATENATE(TabSegmentacaoParceiro)
+LOAD	DISTINCT
+    '' 				AS %LinkSegmentacaoParceiro,
+    'Não Segmenta'	as SegmentacaoShareCliente
+autogenerate
+1
+;
+
+
+
+TabDiretoria:
+LOAD
+    Regional,
+    Diretoria,
+    Num(Num#(CodUnidade)) as CodUnidade,
+    REDUCTION
+FROM 
+	[lib://1.Transform/CloverCRM/TabDiretoria.qvd]
+(qvd);
+CONCATENATE(TabDiretoria)
+LOAD
+    Regional,
+    Diretoria,
+    Num(Num#(CodUnidade)) as CodUnidade,
+    'TODOS' AS REDUCTION
+FROM 
+	[lib://1.Transform/CloverCRM/TabDiretoria.qvd]
+(qvd);
+
+TabPerfilDeCompra:
+LOAD
+    %LinkPerfilCompraParceiro,
+    PerfilCompraParceiro
+FROM 
+	[lib://1.Transform/CloverCRM/TabPerfilCompra.qvd]
+(qvd);
+
+LEFT KEEP(FatPedidos)
+TabFornecedor:
+LOAD
+	CodProdutoSiagri	AS	CodFornecedor,
+    Fornecedor
+FROM [lib://1.Transform/Siagri/TabFornecedor.qvd]
+(qvd);
+
+LEFT KEEP(FatPedidos)
+TabProduto:
+LOAD
+    CodProduto,
+    Produto
+FROM [lib://1.Transform/Siagri/TabProduto.qvd]
+(qvd);

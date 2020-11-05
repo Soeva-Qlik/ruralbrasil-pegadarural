@@ -1,0 +1,51 @@
+///$tab Data
+Temp:
+Load
+	min(%LinkData) as minDate,
+	max(%LinkData) as maxDate
+Resident 
+	LinkTable
+;
+
+Let varMinDate = Num(Peek('minDate', 0, 'Temp'));
+Let varMaxDate = Num(Peek('maxDate', 0, 'Temp'));
+
+DROP Table Temp;
+
+TempCalendar:
+LOAD
+	$(varMinDate) + Iterno()-1 			As Num,
+	Date($(varMinDate) + IterNo() - 1) 	AS TempDate
+AutoGenerate
+	1
+While
+	$(varMinDate) + IterNo() -1 <= $(varMaxDate)
+;
+
+MasterCalendar:
+LOAD
+	TempDate 			AS %LinkData,
+    TempDate			AS	Data,
+	Year(TempDate) 		As	Ano,
+	Month(TempDate) 	As	Mes,
+	MonthName(TempDate)	AS	MesAno,
+    WeekDay(TempDate)	AS	DiaSemana,
+    Week(TempDate)		AS	Semana
+RESIDENT
+	TempCalendar
+;
+
+DROP TABLE TempCalendar;
+
+CONCATENATE(MasterCalendar)
+LOAD
+	'*' as %LinkData,
+    Data,
+	Ano,
+	Mes,
+	MesAno,
+    DiaSemana,
+    Semana
+RESIDENT
+	MasterCalendar
+;

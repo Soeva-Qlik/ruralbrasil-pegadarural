@@ -1,0 +1,596 @@
+[
+  {
+    "qInfo": {
+      "qId": "3c1939be-a8d6-4137-b78b-e60f6753e737",
+      "qType": "dimension"
+    },
+    "qDim": {
+      "qGrouping": "N",
+      "qFieldDefs": [
+        "Regional"
+      ],
+      "qFieldLabels": [
+        "Regional"
+      ],
+      "title": "Regional",
+      "coloring": {
+        "colorMapRef": "TvaTjT",
+        "changeHash": "0.039345309698818776"
+      }
+    },
+    "qMetaDef": {
+      "title": "Regional",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "45579f08-1111-4e85-b225-ed3dc817802f",
+      "qType": "dimension"
+    },
+    "qDim": {
+      "qGrouping": "N",
+      "qFieldDefs": [
+        "Filial"
+      ],
+      "qFieldLabels": [
+        "Filial"
+      ],
+      "title": "Filial",
+      "coloring": {
+        "colorMapRef": "TvaTjT",
+        "changeHash": "0.43773819262970415"
+      }
+    },
+    "qMetaDef": {
+      "title": "Filial",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "5981dfb7-60d6-433c-a118-15f7c0342127",
+      "qType": "dimension"
+    },
+    "qDim": {
+      "qGrouping": "N",
+      "qFieldDefs": [
+        "Mes"
+      ],
+      "qFieldLabels": [
+        "Mes"
+      ],
+      "title": "Mes",
+      "coloring": {
+        "colorMapRef": "5981dfb7-60d6-433c-a118-15f7c0342127",
+        "changeHash": "0.1700177740277804"
+      }
+    },
+    "qMetaDef": {
+      "title": "Mes",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "5d6af938-1afe-47a6-abfa-8494c60f0e60",
+      "qType": "dimension"
+    },
+    "qDim": {
+      "qGrouping": "N",
+      "qFieldDefs": [
+        "=\r\nIF(GetSelectedCount(Regional)>0,Consultor,\nIF(GetSelectedCount(Diretoria)>0,Filial,\nRegional))"
+      ],
+      "qFieldLabels": [
+        "Drill_2"
+      ],
+      "title": "Drill_2",
+      "coloring": {
+        "changeHash": "0.6566367749258506",
+        "colorMapRef": "5d6af938-1afe-47a6-abfa-8494c60f0e60"
+      }
+    },
+    "qMetaDef": {
+      "title": "Drill_2",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "97880d44-3fcd-491d-be13-d28ba96a9829",
+      "qType": "dimension"
+    },
+    "qDim": {
+      "qGrouping": "N",
+      "qFieldDefs": [
+        "Cultura"
+      ],
+      "qFieldLabels": [
+        "Cultura"
+      ],
+      "title": "Cultura",
+      "coloring": {
+        "colorMapRef": "TvaTjT",
+        "changeHash": "0.4695078808387172"
+      }
+    },
+    "qMetaDef": {
+      "title": "Cultura",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "EGzZv",
+      "qType": "dimension"
+    },
+    "qDim": {
+      "qGrouping": "N",
+      "qFieldDefs": [
+        "Consultor"
+      ],
+      "qFieldLabels": [
+        "Consultor"
+      ],
+      "title": "Consultor",
+      "coloring": {
+        "changeHash": "0.20838386349454052"
+      }
+    },
+    "qMetaDef": {
+      "title": "Consultor",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "ENKurs",
+      "qType": "dimension"
+    },
+    "qDim": {
+      "qGrouping": "H",
+      "qFieldDefs": [
+        "Regional",
+        "Filial"
+      ],
+      "qFieldLabels": [],
+      "title": "Regional/Filial",
+      "coloring": {
+        "changeHash": "0.7578779139677003"
+      }
+    },
+    "qMetaDef": {
+      "title": "Regional/Filial",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "GHuj",
+      "qType": "dimension"
+    },
+    "qDim": {
+      "qGrouping": "H",
+      "qFieldDefs": [
+        "Consultor",
+        "parceiroCRM"
+      ],
+      "qFieldLabels": [],
+      "title": "Consultor/Parceiro",
+      "coloring": {
+        "changeHash": "0.384265688461785"
+      }
+    },
+    "qMetaDef": {
+      "title": "Consultor/Parceiro",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "NhwBnp",
+      "qType": "dimension"
+    },
+    "qDim": {
+      "qGrouping": "N",
+      "qFieldDefs": [
+        "AtividadeVisita"
+      ],
+      "qFieldLabels": [
+        "AtividadeVisita"
+      ],
+      "qLabelExpression": "'Atividade'",
+      "title": "AtividadeVisita",
+      "coloring": {
+        "changeHash": "0.9892372131176885"
+      }
+    },
+    "qMetaDef": {
+      "title": "AtividadeVisita",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "TvaTjT",
+      "qType": "dimension"
+    },
+    "qDim": {
+      "qGrouping": "N",
+      "qFieldDefs": [
+        "Ano"
+      ],
+      "qFieldLabels": [
+        "Ano"
+      ],
+      "qLabelExpression": "'Ano'",
+      "title": "Ano",
+      "coloring": {
+        "changeHash": "0.0662453361338351",
+        "colorMapRef": "TvaTjT"
+      }
+    },
+    "qMetaDef": {
+      "title": "Ano",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "Tzdfamu",
+      "qType": "dimension"
+    },
+    "qDim": {
+      "qGrouping": "H",
+      "qFieldDefs": [
+        "MesAno",
+        "Semana",
+        "Data"
+      ],
+      "qFieldLabels": [],
+      "title": "MesAno/Semana",
+      "coloring": {
+        "changeHash": "0.5259466349004935",
+        "colorMapRef": "Tzdfamu"
+      }
+    },
+    "qMetaDef": {
+      "title": "MesAno/Semana",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "VccauWN",
+      "qType": "dimension"
+    },
+    "qDim": {
+      "qGrouping": "N",
+      "qFieldDefs": [
+        "ConsultorAtivo"
+      ],
+      "qFieldLabels": [
+        "ConsultorAtivo"
+      ],
+      "qLabelExpression": "'Consultor Ativo'",
+      "title": "ConsultorAtivo",
+      "coloring": {
+        "changeHash": "0.3576026955998841"
+      }
+    },
+    "qMetaDef": {
+      "title": "ConsultorAtivo",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "a7695cb0-fd32-447c-90b2-fe7f36bfeb9c",
+      "qType": "dimension"
+    },
+    "qDim": {
+      "qGrouping": "N",
+      "qFieldDefs": [
+        "Ciclo"
+      ],
+      "qFieldLabels": [
+        "Ciclo"
+      ],
+      "title": "Ciclo",
+      "coloring": {
+        "colorMapRef": "TvaTjT",
+        "changeHash": "0.07411213178145282"
+      }
+    },
+    "qMetaDef": {
+      "title": "Ciclo",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "c979943d-b825-420b-92a1-2b04c78a9428",
+      "qType": "dimension"
+    },
+    "qDim": {
+      "qGrouping": "N",
+      "qFieldDefs": [
+        "Fornecedor"
+      ],
+      "qFieldLabels": [
+        "Fornecedor"
+      ],
+      "title": "Fornecedor",
+      "coloring": {
+        "colorMapRef": "TvaTjT",
+        "changeHash": "0.8025639975874597"
+      }
+    },
+    "qMetaDef": {
+      "title": "Fornecedor",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "d81ebfd0-c203-4225-8e5e-7c414a3eeb0a",
+      "qType": "dimension"
+    },
+    "qDim": {
+      "qGrouping": "N",
+      "qFieldDefs": [
+        "SubGrupo"
+      ],
+      "qFieldLabels": [
+        "SubGrupo"
+      ],
+      "title": "SubGrupo",
+      "coloring": {
+        "colorMapRef": "TvaTjT",
+        "changeHash": "0.1925215802717326"
+      }
+    },
+    "qMetaDef": {
+      "title": "SubGrupo",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "dybUnTs",
+      "qType": "dimension"
+    },
+    "qDim": {
+      "qGrouping": "N",
+      "qFieldDefs": [
+        "Semana"
+      ],
+      "qFieldLabels": [
+        "Semana"
+      ],
+      "title": "Semana",
+      "coloring": {
+        "changeHash": "0.6818112756844072"
+      }
+    },
+    "qMetaDef": {
+      "title": "Semana",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "e4e614cb-e0da-4e2c-9a9d-b891c9a77348",
+      "qType": "dimension"
+    },
+    "qDim": {
+      "qGrouping": "N",
+      "qFieldDefs": [
+        "parceiroCRM"
+      ],
+      "qFieldLabels": [
+        "parceiro"
+      ],
+      "qLabelExpression": "'parceiro'",
+      "title": "parceiro",
+      "coloring": {
+        "colorMapRef": "e4e614cb-e0da-4e2c-9a9d-b891c9a77348",
+        "changeHash": "0.042126797873373256"
+      }
+    },
+    "qMetaDef": {
+      "title": "parceiro",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "e607d823-500a-4931-838f-2621ec6aadd0",
+      "qType": "dimension"
+    },
+    "qDim": {
+      "qGrouping": "N",
+      "qFieldDefs": [
+        "GrupoProduto"
+      ],
+      "qFieldLabels": [
+        "GrupoProduto"
+      ],
+      "title": "GrupoProduto",
+      "coloring": {
+        "colorMapRef": "TvaTjT",
+        "changeHash": "0.6342834379091828"
+      }
+    },
+    "qMetaDef": {
+      "title": "GrupoProduto",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "ec6e06d5-5668-4f2e-aa05-fa7605ae42df",
+      "qType": "dimension"
+    },
+    "qDim": {
+      "qGrouping": "N",
+      "qFieldDefs": [
+        "MesAno"
+      ],
+      "qFieldLabels": [
+        "MesAno"
+      ],
+      "title": "MesAno",
+      "coloring": {
+        "colorMapRef": "TvaTjT",
+        "changeHash": "0.006417922064647863"
+      }
+    },
+    "qMetaDef": {
+      "title": "MesAno",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "jQbCKm",
+      "qType": "dimension"
+    },
+    "qDim": {
+      "qGrouping": "N",
+      "qFieldDefs": [
+        "Produto"
+      ],
+      "qFieldLabels": [
+        "Produto"
+      ],
+      "title": "Produto",
+      "coloring": {
+        "changeHash": "0.12479761239778742"
+      }
+    },
+    "qMetaDef": {
+      "title": "Produto",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "jjMa",
+      "qType": "dimension"
+    },
+    "qDim": {
+      "qGrouping": "N",
+      "qFieldDefs": [
+        "PerfilCompraParceiro"
+      ],
+      "qFieldLabels": [
+        "Perfil Compra"
+      ],
+      "qLabelExpression": "'Perfil Compra'",
+      "title": "Perfil Compra",
+      "coloring": {
+        "changeHash": "0.30220214568706383"
+      }
+    },
+    "qMetaDef": {
+      "title": "Perfil Compra",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "ngQDyxK",
+      "qType": "dimension"
+    },
+    "qDim": {
+      "qGrouping": "H",
+      "qFieldDefs": [
+        "Diretoria",
+        "Regional",
+        "Filial"
+      ],
+      "qFieldLabels": [],
+      "title": "Drill",
+      "coloring": {
+        "changeHash": "0.9984539623350346",
+        "colorMapRef": "ngQDyxK"
+      }
+    },
+    "qMetaDef": {
+      "title": "Drill",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "pVfVjNY",
+      "qType": "dimension"
+    },
+    "qDim": {
+      "qGrouping": "N",
+      "qFieldDefs": [
+        "SegmentacaoShareCliente"
+      ],
+      "qFieldLabels": [
+        "SegmentacaoShareCliente"
+      ],
+      "qLabelExpression": "'SegmentacaoParceiro'",
+      "title": "SegmentacaoShareCliente",
+      "coloring": {
+        "changeHash": "0.7165324400468902"
+      }
+    },
+    "qMetaDef": {
+      "title": "SegmentacaoShareCliente",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "sHmfXjJ",
+      "qType": "dimension"
+    },
+    "qDim": {
+      "qGrouping": "N",
+      "qFieldDefs": [
+        "Diretoria"
+      ],
+      "qFieldLabels": [
+        "Diretoria"
+      ],
+      "title": "Diretoria",
+      "coloring": {
+        "changeHash": "0.590515931440698"
+      }
+    },
+    "qMetaDef": {
+      "title": "Diretoria",
+      "description": "",
+      "tags": []
+    }
+  }
+]

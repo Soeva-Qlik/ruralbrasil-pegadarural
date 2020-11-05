@@ -1,0 +1,97 @@
+///$tab Main
+$(Must_Include=LIB://3.Script/SectionAccess.qvs);
+
+
+SET ThousandSep='.';
+SET DecimalSep=',';
+SET MoneyThousandSep='.';
+SET MoneyDecimalSep=',';
+SET MoneyFormat='R$#.##0,00;-R$#.##0,00';
+SET TimeFormat='hh:mm:ss';
+SET DateFormat='DD/MM/YYYY';
+SET TimestampFormat='DD/MM/YYYY hh:mm:ss[.fff]';
+SET FirstWeekDay=6;
+SET BrokenWeeks=1;
+SET ReferenceDay=0;
+SET FirstMonthOfYear=1;
+SET CollationLocale='pt-BR';
+SET CreateSearchIndexOnReload=1;
+SET MonthNames='jan;fev;mar;abr;mai;jun;jul;ago;set;out;nov;dez';
+SET LongMonthNames='janeiro;fevereiro;março;abril;maio;junho;julho;agosto;setembro;outubro;novembro;dezembro';
+SET DayNames='seg;ter;qua;qui;sex;sáb;dom';
+SET LongDayNames='segunda-feira;terça-feira;quarta-feira;quinta-feira;sexta-feira;sábado;domingo';
+SET NumericalAbbreviation='3:Mil;6:Mio;9:Bi;12:T;15:P;18:E;21:Z;24:Y;-3:m;-6:μ;-9:n;-12:p;-15:f;-18:a;-21:z;-24:y';
+
+CALL SessaoAccesso ('PEGADA');
+
+RemoveAcento_Map:
+Mapping
+LOAD * INLINE [
+F1, F2
+Š, S
+š, s
+Ž, Z
+ž, z
+À, A
+Á, A
+Â, A
+Ã, A
+Ä, A
+Å, A
+Æ, A
+Ç, C
+È, E
+É, E
+Ê, E
+Ë, E
+Ì, I
+Í, I
+Î, I
+Ï, I
+Ñ, N
+Ò, O
+Ó, O
+Ô, O
+Õ, O
+Ö, O
+Ø, O
+Ù, U
+Ú, U
+Û, U
+Ü, U
+Ý, Y
+Þ, B
+ß, B
+à, a
+á, a
+â, a
+ã, a
+ä, a
+å, a
+æ, a
+ç, c
+è, e
+é, e
+ê, e
+ë, e
+ì, i
+í, i
+î, i
+ï, i
+ð, o
+ñ, n
+ò, o
+ó, o
+ô, o
+õ, o
+ö, o
+ø, o
+ù, u
+ú, u
+û, u
+ý, y
+ý, y
+þ, b
+ÿ, y
+',
+];

@@ -1,0 +1,134 @@
+///$tab LinkTable
+//MAP REALIZADO NA VISÃO POIS É NA LINK TABLE QUE TODAS FONTES DE CONSULTORES SÃO UNIFICADAS
+MapLinkConsultorProspect:MAPPING LOAD	%LinkConsultorProspect, Consultor	FROM	[lib://1.Transform/CloverCRM/TabConsultorProspect.qvd](qvd);
+
+MapConsultorAtivo:
+MAPPING
+LOAD
+	trim(upper(MapSubString('RemoveAcento_Map',Nome))),//Consultor
+   'Sim'
+FROM
+	[lib://2.Arquivos/Marketing/Custo 2019 CTVs e Gerentes - MKT.xlsx]
+(ooxml, embedded labels, header is 2 lines, table is [CTVs e gerentes]);
+
+tempLinkTable:
+LOAD
+	recno()	as	%LinkPedidos,
+    %LinkPerfilCompraParceiro,
+    %LinkSegmentacaoParceiro,
+    Ciclo,
+    Vendedor					AS	Consultor,
+    DataEmissao,
+    Cultura,
+    RegionalSemAscento			AS	Regional,
+    FilialSemAscento			AS	Filial,
+   	CodEmpresa					as  CodUnidade,
+    GrupoProdutoConsideraFoliar	AS	GrupoProduto,
+    ClientePrincipal			AS	parceiroCRM
+FROM 
+	[lib://1.Transform/CloverCRM/PedidosCRM_SIAGRI_MARGEM.qvd](qvd)
+;
+
+OUTER JOIN(tempLinkTable)
+LOAD
+    %LinkSegmentacaoParceiro,
+	%LinkFaturamento	AS	%LinkPedidos,
+    Vendedor			AS	Consultor,
+    ParceiroPrincipal	AS	parceiroCRM,
+    %LinkPerfilCompraParceiro,
+    Cultura,
+	GrupoProduto,
+    Ciclo,
+  	CodEmpresa as CodUnidade,
+    DataEmissao,
+    Filial,
+    Regional
+FROM 
+	[lib://1.Transform/Siagri/FatSaidasFaturadas.qvd](qvd)
+WHERE
+	$(vWhereFaturado)
+;
+
+OUTER JOIN(tempLinkTable)
+LOAD
+    %LinkSegmentacaoParceiro,
+	%LinkPotencialTecnologico,
+    CodUnidade,
+    Ciclo,
+    Regional,
+    parceiroCRM,
+    GrupoProduto,
+   	Filial,
+    Cultura,
+    '*'		AS	DataEmissao,
+    %LinkPerfilCompraParceiro,
+    ApplyMap('MapLinkConsultorProspect',%LinkConsultorProspect,NULL())	AS	Consultor
+FROM 
+	[lib://1.Transform/CloverCRM/TabPotencialTecnologico.qvd]
+(qvd);
+
+
+OUTER JOIN(tempLinkTable)
+LOAD
+	%LinkPerfilCompraParceiro,
+    %LinkSegmentacaoParceiro,
+	IdAgendamento,
+    Consultor,
+    FilialCRM			AS	Filial,
+    CodEmpresa  		as CodUnidade,
+	RegionalSemAcento	AS	Regional,    
+	datahorainicio		AS	DataEmissao,
+    ClientePrincipal	AS	parceiroCRM
+FROM 
+	[lib://1.Transform/CloverCRM/AtendimentoPlanejado.qvd](qvd)
+WHERE
+	$(vWhereVisitas)
+;
+
+OUTER JOIN(tempLinkTable)
+LOAD
+	%LinkAtendimento,
+	%LinkPerfilCompraParceiro,
+    %LinkSegmentacaoParceiro,
+    Filial,
+    Regional,
+    ClientePrincipal		AS	parceiroCRM,    
+    Consultor,
+    DataAtendimento			AS	DataEmissao,
+    Num(Num#(CodEmpresa))	AS	CodUnidade
+FROM    
+	[lib://1.Transform/CloverCRM/TabAtendimento.qvd](qvd)
+WHERE
+	YEAR(DataAtendimento) > 2018
+;
+
+CONCATENATE
+LOAD
+	%LinkOrcamento,
+    ''	as %LinkSegmentacaoParceiro,
+    Regional,
+    Filial,
+    GrupoProdutoPegada 	as GrupoProduto,
+    DataEmissao,
+    CodUnidade
+FROM
+	[lib://1.Transform/FatOrcamento.qvd](QVD)
+WHERE
+	$(vWhereOrçamento)	
+;
+
+LinkTable:
+LOAD
+	*,
+    DataEmissao as %LinkData,
+    hash128(
+    MapSubString('RemoveAcento_Map',upper(trim(Regional))),
+    MapSubString('RemoveAcento_Map',upper(trim(Filial))),
+    MapSubString('RemoveAcento_Map',upper(trim(parceiroCRM))),
+    Cultura)	AS	%LinkArea,
+    ApplyMap('MapConsultorAtivo',trim(upper(MapSubString('RemoveAcento_Map',Consultor))),'Não')	AS	ConsultorAtivo
+RESIDENT
+	tempLinkTable
+;
+DROP Fields Regional, DataEmissao;
+DROP TABLE tempLinkTable;

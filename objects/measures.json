@@ -11,7 +11,12 @@
       "qExpressions": [],
       "qActiveExpression": 0,
       "qLabelExpression": "'VENDAS'",
-      "coloring": {}
+      "coloring": {
+        "baseColor": {
+          "color": "#8e477d",
+          "index": 7
+        }
+      }
     },
     "qMetaDef": {
       "title": "ValorMovimento",
@@ -85,6 +90,26 @@
     },
     "qMetaDef": {
       "title": "QtdFaturamento",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "9726c2d5-2fe7-4ef4-8c67-2046a52fba01",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "QtdClientesNaCarteira",
+      "qDef": "COUNT(DISTINCT{<FlagVendaSaldo={1}>} parceiroCRM)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "qLabelExpression": "'Nº Clientes na Carteira'",
+      "coloring": {}
+    },
+    "qMetaDef": {
+      "title": "QtdClientesNaCarteira",
       "description": "",
       "tags": []
     }
@@ -250,7 +275,12 @@
       "qExpressions": [],
       "qActiveExpression": 0,
       "qLabelExpression": "'Orçamento",
-      "coloring": {}
+      "coloring": {
+        "baseColor": {
+          "color": "#b0afae",
+          "index": 12
+        }
+      }
     },
     "qMetaDef": {
       "title": "ValorOrcamento",
@@ -314,6 +344,26 @@
     },
     "qMetaDef": {
       "title": "QtdClientesAtendidos",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "e6dbd882-4200-4317-a2b8-d15de09ea9af",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "ValorMargemMovimento",
+      "qDef": "sum(ValorMargemMovimento)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "qLabelExpression": "'MARGEM'",
+      "coloring": {}
+    },
+    "qMetaDef": {
+      "title": "ValorMargemMovimento",
       "description": "",
       "tags": []
     }

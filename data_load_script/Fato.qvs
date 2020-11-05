@@ -6,11 +6,13 @@ LOAD
     numero_pedidoCRM,
     CodProdutoSiagri	AS	CodFornecedor,
     CodProdutoSiagri	AS	CodProduto,
-	IF(DescricaoPedidoTipo<>'Movimento',1)	AS	FlagPossuiVenda,
+	IF(DescricaoPedidoTipo<>'Movimento',1)		AS	FlagPossuiVenda,
+    IF(DescricaoPedidoTipo<>'Movimento',1,0)	AS	FlagVendaSaldo,
     IF(DescricaoPedidoTipo<>'Movimento',QtdProduto,0)	AS	QtdProdutoSaldo,
     ValorPedidoSaldo,
 	ValorPedidoMovimento,
-    ValorMargemSaldo
+    ValorMargemSaldo,
+	ValorMargemMovimento
 FROM 
 	[lib://1.Transform/CloverCRM/PedidosCRM_SIAGRI_MARGEM.qvd](qvd)
 

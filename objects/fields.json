@@ -3,7 +3,7 @@
     "qIsHidden": true,
     "qIsSystem": true,
     "qName": "$Field",
-    "qCardinal": 52,
+    "qCardinal": 54,
     "qTags": [
       "$text",
       "$key",
@@ -128,7 +128,7 @@
   },
   {
     "qName": "%LinkPedidos",
-    "qCardinal": 450297,
+    "qCardinal": 450379,
     "qTags": [
       "$key"
     ],
@@ -364,6 +364,17 @@
     ]
   },
   {
+    "qName": "FlagVendaSaldo",
+    "qCardinal": 2,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "FatPedidos"
+    ]
+  },
+  {
     "qName": "Fornecedor",
     "qCardinal": 232,
     "qTags": [
@@ -434,7 +445,7 @@
   },
   {
     "qName": "NumeroNotaFiscal",
-    "qCardinal": 50075,
+    "qCardinal": 50095,
     "qTags": [
       "$numeric",
       "$integer"
@@ -538,7 +549,17 @@
   },
   {
     "qName": "ValorMargemFaturado",
-    "qCardinal": 140729,
+    "qCardinal": 140786,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "FatPedidos"
+    ]
+  },
+  {
+    "qName": "ValorMargemMovimento",
+    "qCardinal": 210088,
     "qTags": [
       "$numeric"
     ],
@@ -598,7 +619,7 @@
   },
   {
     "qName": "ValorReceitaFaturado",
-    "qCardinal": 55064,
+    "qCardinal": 55089,
     "qTags": [
       "$numeric"
     ],

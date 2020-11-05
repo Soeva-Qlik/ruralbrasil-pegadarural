@@ -64,7 +64,8 @@
     },
     {
       "qId": "541b873e-da9f-4986-a374-5638a7007380",
-      "qType": "measure"
+      "qType": "measure",
+      "modifiedDate": "2020-11-05T13:02:51.733Z"
     },
     {
       "qId": "556a3006-049c-4bcd-9dc0-c4dd614b1ce7",
@@ -91,7 +92,8 @@
     },
     {
       "qId": "5fc3a5c6-71f9-4627-b6d2-0a2568db7357",
-      "qType": "measure"
+      "qType": "measure",
+      "modifiedDate": "2020-11-05T13:01:49.668Z"
     },
     {
       "qId": "633af887-8c20-4179-87d5-78840b63033b",
@@ -105,7 +107,7 @@
     {
       "qId": "71319554-7f42-48df-9a44-654637d81a42",
       "qType": "sheet",
-      "modifiedDate": "2020-11-05T12:37:18.783Z"
+      "modifiedDate": "2020-11-05T16:43:43.877Z"
     },
     {
       "qId": "745787a4-a357-495b-a000-89248e9d07b5",
@@ -146,6 +148,11 @@
       "qType": "listbox"
     },
     {
+      "qId": "9726c2d5-2fe7-4ef4-8c67-2046a52fba01",
+      "qType": "measure",
+      "modifiedDate": "2020-11-05T13:31:23.381Z"
+    },
+    {
       "qId": "97880d44-3fcd-491d-be13-d28ba96a9829",
       "qType": "dimension",
       "modifiedDate": "2020-11-05T12:37:18.783Z"
@@ -153,12 +160,12 @@
     {
       "qId": "9a44f4bd-72e8-4bd4-aeb0-d0eedf65b3c1",
       "qType": "sheet",
-      "modifiedDate": "2020-11-05T12:37:18.783Z"
+      "modifiedDate": "2020-11-05T13:03:22.531Z"
     },
     {
       "qId": "CudrTWP",
       "qType": "measure",
-      "modifiedDate": "2020-11-05T12:37:18.783Z"
+      "modifiedDate": "2020-11-05T12:56:32.710Z"
     },
     {
       "qId": "CyWXE",
@@ -202,6 +209,10 @@
     {
       "qId": "JnXrfge",
       "qType": "slideitem"
+    },
+    {
+      "qId": "JwMuYm",
+      "qType": "qlik-variable-input"
     },
     {
       "qId": "LoadModel",
@@ -249,9 +260,17 @@
       "qType": "qlik-button-for-navigation"
     },
     {
+      "qId": "PSMEU",
+      "qType": "combochart"
+    },
+    {
       "qId": "PpXPQ",
       "qType": "measure",
       "modifiedDate": "2020-11-05T12:37:18.783Z"
+    },
+    {
+      "qId": "PtpPT",
+      "qType": "combochart"
     },
     {
       "qId": "QCLAkz",
@@ -428,6 +447,11 @@
       "modifiedDate": "2020-11-05T12:37:18.783Z"
     },
     {
+      "qId": "e6dbd882-4200-4317-a2b8-d15de09ea9af",
+      "qType": "measure",
+      "modifiedDate": "2020-11-05T13:35:11.453Z"
+    },
+    {
       "qId": "e878844b-a833-4a5a-ba4a-fd3c02f083fa",
       "qType": "listbox"
     },
@@ -456,7 +480,7 @@
     {
       "qId": "gQPhHY",
       "qType": "measure",
-      "modifiedDate": "2020-11-05T12:37:18.783Z"
+      "modifiedDate": "2020-11-05T12:56:32.710Z"
     },
     {
       "qId": "jCVkDR",
@@ -543,6 +567,10 @@
       "qId": "pVfVjNY",
       "qType": "dimension",
       "modifiedDate": "2020-11-05T12:37:18.783Z"
+    },
+    {
+      "qId": "rAdaC",
+      "qType": "qlik-variable-input"
     },
     {
       "qId": "rZbf",

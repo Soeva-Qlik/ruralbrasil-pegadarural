@@ -55,7 +55,7 @@
       "qnDec": 10,
       "qUseThou": 0
     },
-    "qDefinition": "1",
+    "qDefinition": "0",
     "tags": []
   },
   {
@@ -146,6 +146,36 @@
       "qUseThou": 0
     },
     "qDefinition": "IF(rowno(total)=0 OR isNull(rowno(total)),green(255),\r\nIF(Dimensionality()=1,\ngreen(55)\n))",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "dc6182c9-afea-417e-b9a8-8ded96da3477",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "vOrdenacaoPainelVisitasAux",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "1",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "e798559d-cecd-4c5d-abf7-551fcbcb8707",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "vOrdenacaoPainelVisitas",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "pick($(vOrdenacaoPainelVisitasAux)\r\n,Count(DISTINCT idagenda)\n,Count(DISTINCT idagendaRealizada)\n,COUNT(DISTINCT IdAtendimento)\n,COUNT(DISTINCT{<FlagClienteAtendido={1}>} parceiroCRM)\n,COUNT(DISTINCT{<FlagVendaSaldo={1}>} parceiroCRM)\n,COUNT(DISTINCT numero_pedidoCRM)\n,Sum(ValorPedidoMovimento)\n,sum(ValorMargemMovimento)\n)\n*\n$(vOrdemAux)",
     "tags": []
   }
 ]

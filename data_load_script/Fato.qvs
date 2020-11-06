@@ -15,7 +15,6 @@ LOAD
 	ValorMargemMovimento
 FROM 
 	[lib://1.Transform/CloverCRM/PedidosCRM_SIAGRI_MARGEM.qvd](qvd)
-
 ;
 
 Concatenate(FatPedidos)

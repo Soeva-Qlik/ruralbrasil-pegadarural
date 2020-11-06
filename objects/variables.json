@@ -1,6 +1,21 @@
 [
   {
     "qInfo": {
+      "qId": "2c481df9-e192-418f-a1e9-f43a185fdc59",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "vAnosSemCompraMaior",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "4",
+    "tags": []
+  },
+  {
+    "qInfo": {
       "qId": "30309273-186c-42a3-835d-337ba3626490",
       "qType": "variable"
     },
@@ -45,6 +60,21 @@
   },
   {
     "qInfo": {
+      "qId": "5fac500b-f21f-48a6-b4a9-e2d866faf2e4",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "sAnoOuSafra",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "=pick($(vAnoOuSafra),\r\n\t'QtdAnosSemCompra={\">=$(vAnosSemCompraMenor) <= $(vAnosSemCompraMaior)\"}',\n\t'QtdCiclosSemCompra={\">=$(vAnosSemCompraMenor) <= $(vAnosSemCompraMaior)\"}')\n",
+    "tags": []
+  },
+  {
+    "qInfo": {
       "qId": "71828ad5-1e65-4a92-a7bd-46903a28a442",
       "qType": "variable"
     },
@@ -56,6 +86,21 @@
       "qUseThou": 0
     },
     "qDefinition": "0",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "82ebcf7c-dac0-45f9-be85-25e24e8dd11d",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "vAnoOuSafra",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "1",
     "tags": []
   },
   {
@@ -161,6 +206,21 @@
       "qUseThou": 0
     },
     "qDefinition": "1",
+    "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "e6b65729-bf72-4be1-a5ab-9cf8f4184d7e",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "vAnosSemCompraMenor",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "0",
     "tags": []
   },
   {

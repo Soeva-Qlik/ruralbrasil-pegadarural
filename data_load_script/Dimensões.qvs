@@ -15,7 +15,6 @@ autogenerate
 ;
 
 
-
 TabDiretoria:
 LOAD
     Regional,
@@ -57,4 +56,30 @@ LOAD
     CodProduto,
     Produto
 FROM [lib://1.Transform/Siagri/TabProduto.qvd]
+(qvd);
+
+LEFT KEEP(FatPedidos)
+TabUltimaCompraClientes:
+LOAD
+    ClientePrincipal	as parceiroCRM,
+    CulturaUltimaCompra,
+    CicloUltimaCompra,
+    UltimoPedidoCliente,
+    DataUltimaCompra,
+    QtdAnosSemCompra,
+    ChaveCicloUltimaCompra,
+    QtdCiclosSemCompra,
+    ValorUltimaCompra,
+    DataUltimaVisitaRealizada,
+    DataUltimoAtendimento
+FROM [lib://1.Transform/CloverCRM/TabUltimaCompraClientes.qvd]
+(qvd);
+
+LEFT KEEP(FatPedidos)
+tempTabArea:
+LOAD
+    %LinkArea,
+    ValorAreaSegmentacao
+FROM
+	[lib://1.Transform/CloverCRM/TabAreaSegmentacao.qvd]
 (qvd);

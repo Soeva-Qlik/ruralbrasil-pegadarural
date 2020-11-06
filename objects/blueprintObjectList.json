@@ -11,7 +11,7 @@
     {
       "qId": "15bab4e3-8785-4ab4-aec6-249220027dfd",
       "qType": "measure",
-      "modifiedDate": "2020-11-05T12:37:18.783Z"
+      "modifiedDate": "2020-11-05T19:30:27.567Z"
     },
     {
       "qId": "23d5aacf-f0d4-4528-8c0d-41fcd2084817",
@@ -39,6 +39,11 @@
       "qId": "45579f08-1111-4e85-b225-ed3dc817802f",
       "qType": "dimension",
       "modifiedDate": "2020-11-05T12:37:18.783Z"
+    },
+    {
+      "qId": "461f04ed-7be4-4f4f-9624-8a8da26d5144",
+      "qType": "sheet",
+      "modifiedDate": "2020-11-06T14:07:44.530Z"
     },
     {
       "qId": "465b014c-d896-49a7-8a1c-bbbc44d3bcef",
@@ -107,7 +112,7 @@
     {
       "qId": "71319554-7f42-48df-9a44-654637d81a42",
       "qType": "sheet",
-      "modifiedDate": "2020-11-05T16:43:43.877Z"
+      "modifiedDate": "2020-11-05T19:30:27.567Z"
     },
     {
       "qId": "745787a4-a357-495b-a000-89248e9d07b5",
@@ -338,6 +343,10 @@
       "modifiedDate": "2020-11-05T12:37:18.783Z"
     },
     {
+      "qId": "VfPDF",
+      "qType": "qlik-variable-input"
+    },
+    {
       "qId": "WVWQQr",
       "qType": "filterpane"
     },
@@ -349,6 +358,10 @@
       "qId": "WnHKDnE",
       "qType": "measure",
       "modifiedDate": "2020-11-05T12:37:18.783Z"
+    },
+    {
+      "qId": "WwmLWz",
+      "qType": "text-image"
     },
     {
       "qId": "YXgutA",
@@ -366,7 +379,7 @@
     {
       "qId": "ZJkWKfh",
       "qType": "measure",
-      "modifiedDate": "2020-11-05T12:37:18.783Z"
+      "modifiedDate": "2020-11-05T19:30:27.567Z"
     },
     {
       "qId": "ZTehGfP",
@@ -399,7 +412,7 @@
     {
       "qId": "c839a074-b2f6-4304-a85d-d8a3b96e6a0d",
       "qType": "sheet",
-      "modifiedDate": "2020-11-05T12:37:18.783Z"
+      "modifiedDate": "2020-11-05T19:30:27.567Z"
     },
     {
       "qId": "c979943d-b825-420b-92a1-2b04c78a9428",
@@ -463,6 +476,10 @@
     {
       "qId": "exSvS",
       "qType": "pivot-table"
+    },
+    {
+      "qId": "ezhcm",
+      "qType": "qlik-variable-input"
     },
     {
       "qId": "f23b5345-bc67-4870-92ec-3afcac29b455",
@@ -569,6 +586,10 @@
       "modifiedDate": "2020-11-05T12:37:18.783Z"
     },
     {
+      "qId": "qJVprM",
+      "qType": "qlik-variable-input"
+    },
+    {
       "qId": "rAdaC",
       "qType": "qlik-variable-input"
     },
@@ -584,6 +605,10 @@
     {
       "qId": "sMrQt",
       "qType": "barchart"
+    },
+    {
+      "qId": "shjZBtJ",
+      "qType": "table"
     },
     {
       "qId": "svuWt",

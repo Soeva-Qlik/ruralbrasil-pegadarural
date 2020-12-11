@@ -11,8 +11,23 @@ LOAD	DISTINCT
     '' 				AS %LinkSegmentacaoParceiro,
     'Não Segmenta'	as SegmentacaoShareCliente
 autogenerate
-1
+	1
 ;
+
+LEFT KEEP(LinkTable)
+
+TabCiclo:
+LOAD
+    CodCiclo,
+    ChaveCiclo,
+    Ciclo,
+    DataInicio,
+    DataFim,
+    Situacao,
+    OrdemCiclo
+FROM [lib://1.Transform/Siagri/TabCiclo.qvd]
+(qvd);
+
 
 
 TabDiretoria:
@@ -33,6 +48,21 @@ LOAD
 FROM 
 	[lib://1.Transform/CloverCRM/TabDiretoria.qvd]
 (qvd);
+
+TabDiretoria_ComTotal:
+LOAD	DISTINCT
+	Diretoria,
+    Diretoria	AS 	DiretoriaComTotal
+RESIDENT
+	TabDiretoria
+;
+CONCATENATE(TabDiretoria_ComTotal)
+LOAD	DISTINCT
+	Diretoria,
+    'TOTAL RURAL' AS DiretoriaComTotal
+RESIDENT
+	TabDiretoria_ComTotal
+;
 
 TabPerfilDeCompra:
 LOAD
@@ -70,6 +100,7 @@ LOAD
     ChaveCicloUltimaCompra,
     QtdCiclosSemCompra,
     ValorUltimaCompra,
+    QtdAtendimentosDesdeUltimaCompra,
     DataUltimaVisitaRealizada,
     DataUltimoAtendimento
 FROM [lib://1.Transform/CloverCRM/TabUltimaCompraClientes.qvd]
@@ -82,4 +113,11 @@ LOAD
     ValorAreaSegmentacao
 FROM
 	[lib://1.Transform/CloverCRM/TabAreaSegmentacao.qvd]
+(qvd);
+
+TabParceiro:
+LOAD
+	ParceiroPrincipal as parceiroCRM,
+    FlagClienteAtivo
+FROM [lib://1.Transform/CloverCRM/TabParceiro.qvd]
 (qvd);

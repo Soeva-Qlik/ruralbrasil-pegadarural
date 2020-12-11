@@ -82,14 +82,14 @@
     "qDim": {
       "qGrouping": "N",
       "qFieldDefs": [
-        "=\r\nIF(GetSelectedCount(Regional)>0,Consultor,\nIF(GetSelectedCount(Diretoria)>0,Filial,\nRegional))"
+        "=\r\nIF(GetSelectedCount(Regional)>0,Consultor,\nIF(GetSelectedCount(Diretoria)>0,Filial,\nTextBetween(Regional,' ','')))"
       ],
       "qFieldLabels": [
         "Drill_2"
       ],
       "title": "Drill_2",
       "coloring": {
-        "changeHash": "0.6566367749258506",
+        "changeHash": "0.15229949214677796",
         "colorMapRef": "5d6af938-1afe-47a6-abfa-8494c60f0e60"
       }
     },
@@ -120,6 +120,30 @@
     },
     "qMetaDef": {
       "title": "Cultura",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "DWFpej",
+      "qType": "dimension"
+    },
+    "qDim": {
+      "qGrouping": "N",
+      "qFieldDefs": [
+        "FlagClienteAtivo"
+      ],
+      "qFieldLabels": [
+        "Parceiro Ativo"
+      ],
+      "title": "Parceiro Ativo",
+      "coloring": {
+        "changeHash": "0.5122776128402169"
+      }
+    },
+    "qMetaDef": {
+      "title": "Parceiro Ativo",
       "description": "",
       "tags": []
     }
@@ -525,16 +549,16 @@
       "qType": "dimension"
     },
     "qDim": {
-      "qGrouping": "H",
+      "qGrouping": "N",
       "qFieldDefs": [
-        "Diretoria",
-        "Regional",
-        "Filial"
+        "=IF(GetSelectedCount(Diretoria)>0,TextBetween(Regional,' ',''),\r\nIF(GetSelectedCount(Regional)>0,Filial,\nIF(GetSelectedCount(Filial)>0,Consultor,DiretoriaComTotal\n)))"
       ],
-      "qFieldLabels": [],
+      "qFieldLabels": [
+        "Drill"
+      ],
       "title": "Drill",
       "coloring": {
-        "changeHash": "0.9984539623350346",
+        "changeHash": "0.9906316409489124",
         "colorMapRef": "ngQDyxK"
       }
     },
@@ -557,10 +581,11 @@
       "qFieldLabels": [
         "SegmentacaoShareCliente"
       ],
-      "qLabelExpression": "'SegmentacaoParceiro'",
+      "qLabelExpression": "'Segmentacao Parceiro'",
       "title": "SegmentacaoShareCliente",
       "coloring": {
-        "changeHash": "0.7165324400468902"
+        "changeHash": "0.07955435380822506",
+        "colorMapRef": "pVfVjNY"
       }
     },
     "qMetaDef": {

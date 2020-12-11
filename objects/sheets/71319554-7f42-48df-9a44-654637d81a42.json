@@ -10,23 +10,25 @@
     },
     "rank": 25.5,
     "thumbnail": {
-      "qStaticContentUrlDef": {}
+      "qStaticContentUrlDef": {
+        "qUrl": "/appcontent/b1e5c531-6d90-470f-b742-3d2795482d6c/sheet_thumb_71319554-7f42-48df-9a44-654637d81a42-0.6343066910413195.png"
+      }
     },
     "columns": 24,
-    "rows": 22,
+    "rows": 25,
     "cells": [
       {
         "name": "UucXR",
         "type": "filterpane",
-        "col": 9,
+        "col": 12,
         "row": 0,
-        "colspan": 15,
+        "colspan": 12,
         "rowspan": 2,
         "bounds": {
+          "x": 50,
           "y": 0,
-          "x": 37.5,
-          "width": 62.5,
-          "height": 9.090909090909092
+          "width": 50,
+          "height": 8.000000000000002
         }
       },
       {
@@ -37,10 +39,10 @@
         "colspan": 3,
         "rowspan": 2,
         "bounds": {
-          "y": 9.090909090909092,
           "x": 0,
+          "y": 8.000000000000002,
           "width": 12.5,
-          "height": 9.090909090909092
+          "height": 8.000000000000002
         }
       },
       {
@@ -51,10 +53,10 @@
         "colspan": 3,
         "rowspan": 2,
         "bounds": {
-          "y": 18.181818181818183,
           "x": 0,
+          "y": 16.000000000000004,
           "width": 12.5,
-          "height": 9.090909090909092
+          "height": 8.000000000000002
         }
       },
       {
@@ -65,10 +67,10 @@
         "colspan": 8,
         "rowspan": 7,
         "bounds": {
-          "y": 9.090909090909092,
           "x": 66.66666666666666,
+          "y": 8.000000000000002,
           "width": 33.33333333333333,
-          "height": 31.818181818181817
+          "height": 27.999999999999996
         }
       },
       {
@@ -79,10 +81,10 @@
         "colspan": 10,
         "rowspan": 6,
         "bounds": {
-          "y": 13.636363636363635,
           "x": 25,
+          "y": 11.999999999999998,
           "width": 41.66666666666667,
-          "height": 27.27272727272727
+          "height": 23.999999999999996
         }
       },
       {
@@ -94,9 +96,9 @@
         "rowspan": 5,
         "bounds": {
           "x": 25,
-          "y": 40.90909090909091,
+          "y": 35.99999999999999,
           "width": 75,
-          "height": 22.727272727272727
+          "height": 20
         }
       },
       {
@@ -108,9 +110,9 @@
         "rowspan": 8,
         "bounds": {
           "x": 0,
-          "y": 27.27272727272727,
+          "y": 23.999999999999996,
           "width": 25,
-          "height": 36.36363636363636
+          "height": 31.999999999999996
         }
       },
       {
@@ -119,12 +121,12 @@
         "col": 0,
         "row": 16,
         "colspan": 24,
-        "rowspan": 6,
+        "rowspan": 9,
         "bounds": {
-          "y": 72.72727272727273,
           "x": 0,
+          "y": 63.99999999999999,
           "width": 100,
-          "height": 27.27272727272727
+          "height": 35.99999999999999
         }
       },
       {
@@ -135,10 +137,10 @@
         "colspan": 3,
         "rowspan": 2,
         "bounds": {
-          "y": 9.090909090909092,
           "x": 12.5,
+          "y": 8.000000000000002,
           "width": 12.5,
-          "height": 9.090909090909092
+          "height": 8.000000000000002
         }
       },
       {
@@ -149,10 +151,10 @@
         "colspan": 3,
         "rowspan": 2,
         "bounds": {
-          "y": 18.181818181818183,
           "x": 12.5,
+          "y": 16.000000000000004,
           "width": 12.5,
-          "height": 9.090909090909092
+          "height": 8.000000000000002
         }
       },
       {
@@ -163,10 +165,10 @@
         "colspan": 3,
         "rowspan": 2,
         "bounds": {
-          "y": 0,
           "x": 0,
+          "y": 0,
           "width": 12.5,
-          "height": 9.090909090909092
+          "height": 8.000000000000002
         }
       },
       {
@@ -177,10 +179,10 @@
         "colspan": 3,
         "rowspan": 2,
         "bounds": {
-          "y": 0,
           "x": 12.5,
+          "y": 0,
           "width": 12.5,
-          "height": 9.090909090909092
+          "height": 8.000000000000002
         }
       },
       {
@@ -192,9 +194,9 @@
         "rowspan": 1,
         "bounds": {
           "x": 50,
-          "y": 9.090909090909092,
+          "y": 8.000000000000002,
           "width": 16.666666666666664,
-          "height": 4.545454545454546
+          "height": 4.000000000000001
         }
       },
       {
@@ -205,10 +207,10 @@
         "colspan": 3,
         "rowspan": 2,
         "bounds": {
-          "y": 0,
           "x": 25,
+          "y": 0,
           "width": 12.5,
-          "height": 9.090909090909092
+          "height": 8.000000000000002
         }
       },
       {
@@ -220,9 +222,9 @@
         "rowspan": 1,
         "bounds": {
           "x": 25,
-          "y": 9.090909090909092,
+          "y": 8.000000000000002,
           "width": 16.666666666666664,
-          "height": 4.545454545454546
+          "height": 4.000000000000001
         }
       },
       {
@@ -233,10 +235,10 @@
         "colspan": 4,
         "rowspan": 2,
         "bounds": {
-          "y": 63.63636363636363,
           "x": 0,
+          "y": 55.99999999999999,
           "width": 16.666666666666664,
-          "height": 9.090909090909092
+          "height": 8.000000000000002
         }
       },
       {
@@ -247,10 +249,24 @@
         "colspan": 3,
         "rowspan": 2,
         "bounds": {
-          "y": 63.63636363636363,
           "x": 16.666666666666664,
+          "y": 55.99999999999999,
           "width": 12.5,
-          "height": 9.090909090909092
+          "height": 8.000000000000002
+        }
+      },
+      {
+        "name": "vEYpTf",
+        "type": "qlik-button-for-navigation",
+        "col": 9,
+        "row": 0,
+        "colspan": 3,
+        "rowspan": 2,
+        "bounds": {
+          "x": 37.5,
+          "y": 0,
+          "width": 12.5,
+          "height": 8.000000000000002
         }
       }
     ],
@@ -265,7 +281,7 @@
       "extendable": true,
       "sheetMode": "RESPONSIVE"
     },
-    "height": 206
+    "height": 238
   },
   "qChildren": [
     {
@@ -2933,7 +2949,7 @@
               }
             },
             {
-              "qLibraryId": "e6dbd882-4200-4317-a2b8-d15de09ea9af",
+              "qLibraryId": "f617b9cb-9e63-4599-875f-410eeb041ed2",
               "qDef": {
                 "qTags": [],
                 "qGrouping": "N",
@@ -2941,7 +2957,7 @@
                   "qType": "F",
                   "qnDec": 2,
                   "qUseThou": 0,
-                  "qFmt": "#.##0",
+                  "qFmt": "0,0%",
                   "qDec": ",",
                   "qThou": "."
                 },
@@ -2949,7 +2965,7 @@
                 "qActiveExpression": 0,
                 "qExpressions": [],
                 "autoSort": true,
-                "cId": "hSDzK",
+                "cId": "BjEJG",
                 "numFormatFromTemplate": true,
                 "textAlign": {
                   "auto": true,
@@ -3044,6 +3060,27 @@
           "qExpansionState": [
             {
               "qPos": {
+                "qDimName": "Regional",
+                "qElemNo": [],
+                "qElemValues": []
+              }
+            },
+            {
+              "qPos": {
+                "qDimName": "Diretoria",
+                "qElemNo": [],
+                "qElemValues": []
+              }
+            },
+            {
+              "qPos": {
+                "qDimName": "SegmentacaoShareCliente",
+                "qElemNo": [],
+                "qElemValues": []
+              }
+            },
+            {
+              "qPos": {
                 "qDimName": "Filial",
                 "qElemNo": [],
                 "qElemValues": []
@@ -3065,34 +3102,18 @@
             },
             {
               "qPos": {
-                "qDimName": "Regional",
-                "qElemNo": [],
-                "qElemValues": []
-              }
-            },
-            {
-              "qPos": {
-                "qDimName": "Diretoria",
-                "qElemNo": [],
-                "qElemValues": []
-              }
-            },
-            {
-              "qPos": {
                 "qDimName": "AtividadeVisita",
-                "qElemNo": [],
-                "qElemValues": []
-              }
-            },
-            {
-              "qPos": {
-                "qDimName": "SegmentacaoShareCliente",
                 "qElemNo": [],
                 "qElemValues": []
               }
             }
           ],
-          "columnWidths": [],
+          "columnWidths": [
+            [
+              232
+            ],
+            []
+          ],
           "qLayoutExclude": {
             "qHyperCubeDef": {
               "qDimensions": [],
@@ -3991,6 +4012,82 @@
           },
           "installer": "QlikExtensionBundler",
           "previewIconURL": "https://bi.ruralbrasil.com/extensions/qlik-variable-input/preview.png"
+        }
+      },
+      "qChildren": []
+    },
+    {
+      "qProperty": {
+        "qInfo": {
+          "qId": "vEYpTf",
+          "qType": "qlik-button-for-navigation"
+        },
+        "qMetaDef": {},
+        "showTitles": false,
+        "title": "",
+        "subtitle": "",
+        "footnote": "",
+        "showDetails": false,
+        "props": {
+          "buttonLabel": "Churn",
+          "buttonShowIcon": false,
+          "buttonIconLui": "",
+          "fullWidth": false,
+          "buttonAlignment": "centered",
+          "buttonTextAlign": "center",
+          "useEnabledCondition": false,
+          "enabledCondition": 1,
+          "actionItems": [],
+          "navigationAction": "gotoSheet",
+          "sheetId": "",
+          "selectedSheet": "461f04ed-7be4-4f4f-9624-8a8da26d5144",
+          "selectedStory": "",
+          "websiteUrl": "https://bi.ruralbrasil.com/single/?appid=c21450d2-a937-40be-a241-ed7323bdbe05&sheet=838517b6-5e68-4e91-91d5-0fbed0126062&opt=ctxmenu,currsel&select=$::Mercado,TOTAL",
+          "sameWindow": false,
+          "buttonIconSet": "lui"
+        },
+        "visualization": "qlik-button-for-navigation",
+        "version": "2.10.0",
+        "extensionMeta": {
+          "translationKey": "",
+          "icon": "align-object-center",
+          "iconChar": "puzzle",
+          "isLibraryItem": true,
+          "visible": true,
+          "name": "Button for navigation",
+          "description": "Enhance your app with buttons and actions.\nVersion: 2.12.0",
+          "template": "qlik-button-for-navigation",
+          "iconPath": "M14.5,9 L13,9 L13,3.3 C13,3.1 12.9,3 12.7,3 L8,3 L8,1.5 C8,0.7 7.3,0 6.5,0 C5.7,0 5,0.7 5,1.5 L5,3 L0.3,3 C0.1,3 0,3.1 0,3.3 L0,9 L1.5,9 C2.3,9 3,9.7 3,10.5 C3,11.3 2.3,12 1.5,12 L0,12 L0,15.7 C0,15.9 0.1,16 0.3,16 L5,16 L5,14.5 C5,13.7 5.7,13 6.5,13 C7.3,13 8,13.7 8,14.5 L8,16 L12.7,16 C12.9,16 13,15.9 13,15.7 L13,12 L14.5,12 C15.3,12 16,11.3 16,10.5 C16,9.7 15.3,9 14.5,9 Z",
+          "isThirdParty": true,
+          "type": "visualization",
+          "version": "2.12.0",
+          "preview": "qlik-button-for-navigation.png",
+          "keywords": [
+            "actions",
+            "bootstrap",
+            "button",
+            "navigation",
+            "qlik",
+            "qlik-sense",
+            "qlik-sense-visualization-extension",
+            "sense",
+            "sheets"
+          ],
+          "author": "Stefan Walther",
+          "homepage": "https://github.com/stefanwalther/sense-navigation",
+          "license": "MIT",
+          "repository": "",
+          "dependencies": {
+            "qlik-sense": ">=5.5.x"
+          },
+          "deprecated": "2020-04-30",
+          "bundle": {
+            "id": "qlik-dashboard-bundle",
+            "name": "Qlik Dashboard bundle",
+            "description": "This is a set of supported objects that will facilitate dashboard creation in Qlik Sense: A date picker, a variable input, a demand-reporting button and a share button. These can be used in addition to the objects found under \"Charts\".\n\nFor limitations and support conditions, see the documentation."
+          },
+          "installer": "QlikExtensionBundler",
+          "previewIconURL": "https://bi.ruralbrasil.com/extensions/qlik-button-for-navigation/qlik-button-for-navigation.png"
         }
       },
       "qChildren": []

@@ -104,15 +104,16 @@ WHERE
 
 CONCATENATE
 LOAD
-	%LinkOrcamento,
+	%LinkOrcamentoPorCTV,
     ''	as %LinkSegmentacaoParceiro,
     Regional,
     Filial,
     GrupoProdutoPegada 	as GrupoProduto,
-    DataEmissao,
+    Data as DataEmissao,
+    Consultor,
     CodUnidade
 FROM
-	[lib://1.Transform/FatOrcamento.qvd](QVD)
+	[lib://1.Transform/Orcamentos/FatOrcamentoPorCTV.qvd](qvd)
 WHERE
 	$(vWhereOrçamento)	
 ;

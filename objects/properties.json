@@ -1,18 +1,19 @@
 {
-  "qTitle": "Pegada Rural - New - Wederson",
-  "qLastReloadTime": "2020-11-06T17:02:24.235Z",
+  "qTitle": "Pegada Rural - Homologacao",
+  "qLastReloadTime": "2020-12-10T18:08:01.114Z",
   "qMigrationHash": "21ecc792c56e18162f1785d3d41f28fdaced5c96",
   "qSavedInProductVersion": "12.674.16",
   "qThumbnail": {
     "qUrl": "/appcontent/b1e5c531-6d90-470f-b742-3d2795482d6c/picturemessage_0nnqo1vc.x0j.png"
   },
-  "qHasSectionAccess": true,
-  "hassectionaccess": true,
   "createdDate": "2020-11-05T12:37:13.431Z",
-  "modifiedDate": "2020-11-06T13:47:27.387Z",
-  "published": false,
-  "publishTime": "1753-01-01T00:00:00.000Z",
+  "modifiedDate": "2020-12-10T18:10:27.103Z",
+  "published": true,
+  "publishTime": "2020-12-10T18:10:20.936Z",
   "description": "",
   "dynamicColor": "hsla(192,18%,43%,1)",
-  "stream": null
+  "stream": {
+    "id": "f060580d-2f54-4305-aaa4-c49519a6c558",
+    "name": "5 - Homologação"
+  }
 }

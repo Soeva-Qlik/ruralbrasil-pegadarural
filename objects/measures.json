@@ -370,6 +370,26 @@
   },
   {
     "qInfo": {
+      "qId": "f617b9cb-9e63-4599-875f-410eeb041ed2",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "PercMargemMovimento",
+      "qDef": "sum(ValorMargemMovimento)\r\n/\nsum(ValorPedidoMovimento)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "qLabelExpression": "'% MARGEM'",
+      "coloring": {}
+    },
+    "qMetaDef": {
+      "title": "PercMargemMovimento",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
       "qId": "gQPhHY",
       "qType": "measure"
     },

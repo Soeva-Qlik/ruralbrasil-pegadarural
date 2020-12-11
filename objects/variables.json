@@ -1,6 +1,21 @@
 [
   {
     "qInfo": {
+      "qId": "096d12e4-d86c-49fb-bbc2-2f10e2993743",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "varMinDate",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "42006",
+    "qIsScriptCreated": true
+  },
+  {
+    "qInfo": {
       "qId": "2c481df9-e192-418f-a1e9-f43a185fdc59",
       "qType": "variable"
     },
@@ -70,8 +85,23 @@
       "qnDec": 10,
       "qUseThou": 0
     },
-    "qDefinition": "=pick($(vAnoOuSafra),\r\n\t'QtdAnosSemCompra={\">=$(vAnosSemCompraMenor) <= $(vAnosSemCompraMaior)\"}',\n\t'QtdCiclosSemCompra={\">=$(vAnosSemCompraMenor) <= $(vAnosSemCompraMaior)\"}')\n",
+    "qDefinition": "=pick($(vAnoOuSafra),\r\n\t'QtdAnosSemCompra={\">=$(vAnosSemCompraMenor) <= $(vAnosSemCompraMaior)\"}',\n\t'QtdCiclosSemCompra={\">=$(vAnosSemCompraMenor) <= $(vAnosSemCompraMaior)\"}'\n )\n",
     "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "6f0e5a42-2fa7-4474-b470-9c4d69d5aba8",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "vDominioAcesso",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "BRSPRBCRMHM01",
+    "qIsScriptCreated": true
   },
   {
     "qInfo": {
@@ -85,8 +115,23 @@
       "qnDec": 10,
       "qUseThou": 0
     },
-    "qDefinition": "0",
+    "qDefinition": "1",
     "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "80db290f-c62f-445e-bd00-89cb4f300a15",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "vWhereFaturado",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "YEAR(DataEmissao) >2017",
+    "qIsScriptCreated": true
   },
   {
     "qInfo": {
@@ -165,6 +210,36 @@
   },
   {
     "qInfo": {
+      "qId": "a36a4662-f74f-466f-8264-f2297a11b3d0",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "vWhereAtendimento",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "YEAR(DataAtendimento) >2018",
+    "qIsScriptCreated": true
+  },
+  {
+    "qInfo": {
+      "qId": "bb07ac9f-244b-4566-bdb9-b9e51e8a4cf8",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "sAnoOuSafraVisitas",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "=pick($(vAnoOuSafra),\r\n\t'Ano={\">=$(=year(Today()) - $(vAnosSemCompraMenor)) <= $(=Max(Ano) - $(vAnosSemCompraMaior))\"}',\n\t'Data={\">=$(=MIN({<OrdemCiclo={\">=$(=MAX(OrdemCiclo)-$(vAnosSemCompraMaior)*2)\"}>} DataInicio)) <= $(=MAX({<OrdemCiclo={\">=$(=MAX(OrdemCiclo)-$(vAnosSemCompraMenor)-1)\"}>} DataFim))\"}>}'\n )\n",
+    "tags": []
+  },
+  {
+    "qInfo": {
       "qId": "ce581e61-41a0-4cad-975a-f617f188bad4",
       "qType": "variable"
     },
@@ -177,6 +252,21 @@
     },
     "qDefinition": "pick($(vClassificaçãoDinâmicaAux),\r\nSum(ValorOrcamento),\nsum(ValorReceitaFaturado),\nsum(ValorMargemFaturado)/sum(ValorReceitaFaturado),\nSum(ValorPedidoSaldo),\nsum(ValorMargemSaldo)/sum(ValorPedidoSaldo),\nSum([ValorPotencialTecnológico]),\nsum(ValorArea)\n)\n*\n$(vOrdemAux)",
     "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "cf097ca6-1782-4fd8-92af-267e5a55221c",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "vWhereOrçamento",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "1=1",
+    "qIsScriptCreated": true
   },
   {
     "qInfo": {
@@ -220,7 +310,7 @@
       "qnDec": 10,
       "qUseThou": 0
     },
-    "qDefinition": "0",
+    "qDefinition": "1",
     "tags": []
   },
   {
@@ -237,5 +327,35 @@
     },
     "qDefinition": "pick($(vOrdenacaoPainelVisitasAux)\r\n,Count(DISTINCT idagenda)\n,Count(DISTINCT idagendaRealizada)\n,COUNT(DISTINCT IdAtendimento)\n,COUNT(DISTINCT{<FlagClienteAtendido={1}>} parceiroCRM)\n,COUNT(DISTINCT{<FlagVendaSaldo={1}>} parceiroCRM)\n,COUNT(DISTINCT numero_pedidoCRM)\n,Sum(ValorPedidoMovimento)\n,sum(ValorMargemMovimento)\n)\n*\n$(vOrdemAux)",
     "tags": []
+  },
+  {
+    "qInfo": {
+      "qId": "fcaf0e08-6d42-4a0d-a866-8298fb9d34db",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "vWhereVisitas",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "cancelada='Não Cancelada' and YEAR(datahorainicio)>2018",
+    "qIsScriptCreated": true
+  },
+  {
+    "qInfo": {
+      "qId": "fd813c31-cdd4-48de-b377-e2259ac90528",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "varMaxDate",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "44477",
+    "qIsScriptCreated": true
   }
 ]

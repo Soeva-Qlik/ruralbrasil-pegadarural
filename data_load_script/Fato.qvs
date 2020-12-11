@@ -69,10 +69,10 @@ WHERE
 
 FatOrcamento:
 LOAD
-	%LinkOrcamento,
+	%LinkOrcamentoPorCTV,
     ValorOrcamento
 FROM
-	[lib://1.Transform/FatOrcamento.qvd](qvd)
+	[lib://1.Transform/Orcamentos/FatOrcamentoPorCTV.qvd](qvd)
 WHERE
 	$(vWhereOrçamento)	
 ;

@@ -6,12 +6,13 @@
     },
     "qMetaDef": {
       "title": "Painel Visitas ( Visão Gerencial )",
-      "description": ""
+      "description": "",
+      "isBlueprintItem": true
     },
     "rank": 25.5,
     "thumbnail": {
       "qStaticContentUrlDef": {
-        "qUrl": "/appcontent/b1e5c531-6d90-470f-b742-3d2795482d6c/sheet_thumb_71319554-7f42-48df-9a44-654637d81a42-0.6343066910413195.png"
+        "qUrl": "/appcontent/1b93735d-1059-42bb-9413-8913b4ab0e27/sheet_thumb_71319554-7f42-48df-9a44-654637d81a42-0.6343066910413195.png"
       }
     },
     "columns": 24,
@@ -74,20 +75,6 @@
         }
       },
       {
-        "name": "sMrQt",
-        "type": "barchart",
-        "col": 6,
-        "row": 3,
-        "colspan": 10,
-        "rowspan": 6,
-        "bounds": {
-          "x": 25,
-          "y": 11.999999999999998,
-          "width": 41.66666666666667,
-          "height": 23.999999999999996
-        }
-      },
-      {
         "name": "MNtKP",
         "type": "linechart",
         "col": 6,
@@ -99,20 +86,6 @@
           "y": 35.99999999999999,
           "width": 75,
           "height": 20
-        }
-      },
-      {
-        "name": "LpJms",
-        "type": "piechart",
-        "col": 0,
-        "row": 6,
-        "colspan": 6,
-        "rowspan": 8,
-        "bounds": {
-          "x": 0,
-          "y": 23.999999999999996,
-          "width": 25,
-          "height": 31.999999999999996
         }
       },
       {
@@ -263,10 +236,38 @@
         "colspan": 3,
         "rowspan": 2,
         "bounds": {
-          "x": 37.5,
           "y": 0,
+          "x": 37.5,
           "width": 12.5,
           "height": 8.000000000000002
+        }
+      },
+      {
+        "name": "RkXcg",
+        "type": "container",
+        "col": 0,
+        "row": 6,
+        "colspan": 6,
+        "rowspan": 8,
+        "bounds": {
+          "y": 24,
+          "x": 0,
+          "width": 25,
+          "height": 32
+        }
+      },
+      {
+        "name": "DbZ",
+        "type": "combochart",
+        "col": 6,
+        "row": 3,
+        "colspan": 10,
+        "rowspan": 6,
+        "bounds": {
+          "y": 12,
+          "x": 25,
+          "width": 41.66666666666667,
+          "height": 24
         }
       }
     ],
@@ -992,7 +993,7 @@
       "qProperty": {
         "qInfo": {
           "qId": "svuWt",
-          "qType": "barchart"
+          "qType": "combochart"
         },
         "qMetaDef": {},
         "qHyperCubeDef": {
@@ -1048,7 +1049,9 @@
               "qCalcCondition": {
                 "qCond": {},
                 "qMsg": {}
-              }
+              },
+              "title": "Regional/Filial",
+              "othersLabel": "Outros"
             }
           ],
           "qMeasures": [
@@ -1058,16 +1061,26 @@
                 "qTags": [],
                 "qGrouping": "N",
                 "qNumFormat": {
-                  "qType": "U",
-                  "qnDec": 10,
-                  "qUseThou": 0
+                  "qType": "F",
+                  "qnDec": 2,
+                  "qUseThou": 0,
+                  "qFmt": "#.##0",
+                  "qDec": ",",
+                  "qThou": "."
                 },
                 "qAccumulate": 0,
                 "qActiveExpression": 0,
                 "qExpressions": [],
                 "autoSort": true,
                 "cId": "PvUPCM",
-                "numFormatFromTemplate": true
+                "numFormatFromTemplate": true,
+                "series": {
+                  "type": "bar",
+                  "axis": 0,
+                  "marker": "circle",
+                  "markerFill": true
+                },
+                "isCustomFormatted": false
               },
               "qSortBy": {
                 "qSortByNumeric": -1,
@@ -1099,7 +1112,8 @@
                 },
                 "qMaxNumberPoints": -1,
                 "qAttributeExpressions": []
-              }
+              },
+              "title": "QtdVisitasAgendadas"
             },
             {
               "qLibraryId": "Rjbt",
@@ -1107,16 +1121,86 @@
                 "qTags": [],
                 "qGrouping": "N",
                 "qNumFormat": {
-                  "qType": "U",
-                  "qnDec": 10,
-                  "qUseThou": 0
+                  "qType": "F",
+                  "qnDec": 2,
+                  "qUseThou": 0,
+                  "qFmt": "#.##0",
+                  "qDec": ",",
+                  "qThou": "."
                 },
                 "qAccumulate": 0,
                 "qActiveExpression": 0,
                 "qExpressions": [],
                 "autoSort": true,
                 "cId": "wGMQj",
-                "numFormatFromTemplate": true
+                "numFormatFromTemplate": true,
+                "series": {
+                  "type": "bar",
+                  "axis": 0,
+                  "marker": "circle",
+                  "markerFill": true
+                },
+                "isCustomFormatted": false
+              },
+              "qSortBy": {
+                "qSortByNumeric": -1,
+                "qSortByLoadOrder": 1,
+                "qExpression": {}
+              },
+              "qAttributeExpressions": [],
+              "qAttributeDimensions": [],
+              "qCalcCond": {},
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              },
+              "qTrendLines": [],
+              "qMiniChartDef": {
+                "qSortBy": {
+                  "qExpression": {}
+                },
+                "qOtherTotalSpec": {
+                  "qOtherMode": "OTHER_OFF",
+                  "qOtherCounted": {},
+                  "qOtherLimit": {},
+                  "qOtherLimitMode": "OTHER_GT_LIMIT",
+                  "qForceBadValueKeeping": true,
+                  "qApplyEvenWhenPossiblyWrongResult": true,
+                  "qOtherSortMode": "OTHER_SORT_DESCENDING",
+                  "qTotalMode": "TOTAL_OFF",
+                  "qReferencedExpression": {}
+                },
+                "qMaxNumberPoints": -1,
+                "qAttributeExpressions": []
+              },
+              "title": "QtdVisitasRealizadas"
+            },
+            {
+              "qLibraryId": "1fc8c4b2-228a-4d04-b819-a9f472f4044a",
+              "qDef": {
+                "qTags": [],
+                "qGrouping": "N",
+                "qNumFormat": {
+                  "qType": "F",
+                  "qnDec": 2,
+                  "qUseThou": 0,
+                  "qFmt": "0,0%",
+                  "qDec": ",",
+                  "qThou": "."
+                },
+                "qAccumulate": 0,
+                "qActiveExpression": 0,
+                "qExpressions": [],
+                "autoSort": true,
+                "cId": "mnUXWre",
+                "numFormatFromTemplate": true,
+                "series": {
+                  "type": "line",
+                  "axis": 1,
+                  "marker": "circle",
+                  "markerFill": true
+                },
+                "isCustomFormatted": false
               },
               "qSortBy": {
                 "qSortByNumeric": -1,
@@ -1154,7 +1238,8 @@
           "qInterColumnSortOrder": [
             1,
             0,
-            2
+            2,
+            3
           ],
           "qSuppressZero": true,
           "qSuppressMissing": true,
@@ -1200,9 +1285,6 @@
               "qExpansionState": []
             }
           }
-        },
-        "refLine": {
-          "refLines": []
         },
         "showTitles": true,
         "title": {
@@ -1217,18 +1299,15 @@
           "grouping": "stacked"
         },
         "orientation": "horizontal",
-        "scrollbar": "miniChart",
         "scrollStartPos": 0,
-        "gridLine": {
-          "auto": false,
-          "spacing": 0
-        },
         "dataPoint": {
           "showLabels": true,
           "showSegmentLabels": true,
-          "showTotalLabels": false
+          "showTotalLabels": false,
+          "show": true,
+          "showLineLabels": true,
+          "showBarLabels": true
         },
-        "components": [],
         "color": {
           "auto": true,
           "mode": "primary",
@@ -1246,10 +1325,13 @@
           "dimensionScheme": "12",
           "autoMinMax": true,
           "measureMin": 0,
-          "measureMax": 10
+          "measureMax": 10,
+          "formatting": {
+            "numFormatFromTemplate": true
+          }
         },
         "legend": {
-          "show": false,
+          "show": true,
           "dock": "top",
           "showTitle": true
         },
@@ -1263,212 +1345,41 @@
         },
         "preferContinuousAxis": true,
         "measureAxis": {
-          "show": "none",
-          "dock": "near",
-          "spacing": 1,
-          "autoMinMax": true,
-          "minMax": "min",
           "min": 0,
           "max": 10
         },
-        "visualization": "barchart",
-        "showMiniChartForContinuousAxis": true
-      },
-      "qChildren": []
-    },
-    {
-      "qProperty": {
-        "qInfo": {
-          "qId": "sMrQt",
-          "qType": "barchart"
-        },
-        "qMetaDef": {},
-        "qHyperCubeDef": {
-          "qDimensions": [
-            {
-              "qLibraryId": "GHuj",
-              "qDef": {
-                "qGrouping": "N",
-                "qFieldDefs": [],
-                "qFieldLabels": [],
-                "qSortCriterias": [
-                  {
-                    "qSortByLoadOrder": 1,
-                    "qSortByExpression": -1,
-                    "qExpression": {
-                      "qv": "Count(DISTINCT idagenda) * $(vOrdenacaoGraficoVisitas)"
-                    }
-                  },
-                  {
-                    "qSortByNumeric": 1,
-                    "qSortByAscii": 1,
-                    "qSortByLoadOrder": 1,
-                    "qExpression": {}
-                  }
-                ],
-                "qNumberPresentations": [],
-                "qActiveField": 0,
-                "autoSort": false,
-                "cId": "njpYMmc",
-                "othersLabel": "Outros"
-              },
-              "qOtherTotalSpec": {
-                "qOtherMode": "OTHER_OFF",
-                "qOtherCounted": {
-                  "qv": "10"
-                },
-                "qOtherLimit": {
-                  "qv": "0"
-                },
-                "qOtherLimitMode": "OTHER_GE_LIMIT",
-                "qForceBadValueKeeping": true,
-                "qApplyEvenWhenPossiblyWrongResult": true,
-                "qOtherSortMode": "OTHER_SORT_DESCENDING",
-                "qTotalMode": "TOTAL_OFF",
-                "qReferencedExpression": {}
-              },
-              "qOtherLabel": {
-                "qv": "Outros"
-              },
-              "qTotalLabel": {},
-              "qCalcCond": {},
-              "qAttributeExpressions": [],
-              "qAttributeDimensions": [],
-              "qCalcCondition": {
-                "qCond": {},
-                "qMsg": {}
-              }
-            }
-          ],
-          "qMeasures": [
-            {
-              "qLibraryId": "zmGLp",
-              "qDef": {
-                "qTags": [],
-                "qGrouping": "N",
-                "qNumFormat": {
-                  "qType": "U",
-                  "qnDec": 10,
-                  "qUseThou": 0
-                },
-                "qAccumulate": 0,
-                "qActiveExpression": 0,
-                "qExpressions": [],
-                "autoSort": false,
-                "cId": "nWEjmx",
-                "numFormatFromTemplate": true
-              },
-              "qSortBy": {
-                "qSortByNumeric": -1,
-                "qSortByLoadOrder": 1,
-                "qExpression": {}
-              },
-              "qAttributeExpressions": [],
-              "qAttributeDimensions": [],
-              "qCalcCond": {},
-              "qCalcCondition": {
-                "qCond": {},
-                "qMsg": {}
-              },
-              "qTrendLines": [],
-              "qMiniChartDef": {
-                "qSortBy": {
-                  "qExpression": {}
-                },
-                "qOtherTotalSpec": {
-                  "qOtherMode": "OTHER_OFF",
-                  "qOtherCounted": {},
-                  "qOtherLimit": {},
-                  "qOtherLimitMode": "OTHER_GT_LIMIT",
-                  "qForceBadValueKeeping": true,
-                  "qApplyEvenWhenPossiblyWrongResult": true,
-                  "qOtherSortMode": "OTHER_SORT_DESCENDING",
-                  "qTotalMode": "TOTAL_OFF",
-                  "qReferencedExpression": {}
-                },
-                "qMaxNumberPoints": -1,
-                "qAttributeExpressions": []
+        "visualization": "combochart",
+        "showMiniChartForContinuousAxis": true,
+        "nullMode": "gap",
+        "measureAxes": [
+          {
+            "show": "none",
+            "dock": "near",
+            "spacing": 1,
+            "autoMinMax": false,
+            "minMax": "max",
+            "min": 0,
+            "max": {
+              "qValueExpression": {
+                "qExpr": "=max(aggr(Count(DISTINCT idagendaRealizada)+Count(DISTINCT idagenda),Regional)) * 1.5\r\n"
               }
             },
-            {
-              "qLibraryId": "Rjbt",
-              "qDef": {
-                "qTags": [],
-                "qGrouping": "N",
-                "qNumFormat": {
-                  "qType": "U",
-                  "qnDec": 10,
-                  "qUseThou": 0
-                },
-                "qAccumulate": 0,
-                "qActiveExpression": 0,
-                "qExpressions": [],
-                "autoSort": true,
-                "cId": "hZCmza",
-                "numFormatFromTemplate": true
-              },
-              "qSortBy": {
-                "qSortByNumeric": -1,
-                "qSortByLoadOrder": 1,
-                "qExpression": {}
-              },
-              "qAttributeExpressions": [],
-              "qAttributeDimensions": [],
-              "qCalcCond": {},
-              "qCalcCondition": {
-                "qCond": {},
-                "qMsg": {}
-              },
-              "qTrendLines": [],
-              "qMiniChartDef": {
-                "qSortBy": {
-                  "qExpression": {}
-                },
-                "qOtherTotalSpec": {
-                  "qOtherMode": "OTHER_OFF",
-                  "qOtherCounted": {},
-                  "qOtherLimit": {},
-                  "qOtherLimitMode": "OTHER_GT_LIMIT",
-                  "qForceBadValueKeeping": true,
-                  "qApplyEvenWhenPossiblyWrongResult": true,
-                  "qOtherSortMode": "OTHER_SORT_DESCENDING",
-                  "qTotalMode": "TOTAL_OFF",
-                  "qReferencedExpression": {}
-                },
-                "qMaxNumberPoints": -1,
-                "qAttributeExpressions": []
-              }
-            }
-          ],
-          "qInterColumnSortOrder": [
-            0,
-            1,
-            2
-          ],
-          "qSuppressZero": true,
-          "qSuppressMissing": true,
-          "qInitialDataFetch": [
-            {
-              "qLeft": 0,
-              "qTop": 0,
-              "qWidth": 17,
-              "qHeight": 500
-            }
-          ],
-          "qReductionMode": "N",
-          "qMode": "S",
-          "qPseudoDimPos": -1,
-          "qNoOfLeftDims": -1,
-          "qMaxStackedCells": 5000,
-          "qCalcCond": {},
-          "qTitle": {},
-          "qCalcCondition": {
-            "qCond": {},
-            "qMsg": {}
+            "logarithmic": false
           },
-          "qColumnOrder": [],
-          "qExpansionState": [],
-          "qLayoutExclude": {
+          {
+            "show": "none",
+            "dock": "far",
+            "spacing": 1,
+            "autoMinMax": false,
+            "minMax": "min",
+            "min": 0,
+            "max": 10
+          }
+        ],
+        "tooltip": {
+          "auto": true,
+          "hideBasic": false,
+          "data": {
             "qHyperCubeDef": {
               "qDimensions": [],
               "qMeasures": [],
@@ -1490,80 +1401,102 @@
             }
           }
         },
-        "refLine": {
-          "refLines": []
+        "qLayoutExclude": {
+          "disabled": {
+            "qExtendsId": "",
+            "refLine": {
+              "refLines": []
+            },
+            "scrollbar": "miniChart",
+            "gridLine": {
+              "auto": false,
+              "spacing": 0
+            },
+            "components": [],
+            "measureAxis": {
+              "show": "none",
+              "dock": "near",
+              "spacing": 1,
+              "autoMinMax": true,
+              "minMax": "min",
+              "min": 0,
+              "max": 10
+            }
+          },
+          "quarantine": {}
+        }
+      },
+      "qChildren": []
+    },
+    {
+      "qProperty": {
+        "qInfo": {
+          "qId": "RkXcg",
+          "qType": "container"
         },
-        "showTitles": true,
-        "title": {
-          "qStringExpression": {
-            "qExpr": "='Rank de '&IF(count(DISTINCT Consultor)=1,'Parceiros','Consultores')&' por Visitas'"
+        "qMetaDef": {},
+        "children": [
+          {
+            "refId": "e68d96a1-1d9f-4a86-ac0f-e1cd35723c03",
+            "label": "Atividade",
+            "isMaster": true,
+            "cId": "TcpWJq"
+          },
+          {
+            "refId": "1d23e810-1f0d-4500-b59a-a1fad3bb2f60",
+            "label": "Tipo",
+            "isMaster": true,
+            "cId": "dwaEhC"
           }
-        },
+        ],
+        "showTitles": true,
+        "title": "Atendimentos por:",
         "subtitle": "",
         "footnote": "",
         "showDetails": false,
-        "barGrouping": {
-          "grouping": "stacked"
+        "showTabs": true,
+        "useDropdown": true,
+        "useScrollButton": true,
+        "showIcons": false,
+        "visualization": "container",
+        "qChildListDef": {
+          "qData": {
+            "visualization": "/visualization",
+            "containerChildId": "/containerChildId",
+            "qExtendsId": "/qExtendsId",
+            "title": "/title",
+            "showCondition": "/showCondition"
+          }
         },
-        "orientation": "horizontal",
-        "scrollbar": "miniChart",
-        "scrollStartPos": 0,
-        "gridLine": {
-          "auto": false,
-          "spacing": 0
-        },
-        "dataPoint": {
-          "showLabels": true,
-          "showSegmentLabels": true,
-          "showTotalLabels": false
-        },
-        "components": [],
-        "color": {
-          "auto": true,
-          "mode": "primary",
-          "useBaseColors": "off",
-          "paletteColor": {
-            "index": 6
-          },
-          "useDimColVal": true,
-          "useMeasureGradient": true,
-          "persistent": false,
-          "expressionIsColor": true,
-          "expressionLabel": "",
-          "measureScheme": "sg",
-          "reverseScheme": false,
-          "dimensionScheme": "12",
-          "autoMinMax": true,
-          "measureMin": 0,
-          "measureMax": 10
-        },
-        "legend": {
-          "show": true,
-          "dock": "auto",
-          "showTitle": true
-        },
-        "dimensionAxis": {
-          "continuousAuto": true,
-          "show": "labels",
-          "label": "auto",
-          "dock": "near",
-          "axisDisplayMode": "auto",
-          "maxVisibleItems": 10
-        },
-        "preferContinuousAxis": true,
-        "measureAxis": {
-          "show": "none",
-          "dock": "near",
-          "spacing": 1,
-          "autoMinMax": true,
-          "minMax": "min",
-          "min": 0,
-          "max": 10
-        },
-        "visualization": "barchart",
-        "showMiniChartForContinuousAxis": true
+        "supportRefresh": false,
+        "hasExternalChildren": false
       },
-      "qChildren": []
+      "qChildren": [
+        {
+          "qProperty": {
+            "qInfo": {
+              "qId": "97a8ce9c-406c-4b52-9752-6ada942622b6",
+              "qType": "piechart"
+            },
+            "qExtendsId": "e68d96a1-1d9f-4a86-ac0f-e1cd35723c03",
+            "qMetaDef": {},
+            "visualization": "piechart"
+          },
+          "qChildren": []
+        },
+        {
+          "qProperty": {
+            "qInfo": {
+              "qId": "d2d459f5-3f28-4c89-a77b-f3601b995a5b",
+              "qType": "piechart"
+            },
+            "qExtendsId": "1d23e810-1f0d-4500-b59a-a1fad3bb2f60",
+            "qMetaDef": {},
+            "visualization": "piechart"
+          },
+          "qChildren": []
+        }
+      ]
     },
     {
       "qProperty": {
@@ -1851,234 +1784,76 @@
     {
       "qProperty": {
         "qInfo": {
-          "qId": "LpJms",
-          "qType": "piechart"
+          "qId": "vEYpTf",
+          "qType": "qlik-button-for-navigation"
         },
         "qMetaDef": {},
-        "qHyperCubeDef": {
-          "qDimensions": [
-            {
-              "qLibraryId": "NhwBnp",
-              "qDef": {
-                "qGrouping": "N",
-                "qFieldDefs": [],
-                "qFieldLabels": [],
-                "qSortCriterias": [
-                  {
-                    "qSortByNumeric": 1,
-                    "qSortByAscii": 1,
-                    "qSortByLoadOrder": 1,
-                    "qExpression": {}
-                  }
-                ],
-                "qNumberPresentations": [],
-                "qActiveField": 0,
-                "autoSort": true,
-                "cId": "pnEGJSA",
-                "othersLabel": "Outros"
-              },
-              "qNullSuppression": true,
-              "qOtherTotalSpec": {
-                "qOtherMode": "OTHER_COUNTED",
-                "qOtherCounted": {
-                  "qv": "10"
-                },
-                "qOtherLimit": {
-                  "qv": "0"
-                },
-                "qOtherLimitMode": "OTHER_GE_LIMIT",
-                "qForceBadValueKeeping": true,
-                "qApplyEvenWhenPossiblyWrongResult": true,
-                "qOtherSortMode": "OTHER_SORT_DESCENDING",
-                "qTotalMode": "TOTAL_OFF",
-                "qReferencedExpression": {}
-              },
-              "qOtherLabel": {
-                "qv": "Outros"
-              },
-              "qTotalLabel": {},
-              "qCalcCond": {},
-              "qAttributeExpressions": [
-                {
-                  "qLibraryId": "ZTehGfP",
-                  "qAttribute": true,
-                  "qNumFormat": {
-                    "qType": "U",
-                    "qnDec": 10,
-                    "qUseThou": 0
-                  },
-                  "id": "colorByAlternative",
-                  "matchMeasure": 0,
-                  "colorMapRef": "ZTehGfP"
-                }
-              ],
-              "qAttributeDimensions": [],
-              "qCalcCondition": {
-                "qCond": {},
-                "qMsg": {}
-              }
-            }
-          ],
-          "qMeasures": [
-            {
-              "qLibraryId": "ZTehGfP",
-              "qDef": {
-                "qTags": [],
-                "qGrouping": "N",
-                "qNumFormat": {
-                  "qType": "U",
-                  "qnDec": 10,
-                  "qUseThou": 0
-                },
-                "qAccumulate": 0,
-                "qActiveExpression": 0,
-                "qExpressions": [],
-                "autoSort": true,
-                "cId": "fFPMwV",
-                "numFormatFromTemplate": true
-              },
-              "qSortBy": {
-                "qSortByNumeric": -1,
-                "qSortByLoadOrder": 1,
-                "qExpression": {}
-              },
-              "qAttributeExpressions": [],
-              "qAttributeDimensions": [],
-              "qCalcCond": {},
-              "qCalcCondition": {
-                "qCond": {},
-                "qMsg": {}
-              },
-              "qTrendLines": [],
-              "qMiniChartDef": {
-                "qSortBy": {
-                  "qExpression": {}
-                },
-                "qOtherTotalSpec": {
-                  "qOtherMode": "OTHER_OFF",
-                  "qOtherCounted": {},
-                  "qOtherLimit": {},
-                  "qOtherLimitMode": "OTHER_GT_LIMIT",
-                  "qForceBadValueKeeping": true,
-                  "qApplyEvenWhenPossiblyWrongResult": true,
-                  "qOtherSortMode": "OTHER_SORT_DESCENDING",
-                  "qTotalMode": "TOTAL_OFF",
-                  "qReferencedExpression": {}
-                },
-                "qMaxNumberPoints": -1,
-                "qAttributeExpressions": []
-              },
-              "$$hashKey": "object:38985"
-            }
-          ],
-          "qInterColumnSortOrder": [
-            1,
-            0
-          ],
-          "qSuppressMissing": true,
-          "qInitialDataFetch": [
-            {
-              "qLeft": 0,
-              "qTop": 0,
-              "qWidth": 10,
-              "qHeight": 500
-            }
-          ],
-          "qReductionMode": "N",
-          "qMode": "S",
-          "qPseudoDimPos": -1,
-          "qNoOfLeftDims": -1,
-          "qMaxStackedCells": 5000,
-          "qCalcCond": {},
-          "qTitle": {},
-          "qCalcCondition": {
-            "qCond": {},
-            "qMsg": {}
-          },
-          "qColumnOrder": [],
-          "qExpansionState": [],
-          "qLayoutExclude": {
-            "qHyperCubeDef": {
-              "qDimensions": [],
-              "qMeasures": [],
-              "qInterColumnSortOrder": [],
-              "qInitialDataFetch": [],
-              "qReductionMode": "N",
-              "qMode": "S",
-              "qPseudoDimPos": -1,
-              "qNoOfLeftDims": -1,
-              "qMaxStackedCells": 5000,
-              "qCalcCond": {},
-              "qTitle": {},
-              "qCalcCondition": {
-                "qCond": {},
-                "qMsg": {}
-              },
-              "qColumnOrder": [],
-              "qExpansionState": []
-            }
-          }
-        },
-        "showTitles": true,
-        "title": "Atendimentos por Atividade",
+        "showTitles": false,
+        "title": "",
         "subtitle": "",
         "footnote": "",
         "showDetails": false,
-        "donut": {
-          "showAsDonut": true
+        "props": {
+          "buttonLabel": "Churn",
+          "buttonShowIcon": false,
+          "buttonIconLui": "",
+          "fullWidth": false,
+          "buttonAlignment": "centered",
+          "buttonTextAlign": "center",
+          "useEnabledCondition": false,
+          "enabledCondition": 1,
+          "actionItems": [],
+          "navigationAction": "gotoSheet",
+          "sheetId": "",
+          "selectedSheet": "461f04ed-7be4-4f4f-9624-8a8da26d5144",
+          "selectedStory": "",
+          "websiteUrl": "https://bi.ruralbrasil.com/single/?appid=c21450d2-a937-40be-a241-ed7323bdbe05&sheet=838517b6-5e68-4e91-91d5-0fbed0126062&opt=ctxmenu,currsel&select=$::Mercado,TOTAL",
+          "sameWindow": false,
+          "buttonIconSet": "lui"
         },
-        "dimensionTitle": true,
-        "dataPoint": {
-          "auto": true,
-          "labelMode": "share",
-          "labelValueMode": "arc"
-        },
-        "components": [
-          {
-            "key": "slices",
-            "style": {
-              "strokeWidth": "none",
-              "strokeColor": {
-                "index": -1,
-                "color": "#FFFFFF"
-              },
-              "cornerRadius": 0,
-              "innerRadius": 0.55
-            }
-          }
-        ],
-        "color": {
-          "auto": false,
-          "mode": "byMeasure",
-          "useBaseColors": "off",
-          "paletteColor": {
-            "index": 6
+        "visualization": "qlik-button-for-navigation",
+        "version": "2.10.0",
+        "extensionMeta": {
+          "translationKey": "",
+          "icon": "align-object-center",
+          "iconChar": "puzzle",
+          "isLibraryItem": true,
+          "visible": true,
+          "name": "Button for navigation",
+          "description": "Enhance your app with buttons and actions.\nVersion: 2.12.0",
+          "template": "qlik-button-for-navigation",
+          "iconPath": "M14.5,9 L13,9 L13,3.3 C13,3.1 12.9,3 12.7,3 L8,3 L8,1.5 C8,0.7 7.3,0 6.5,0 C5.7,0 5,0.7 5,1.5 L5,3 L0.3,3 C0.1,3 0,3.1 0,3.3 L0,9 L1.5,9 C2.3,9 3,9.7 3,10.5 C3,11.3 2.3,12 1.5,12 L0,12 L0,15.7 C0,15.9 0.1,16 0.3,16 L5,16 L5,14.5 C5,13.7 5.7,13 6.5,13 C7.3,13 8,13.7 8,14.5 L8,16 L12.7,16 C12.9,16 13,15.9 13,15.7 L13,12 L14.5,12 C15.3,12 16,11.3 16,10.5 C16,9.7 15.3,9 14.5,9 Z",
+          "isThirdParty": true,
+          "type": "visualization",
+          "version": "2.12.0",
+          "preview": "qlik-button-for-navigation.png",
+          "keywords": [
+            "actions",
+            "bootstrap",
+            "button",
+            "navigation",
+            "qlik",
+            "qlik-sense",
+            "qlik-sense-visualization-extension",
+            "sense",
+            "sheets"
+          ],
+          "author": "Stefan Walther",
+          "homepage": "https://github.com/stefanwalther/sense-navigation",
+          "license": "MIT",
+          "repository": "",
+          "dependencies": {
+            "qlik-sense": ">=5.5.x"
           },
-          "useDimColVal": true,
-          "useMeasureGradient": true,
-          "persistent": false,
-          "expressionIsColor": true,
-          "expressionLabel": "",
-          "measureScheme": "sg",
-          "reverseScheme": false,
-          "dimensionScheme": "12",
-          "autoMinMax": true,
-          "measureMin": 0,
-          "measureMax": 10,
-          "altLabel": "ZTehGfP",
-          "byMeasureDef": {
-            "label": "ZTehGfP",
-            "key": "ZTehGfP",
-            "type": "libraryItem",
-            "activeMeasureIndex": 0
-          }
-        },
-        "legend": {
-          "show": true,
-          "dock": "auto",
-          "showTitle": true
-        },
-        "visualization": "piechart"
+          "deprecated": "2020-04-30",
+          "bundle": {
+            "id": "qlik-dashboard-bundle",
+            "name": "Qlik Dashboard bundle",
+            "description": "This is a set of supported objects that will facilitate dashboard creation in Qlik Sense: A date picker, a variable input, a demand-reporting button and a share button. These can be used in addition to the objects found under \"Charts\".\n\nFor limitations and support conditions, see the documentation."
+          },
+          "installer": "QlikExtensionBundler",
+          "previewIconURL": "https://bi.ruralbrasil.com/extensions/qlik-button-for-navigation/qlik-button-for-navigation.png"
+        }
       },
       "qChildren": []
     },
@@ -4019,75 +3794,523 @@
     {
       "qProperty": {
         "qInfo": {
-          "qId": "vEYpTf",
-          "qType": "qlik-button-for-navigation"
+          "qId": "DbZ",
+          "qType": "customBarChart"
         },
         "qMetaDef": {},
-        "showTitles": false,
-        "title": "",
+        "qHyperCubeDef": {
+          "qDimensions": [
+            {
+              "qLibraryId": "GHuj",
+              "qDef": {
+                "qGrouping": "N",
+                "qFieldDefs": [],
+                "qFieldLabels": [],
+                "qSortCriterias": [
+                  {
+                    "qSortByLoadOrder": 1,
+                    "qSortByExpression": -1,
+                    "qExpression": {
+                      "qv": "Count(DISTINCT idagenda) * $(vOrdenacaoGraficoVisitas)"
+                    }
+                  },
+                  {
+                    "qSortByNumeric": 1,
+                    "qSortByAscii": 1,
+                    "qSortByLoadOrder": 1,
+                    "qExpression": {}
+                  }
+                ],
+                "qNumberPresentations": [],
+                "qActiveField": 0,
+                "autoSort": false,
+                "cId": "YGZpVG",
+                "othersLabel": "Outros"
+              },
+              "qOtherTotalSpec": {
+                "qOtherMode": "OTHER_OFF",
+                "qOtherCounted": {
+                  "qv": "10"
+                },
+                "qOtherLimit": {
+                  "qv": "0"
+                },
+                "qOtherLimitMode": "OTHER_GE_LIMIT",
+                "qForceBadValueKeeping": true,
+                "qApplyEvenWhenPossiblyWrongResult": true,
+                "qOtherSortMode": "OTHER_SORT_DESCENDING",
+                "qTotalMode": "TOTAL_OFF",
+                "qReferencedExpression": {}
+              },
+              "qOtherLabel": {
+                "qv": "Outros"
+              },
+              "qTotalLabel": {},
+              "qCalcCond": {},
+              "qAttributeExpressions": [],
+              "qAttributeDimensions": [],
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              }
+            }
+          ],
+          "qMeasures": [
+            {
+              "qLibraryId": "zmGLp",
+              "qDef": {
+                "qTags": [],
+                "qGrouping": "N",
+                "qNumFormat": {
+                  "qType": "F",
+                  "qnDec": 2,
+                  "qUseThou": 0,
+                  "qFmt": "#.##0",
+                  "qDec": ",",
+                  "qThou": "."
+                },
+                "qAccumulate": 0,
+                "qActiveExpression": 0,
+                "qExpressions": [],
+                "autoSort": true,
+                "cId": "PvUPCM",
+                "numFormatFromTemplate": true,
+                "stack": "1",
+                "type": "bar",
+                "yIndex": "0",
+                "color": {
+                  "index": 8,
+                  "color": "#ffcf02"
+                },
+                "dataLabel": {
+                  "auto": false,
+                  "color": {
+                    "index": 15,
+                    "color": "#000000"
+                  }
+                },
+                "series": {
+                  "type": "bar",
+                  "axis": 0,
+                  "marker": "circle",
+                  "markerFill": true
+                },
+                "isCustomFormatted": false
+              },
+              "qSortBy": {
+                "qSortByNumeric": -1,
+                "qSortByLoadOrder": 1,
+                "qExpression": {}
+              },
+              "qAttributeExpressions": [],
+              "qAttributeDimensions": [],
+              "qCalcCond": {},
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              },
+              "qTrendLines": [],
+              "qMiniChartDef": {
+                "qSortBy": {
+                  "qExpression": {}
+                },
+                "qOtherTotalSpec": {
+                  "qOtherMode": "OTHER_OFF",
+                  "qOtherCounted": {},
+                  "qOtherLimit": {},
+                  "qOtherLimitMode": "OTHER_GT_LIMIT",
+                  "qForceBadValueKeeping": true,
+                  "qApplyEvenWhenPossiblyWrongResult": true,
+                  "qOtherSortMode": "OTHER_SORT_DESCENDING",
+                  "qTotalMode": "TOTAL_OFF",
+                  "qReferencedExpression": {}
+                },
+                "qMaxNumberPoints": -1,
+                "qAttributeExpressions": []
+              },
+              "title": "QtdVisitasAgendadas"
+            },
+            {
+              "qLibraryId": "Rjbt",
+              "qDef": {
+                "qTags": [],
+                "qGrouping": "N",
+                "qNumFormat": {
+                  "qType": "F",
+                  "qnDec": 2,
+                  "qUseThou": 0,
+                  "qFmt": "#.##0",
+                  "qDec": ",",
+                  "qThou": "."
+                },
+                "qAccumulate": 0,
+                "qActiveExpression": 0,
+                "qExpressions": [],
+                "autoSort": true,
+                "cId": "wGMQj",
+                "numFormatFromTemplate": true,
+                "stack": "1",
+                "type": "bar",
+                "yIndex": "0",
+                "color": {
+                  "index": 2,
+                  "color": "#46c646"
+                },
+                "dataLabel": {
+                  "auto": false,
+                  "color": {
+                    "index": 15,
+                    "color": "#000000"
+                  }
+                },
+                "series": {
+                  "type": "bar",
+                  "axis": 0,
+                  "marker": "circle",
+                  "markerFill": true
+                },
+                "isCustomFormatted": false
+              },
+              "qSortBy": {
+                "qSortByNumeric": -1,
+                "qSortByLoadOrder": 1,
+                "qExpression": {}
+              },
+              "qAttributeExpressions": [],
+              "qAttributeDimensions": [],
+              "qCalcCond": {},
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              },
+              "qTrendLines": [],
+              "qMiniChartDef": {
+                "qSortBy": {
+                  "qExpression": {}
+                },
+                "qOtherTotalSpec": {
+                  "qOtherMode": "OTHER_OFF",
+                  "qOtherCounted": {},
+                  "qOtherLimit": {},
+                  "qOtherLimitMode": "OTHER_GT_LIMIT",
+                  "qForceBadValueKeeping": true,
+                  "qApplyEvenWhenPossiblyWrongResult": true,
+                  "qOtherSortMode": "OTHER_SORT_DESCENDING",
+                  "qTotalMode": "TOTAL_OFF",
+                  "qReferencedExpression": {}
+                },
+                "qMaxNumberPoints": -1,
+                "qAttributeExpressions": []
+              },
+              "title": "QtdVisitasRealizadas"
+            },
+            {
+              "qLibraryId": "1fc8c4b2-228a-4d04-b819-a9f472f4044a",
+              "qDef": {
+                "qTags": [],
+                "qGrouping": "N",
+                "qNumFormat": {
+                  "qType": "F",
+                  "qnDec": 2,
+                  "qUseThou": 0,
+                  "qFmt": "0,0%",
+                  "qDec": ",",
+                  "qThou": "."
+                },
+                "qAccumulate": 0,
+                "qActiveExpression": 0,
+                "qExpressions": [],
+                "autoSort": true,
+                "cId": "mnUXWre",
+                "numFormatFromTemplate": true,
+                "stack": "",
+                "type": "line",
+                "yIndex": "1",
+                "color": {
+                  "index": 1,
+                  "color": "#ffffff"
+                },
+                "dataLabel": {
+                  "auto": false,
+                  "color": {
+                    "index": 15,
+                    "color": "#000000"
+                  }
+                },
+                "series": {
+                  "type": "line",
+                  "axis": 1,
+                  "marker": "circle",
+                  "markerFill": true
+                },
+                "isCustomFormatted": false
+              },
+              "qSortBy": {
+                "qSortByNumeric": -1,
+                "qSortByLoadOrder": 1,
+                "qExpression": {}
+              },
+              "qAttributeExpressions": [],
+              "qAttributeDimensions": [],
+              "qCalcCond": {},
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              },
+              "qTrendLines": [],
+              "qMiniChartDef": {
+                "qSortBy": {
+                  "qExpression": {}
+                },
+                "qOtherTotalSpec": {
+                  "qOtherMode": "OTHER_OFF",
+                  "qOtherCounted": {},
+                  "qOtherLimit": {},
+                  "qOtherLimitMode": "OTHER_GT_LIMIT",
+                  "qForceBadValueKeeping": true,
+                  "qApplyEvenWhenPossiblyWrongResult": true,
+                  "qOtherSortMode": "OTHER_SORT_DESCENDING",
+                  "qTotalMode": "TOTAL_OFF",
+                  "qReferencedExpression": {}
+                },
+                "qMaxNumberPoints": -1,
+                "qAttributeExpressions": []
+              },
+              "title": "PercExecucaoVisitas"
+            }
+          ],
+          "qInterColumnSortOrder": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "qSuppressZero": true,
+          "qSuppressMissing": true,
+          "qInitialDataFetch": [
+            {
+              "qLeft": 0,
+              "qTop": 0,
+              "qWidth": 10,
+              "qHeight": 1000
+            }
+          ],
+          "qReductionMode": "N",
+          "qMode": "S",
+          "qPseudoDimPos": -1,
+          "qNoOfLeftDims": -1,
+          "qMaxStackedCells": 5000,
+          "qCalcCond": {},
+          "qTitle": {},
+          "qCalcCondition": {
+            "qCond": {},
+            "qMsg": {}
+          },
+          "qColumnOrder": [],
+          "qExpansionState": [],
+          "customErrorMessage": {
+            "calcCond": ""
+          },
+          "qLayoutExclude": {
+            "qHyperCubeDef": {
+              "qDimensions": [],
+              "qMeasures": [],
+              "qInterColumnSortOrder": [],
+              "qInitialDataFetch": [],
+              "qReductionMode": "N",
+              "qMode": "S",
+              "qPseudoDimPos": -1,
+              "qNoOfLeftDims": -1,
+              "qMaxStackedCells": 5000,
+              "qCalcCond": {},
+              "qTitle": {},
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              },
+              "qColumnOrder": [],
+              "qExpansionState": []
+            }
+          }
+        },
+        "showTitles": true,
+        "title": {
+          "qStringExpression": {
+            "qExpr": "='Rank de '&IF(count(DISTINCT Regional)=1,'Filiais','Regionais')&' por Visitas'"
+          }
+        },
         "subtitle": "",
         "footnote": "",
         "showDetails": false,
-        "props": {
-          "buttonLabel": "Churn",
-          "buttonShowIcon": false,
-          "buttonIconLui": "",
-          "fullWidth": false,
-          "buttonAlignment": "centered",
-          "buttonTextAlign": "center",
-          "useEnabledCondition": false,
-          "enabledCondition": 1,
-          "actionItems": [],
-          "navigationAction": "gotoSheet",
-          "sheetId": "",
-          "selectedSheet": "461f04ed-7be4-4f4f-9624-8a8da26d5144",
-          "selectedStory": "",
-          "websiteUrl": "https://bi.ruralbrasil.com/single/?appid=c21450d2-a937-40be-a241-ed7323bdbe05&sheet=838517b6-5e68-4e91-91d5-0fbed0126062&opt=ctxmenu,currsel&select=$::Mercado,TOTAL",
-          "sameWindow": false,
-          "buttonIconSet": "lui"
+        "visualization": "customBarChart",
+        "qLayoutExclude": {
+          "disabled": {
+            "qExtendsId": "",
+            "refLine": {
+              "refLines": []
+            },
+            "scrollbar": "miniChart",
+            "gridLine": {
+              "auto": false,
+              "spacing": 0
+            },
+            "components": [],
+            "measureAxis": {
+              "min": 0,
+              "max": 10
+            },
+            "barGrouping": {
+              "grouping": "stacked"
+            },
+            "orientation": "horizontal",
+            "scrollStartPos": 0,
+            "nullMode": "gap",
+            "dataPoint": {
+              "show": true,
+              "showLineLabels": true,
+              "showBarLabels": true,
+              "showLabels": true,
+              "showSegmentLabels": true,
+              "showTotalLabels": false
+            },
+            "color": {
+              "auto": true,
+              "mode": "primary",
+              "formatting": {
+                "numFormatFromTemplate": true
+              },
+              "useBaseColors": "off",
+              "paletteColor": {
+                "index": 6
+              },
+              "useDimColVal": true,
+              "useMeasureGradient": true,
+              "persistent": false,
+              "expressionIsColor": true,
+              "expressionLabel": "",
+              "measureScheme": "sg",
+              "reverseScheme": false,
+              "dimensionScheme": "12",
+              "autoMinMax": true,
+              "measureMin": 0,
+              "measureMax": 10
+            },
+            "legend": {
+              "show": true,
+              "dock": "top",
+              "showTitle": true
+            },
+            "dimensionAxis": {
+              "continuousAuto": true,
+              "show": "labels",
+              "label": "auto",
+              "dock": "near",
+              "axisDisplayMode": "auto",
+              "maxVisibleItems": 10
+            },
+            "preferContinuousAxis": true,
+            "showMiniChartForContinuousAxis": true,
+            "measureAxes": [
+              {
+                "show": "none",
+                "dock": "near",
+                "spacing": 1,
+                "autoMinMax": false,
+                "minMax": "max",
+                "min": 0,
+                "max": {
+                  "qValueExpression": {
+                    "qExpr": "=max(aggr(Count(DISTINCT idagendaRealizada)+Count(DISTINCT idagenda),Regional)) * 1.5\r\n"
+                  }
+                },
+                "logarithmic": false
+              },
+              {
+                "show": "none",
+                "dock": "far",
+                "spacing": 1,
+                "autoMinMax": false,
+                "minMax": "min",
+                "min": 0,
+                "max": 10
+              }
+            ],
+            "tooltip": {
+              "auto": true,
+              "hideBasic": false,
+              "data": {
+                "qHyperCubeDef": {
+                  "qDimensions": [],
+                  "qMeasures": [],
+                  "qInterColumnSortOrder": [],
+                  "qInitialDataFetch": [],
+                  "qReductionMode": "N",
+                  "qMode": "S",
+                  "qPseudoDimPos": -1,
+                  "qNoOfLeftDims": -1,
+                  "qMaxStackedCells": 5000,
+                  "qCalcCond": {},
+                  "qTitle": {},
+                  "qCalcCondition": {
+                    "qCond": {},
+                    "qMsg": {}
+                  },
+                  "qColumnOrder": [],
+                  "qExpansionState": []
+                }
+              }
+            }
+          },
+          "quarantine": {
+            "supportedAutoMinMax": {
+              "measureAxis.min": 0,
+              "measureAxis.max": 10
+            }
+          }
         },
-        "visualization": "qlik-button-for-navigation",
-        "version": "2.10.0",
+        "settings": {
+          "dataLabel": {
+            "visibility": true,
+            "distance": 5,
+            "rotate": 0,
+            "position": "inside",
+            "style": "normal",
+            "weight": "normal",
+            "size": "12",
+            "align": "center"
+          },
+          "axisLabel": {
+            "visibility": true,
+            "rotate": 26,
+            "style": "normal",
+            "weight": "normal",
+            "size": "10",
+            "align": "right",
+            "color": {
+              "color": "#333",
+              "index": "-1"
+            }
+          },
+          "others": {
+            "barGap": 0,
+            "numberVisibleItems": 12
+          }
+        },
+        "version": "1.3",
         "extensionMeta": {
           "translationKey": "",
-          "icon": "align-object-center",
+          "icon": "puzzle",
           "iconChar": "puzzle",
           "isLibraryItem": true,
           "visible": true,
-          "name": "Button for navigation",
-          "description": "Enhance your app with buttons and actions.\nVersion: 2.12.0",
-          "template": "qlik-button-for-navigation",
+          "name": "Custom Bar charts",
+          "description": "Custom chart based in e-charts library",
+          "template": "customBarChart",
           "iconPath": "M14.5,9 L13,9 L13,3.3 C13,3.1 12.9,3 12.7,3 L8,3 L8,1.5 C8,0.7 7.3,0 6.5,0 C5.7,0 5,0.7 5,1.5 L5,3 L0.3,3 C0.1,3 0,3.1 0,3.3 L0,9 L1.5,9 C2.3,9 3,9.7 3,10.5 C3,11.3 2.3,12 1.5,12 L0,12 L0,15.7 C0,15.9 0.1,16 0.3,16 L5,16 L5,14.5 C5,13.7 5.7,13 6.5,13 C7.3,13 8,13.7 8,14.5 L8,16 L12.7,16 C12.9,16 13,15.9 13,15.7 L13,12 L14.5,12 C15.3,12 16,11.3 16,10.5 C16,9.7 15.3,9 14.5,9 Z",
           "isThirdParty": true,
           "type": "visualization",
-          "version": "2.12.0",
-          "preview": "qlik-button-for-navigation.png",
-          "keywords": [
-            "actions",
-            "bootstrap",
-            "button",
-            "navigation",
-            "qlik",
-            "qlik-sense",
-            "qlik-sense-visualization-extension",
-            "sense",
-            "sheets"
-          ],
-          "author": "Stefan Walther",
-          "homepage": "https://github.com/stefanwalther/sense-navigation",
-          "license": "MIT",
-          "repository": "",
-          "dependencies": {
-            "qlik-sense": ">=5.5.x"
-          },
-          "deprecated": "2020-04-30",
-          "bundle": {
-            "id": "qlik-dashboard-bundle",
-            "name": "Qlik Dashboard bundle",
-            "description": "This is a set of supported objects that will facilitate dashboard creation in Qlik Sense: A date picker, a variable input, a demand-reporting button and a share button. These can be used in addition to the objects found under \"Charts\".\n\nFor limitations and support conditions, see the documentation."
-          },
-          "installer": "QlikExtensionBundler",
-          "previewIconURL": "https://bi.ruralbrasil.com/extensions/qlik-button-for-navigation/qlik-button-for-navigation.png"
+          "version": "1.3",
+          "author": "Wederson Domingues"
         }
       },
       "qChildren": []

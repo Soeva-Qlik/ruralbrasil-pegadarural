@@ -6,12 +6,13 @@
     },
     "qMetaDef": {
       "title": "DashBoard ( Visão Gerencial )",
-      "description": ""
+      "description": "",
+      "isBlueprintItem": true
     },
     "rank": 23.5,
     "thumbnail": {
       "qStaticContentUrlDef": {
-        "qUrl": "/appcontent/b1e5c531-6d90-470f-b742-3d2795482d6c/sheet_thumb_c839a074-b2f6-4304-a85d-d8a3b96e6a0d-0.467457657093046.png"
+        "qUrl": "/appcontent/1b93735d-1059-42bb-9413-8913b4ab0e27/sheet_thumb_c839a074-b2f6-4304-a85d-d8a3b96e6a0d-0.467457657093046.png"
       }
     },
     "columns": 24,
@@ -35,12 +36,12 @@
         "name": "YXgutA",
         "type": "barchart",
         "col": 0,
-        "row": 37,
+        "row": 30,
         "colspan": 24,
         "rowspan": 7,
         "bounds": {
           "x": 0,
-          "y": 84.0909090909091,
+          "y": 68.18181818181819,
           "width": 100,
           "height": 15.909090909090912
         }
@@ -49,12 +50,12 @@
         "name": "jjERG",
         "type": "combochart",
         "col": 0,
-        "row": 30,
+        "row": 37,
         "colspan": 24,
         "rowspan": 7,
         "bounds": {
           "x": 0,
-          "y": 68.18181818181819,
+          "y": 84.0909090909091,
           "width": 100,
           "height": 15.909090909090912
         }
@@ -130,20 +131,6 @@
         }
       },
       {
-        "name": "Qzcpe",
-        "type": "customEChart",
-        "col": 0,
-        "row": 2,
-        "colspan": 24,
-        "rowspan": 7,
-        "bounds": {
-          "x": 0,
-          "y": 4.545454545454546,
-          "width": 100,
-          "height": 15.909090909090912
-        }
-      },
-      {
         "name": "HxKXFL",
         "type": "qlik-button-for-navigation",
         "col": 9,
@@ -158,7 +145,21 @@
         }
       },
       {
-        "name": "rCcRJA",
+        "name": "TapLNWk",
+        "type": "customEChart",
+        "col": 0,
+        "row": 2,
+        "colspan": 24,
+        "rowspan": 7,
+        "bounds": {
+          "y": 4.545454545454546,
+          "x": 0,
+          "width": 100,
+          "height": 15.909090909090908
+        }
+      },
+      {
+        "name": "XJNuWU",
         "type": "customEChart",
         "col": 0,
         "row": 9,
@@ -1817,8 +1818,8 @@
     {
       "qProperty": {
         "qInfo": {
-          "qId": "Qzcpe",
-          "qType": "customEChart"
+          "qId": "TapLNWk",
+          "qType": "customBarChart"
         },
         "qMetaDef": {},
         "qHyperCubeDef": {
@@ -1911,8 +1912,22 @@
                 "type": "bar",
                 "yIndex": "0",
                 "color": {
-                  "index": 6,
-                  "color": "#4477aa"
+                  "color": "#4477aa",
+                  "index": 6
+                },
+                "dataLabel": {
+                  "auto": true,
+                  "color": {
+                    "color": "#fff",
+                    "index": "-1"
+                  }
+                },
+                "label": {
+                  "auto": false,
+                  "color": {
+                    "index": 1,
+                    "color": "#ffffff"
+                  }
                 },
                 "isCustomFormatted": false
               },
@@ -1973,8 +1988,22 @@
                 "type": "bar",
                 "yIndex": "0",
                 "color": {
-                  "index": -1,
-                  "color": "#8dc782"
+                  "color": "#8dc782",
+                  "index": -1
+                },
+                "dataLabel": {
+                  "auto": false,
+                  "color": {
+                    "index": 15,
+                    "color": "#000000"
+                  }
+                },
+                "label": {
+                  "auto": false,
+                  "color": {
+                    "index": -1,
+                    "color": "#333333"
+                  }
                 },
                 "isCustomFormatted": false
               },
@@ -2038,6 +2067,20 @@
                   "color": "#b0afae",
                   "index": 12
                 },
+                "dataLabel": {
+                  "auto": false,
+                  "color": {
+                    "index": 15,
+                    "color": "#000000"
+                  }
+                },
+                "label": {
+                  "auto": false,
+                  "color": {
+                    "index": -1,
+                    "color": "#333333"
+                  }
+                },
                 "isCustomFormatted": false
               },
               "qSortBy": {
@@ -2074,15 +2117,15 @@
             },
             {
               "qDef": {
-                "qLabel": "% TO DO",
+                "qLabel": "TO DO (R$)",
                 "qTags": [],
                 "qGrouping": "N",
-                "qDef": "(sum(ValorReceitaFaturado) + sum(ValorPedidoSaldo))\r\n/\nsum(ValorOrcamento)\n\n",
+                "qDef": "(\r\nsum(ValorOrcamento)\n-\n(sum(ValorReceitaFaturado) + sum(ValorPedidoSaldo))\n)\n\n/\n1000000\n",
                 "qNumFormat": {
                   "qType": "F",
                   "qnDec": 2,
                   "qUseThou": 0,
-                  "qFmt": "0,0%",
+                  "qFmt": "#.##0,00",
                   "qDec": ",",
                   "qThou": "."
                 },
@@ -2094,10 +2137,24 @@
                 "numFormatFromTemplate": true,
                 "stack": "1",
                 "type": "line",
-                "yIndex": "0",
+                "yIndex": "1",
                 "color": {
                   "color": "#8e477d",
                   "index": 7
+                },
+                "dataLabel": {
+                  "auto": false,
+                  "color": {
+                    "index": 15,
+                    "color": "#000000"
+                  }
+                },
+                "label": {
+                  "auto": false,
+                  "color": {
+                    "index": -1,
+                    "color": "#333333"
+                  }
                 },
                 "isCustomFormatted": false
               },
@@ -2158,6 +2215,20 @@
                 "color": {
                   "color": "#633d0c",
                   "index": 11
+                },
+                "dataLabel": {
+                  "auto": false,
+                  "color": {
+                    "index": 15,
+                    "color": "#000000"
+                  }
+                },
+                "label": {
+                  "auto": false,
+                  "color": {
+                    "index": -1,
+                    "color": "#333333"
+                  }
                 },
                 "isCustomFormatted": false
               },
@@ -2220,6 +2291,20 @@
                   "color": "#276e27",
                   "index": 3
                 },
+                "dataLabel": {
+                  "auto": false,
+                  "color": {
+                    "index": 15,
+                    "color": "#000000"
+                  }
+                },
+                "label": {
+                  "auto": false,
+                  "color": {
+                    "index": -1,
+                    "color": "#333333"
+                  }
+                },
                 "isCustomFormatted": false
               },
               "qSortBy": {
@@ -2279,8 +2364,22 @@
                 "type": "line",
                 "yIndex": "1",
                 "color": {
-                  "index": 6,
-                  "color": "#4477aa"
+                  "color": "#4477aa",
+                  "index": 6
+                },
+                "dataLabel": {
+                  "auto": false,
+                  "color": {
+                    "index": 15,
+                    "color": "#000000"
+                  }
+                },
+                "label": {
+                  "auto": false,
+                  "color": {
+                    "index": -1,
+                    "color": "#333333"
+                  }
                 },
                 "isCustomFormatted": false
               },
@@ -2376,12 +2475,53 @@
             }
           }
         },
+        "settings": {
+          "dataLabel": {
+            "visibility": true,
+            "distance": 5,
+            "rotate": 0,
+            "position": "inside",
+            "style": "normal",
+            "weight": "normal",
+            "size": 15,
+            "align": "center"
+          },
+          "axisLabel": {
+            "visibility": true,
+            "rotate": 22,
+            "style": "normal",
+            "weight": "normal",
+            "size": 15,
+            "align": "right",
+            "color": {
+              "color": "#333",
+              "index": "-1"
+            }
+          },
+          "bar": {
+            "gap": 0
+          },
+          "label": {
+            "visibility": true,
+            "distance": "5",
+            "rotate": "0",
+            "position": "inside",
+            "style": "italic",
+            "weight": "bold",
+            "size": 15,
+            "align": "center"
+          },
+          "others": {
+            "barGap": 0,
+            "numberVisibleItems": 12
+          }
+        },
         "showTitles": true,
         "title": "Comparativo atingimento de orçamento em milhão.",
         "subtitle": "",
         "footnote": "",
         "showDetails": false,
-        "visualization": "customEChart",
+        "visualization": "customBarChart",
         "version": "1",
         "extensionMeta": {
           "translationKey": "",
@@ -2398,21 +2538,6 @@
           "version": "1",
           "author": "Wederson Domingues"
         },
-        "settings": {
-          "label": {
-            "visibility": true,
-            "distance": "5",
-            "rotate": "90",
-            "position": "inside",
-            "style": "italic",
-            "weight": "bold",
-            "size": 15,
-            "align": "center"
-          },
-          "bar": {
-            "gap": 0
-          }
-        },
         "qLayoutExclude": {
           "disabled": {
             "qExtendsId": ""
@@ -2425,8 +2550,8 @@
     {
       "qProperty": {
         "qInfo": {
-          "qId": "rCcRJA",
-          "qType": "customEChart"
+          "qId": "XJNuWU",
+          "qType": "customBarChart"
         },
         "qMetaDef": {},
         "qHyperCubeDef": {
@@ -2448,9 +2573,10 @@
                 "qNumberPresentations": [],
                 "qActiveField": 0,
                 "autoSort": true,
-                "cId": "RWFZU",
+                "cId": "BfRvT",
                 "othersLabel": "Outros"
               },
+              "qNullSuppression": true,
               "qOtherTotalSpec": {
                 "qOtherMode": "OTHER_OFF",
                 "qOtherCounted": {
@@ -2476,7 +2602,9 @@
               "qCalcCondition": {
                 "qCond": {},
                 "qMsg": {}
-              }
+              },
+              "title": "Drill_2",
+              "othersLabel": "Outros"
             }
           ],
           "qMeasures": [
@@ -2505,8 +2633,22 @@
                 "type": "bar",
                 "yIndex": "0",
                 "color": {
-                  "index": 6,
-                  "color": "#4477aa"
+                  "color": "#4477aa",
+                  "index": 6
+                },
+                "dataLabel": {
+                  "auto": false,
+                  "color": {
+                    "index": 1,
+                    "color": "#ffffff"
+                  }
+                },
+                "label": {
+                  "auto": false,
+                  "color": {
+                    "index": 1,
+                    "color": "#ffffff"
+                  }
                 },
                 "isCustomFormatted": false
               },
@@ -2567,131 +2709,22 @@
                 "type": "bar",
                 "yIndex": "0",
                 "color": {
-                  "index": -1,
-                  "color": "#8dc782"
+                  "color": "#8dc782",
+                  "index": -1
                 },
-                "isCustomFormatted": false
-              },
-              "qSortBy": {
-                "qSortByNumeric": -1,
-                "qSortByLoadOrder": 1,
-                "qExpression": {}
-              },
-              "qAttributeExpressions": [],
-              "qAttributeDimensions": [],
-              "qCalcCond": {},
-              "qCalcCondition": {
-                "qCond": {},
-                "qMsg": {}
-              },
-              "qTrendLines": [],
-              "qMiniChartDef": {
-                "qSortBy": {
-                  "qExpression": {}
+                "dataLabel": {
+                  "auto": false,
+                  "color": {
+                    "index": 15,
+                    "color": "#000000"
+                  }
                 },
-                "qOtherTotalSpec": {
-                  "qOtherMode": "OTHER_OFF",
-                  "qOtherCounted": {},
-                  "qOtherLimit": {},
-                  "qOtherLimitMode": "OTHER_GT_LIMIT",
-                  "qForceBadValueKeeping": true,
-                  "qApplyEvenWhenPossiblyWrongResult": true,
-                  "qOtherSortMode": "OTHER_SORT_DESCENDING",
-                  "qTotalMode": "TOTAL_OFF",
-                  "qReferencedExpression": {}
-                },
-                "qMaxNumberPoints": -1,
-                "qAttributeExpressions": []
-              }
-            },
-            {
-              "qDef": {
-                "qLabel": "ValorOrcamento",
-                "qTags": [],
-                "qGrouping": "N",
-                "qDef": "Sum(ValorOrcamento)/1000000",
-                "qNumFormat": {
-                  "qType": "F",
-                  "qnDec": 2,
-                  "qUseThou": 0,
-                  "qFmt": "#.##0,00",
-                  "qDec": ",",
-                  "qThou": "."
-                },
-                "qAccumulate": 0,
-                "qActiveExpression": 0,
-                "qExpressions": [],
-                "qLabelExpression": "'Orçamento",
-                "autoSort": true,
-                "cId": "NCpcj",
-                "numFormatFromTemplate": true,
-                "stack": "2",
-                "type": "bar",
-                "yIndex": "0",
-                "color": {
-                  "color": "#b0afae",
-                  "index": 12
-                },
-                "isCustomFormatted": false
-              },
-              "qSortBy": {
-                "qSortByNumeric": -1,
-                "qSortByLoadOrder": 1,
-                "qExpression": {}
-              },
-              "qAttributeExpressions": [],
-              "qAttributeDimensions": [],
-              "qCalcCond": {},
-              "qCalcCondition": {
-                "qCond": {},
-                "qMsg": {}
-              },
-              "qTrendLines": [],
-              "qMiniChartDef": {
-                "qSortBy": {
-                  "qExpression": {}
-                },
-                "qOtherTotalSpec": {
-                  "qOtherMode": "OTHER_OFF",
-                  "qOtherCounted": {},
-                  "qOtherLimit": {},
-                  "qOtherLimitMode": "OTHER_GT_LIMIT",
-                  "qForceBadValueKeeping": true,
-                  "qApplyEvenWhenPossiblyWrongResult": true,
-                  "qOtherSortMode": "OTHER_SORT_DESCENDING",
-                  "qTotalMode": "TOTAL_OFF",
-                  "qReferencedExpression": {}
-                },
-                "qMaxNumberPoints": -1,
-                "qAttributeExpressions": []
-              }
-            },
-            {
-              "qDef": {
-                "qLabel": "% TO DO",
-                "qTags": [],
-                "qGrouping": "N",
-                "qDef": "(sum(ValorReceitaFaturado) + sum(ValorPedidoSaldo))\r\n/\nsum(ValorOrcamento)\n\n",
-                "qNumFormat": {
-                  "qType": "F",
-                  "qnDec": 2,
-                  "qUseThou": 0,
-                  "qFmt": "0,0%",
-                  "qDec": ",",
-                  "qThou": "."
-                },
-                "qAccumulate": 0,
-                "qActiveExpression": 0,
-                "qExpressions": [],
-                "autoSort": true,
-                "cId": "JuFJQy",
-                "numFormatFromTemplate": true,
-                "stack": "1",
-                "type": "line",
-                "yIndex": "0",
-                "color": {
-                  "color": "#8e477d",
-                  "index": 7
+                "label": {
+                  "auto": false,
+                  "color": {
+                    "index": -1,
+                    "color": "#333333"
+                  }
                 },
                 "isCustomFormatted": false
               },
@@ -2752,6 +2785,20 @@
                 "color": {
                   "color": "#633d0c",
                   "index": 11
+                },
+                "dataLabel": {
+                  "auto": false,
+                  "color": {
+                    "index": 15,
+                    "color": "#000000"
+                  }
+                },
+                "label": {
+                  "auto": false,
+                  "color": {
+                    "index": -1,
+                    "color": "#333333"
+                  }
                 },
                 "isCustomFormatted": false
               },
@@ -2814,6 +2861,20 @@
                   "color": "#276e27",
                   "index": 3
                 },
+                "dataLabel": {
+                  "auto": false,
+                  "color": {
+                    "index": 15,
+                    "color": "#000000"
+                  }
+                },
+                "label": {
+                  "auto": false,
+                  "color": {
+                    "index": -1,
+                    "color": "#333333"
+                  }
+                },
                 "isCustomFormatted": false
               },
               "qSortBy": {
@@ -2873,8 +2934,22 @@
                 "type": "line",
                 "yIndex": "1",
                 "color": {
-                  "index": 6,
-                  "color": "#4477aa"
+                  "color": "#4477aa",
+                  "index": 6
+                },
+                "dataLabel": {
+                  "auto": false,
+                  "color": {
+                    "index": 15,
+                    "color": "#000000"
+                  }
+                },
+                "label": {
+                  "auto": false,
+                  "color": {
+                    "index": -1,
+                    "color": "#333333"
+                  }
                 },
                 "isCustomFormatted": false
               },
@@ -2914,12 +2989,10 @@
           "qInterColumnSortOrder": [
             1,
             2,
+            0,
             3,
             4,
-            0,
-            5,
-            6,
-            7
+            5
           ],
           "qSuppressZero": true,
           "qInitialDataFetch": [
@@ -2971,6 +3044,31 @@
           }
         },
         "settings": {
+          "dataLabel": {
+            "visibility": true,
+            "distance": 5,
+            "rotate": 0,
+            "position": "inside",
+            "style": "normal",
+            "weight": "normal",
+            "size": 15,
+            "align": "center"
+          },
+          "axisLabel": {
+            "visibility": true,
+            "rotate": 29,
+            "style": "normal",
+            "weight": "normal",
+            "size": "12",
+            "align": "right",
+            "color": {
+              "color": "#333",
+              "index": "-1"
+            }
+          },
+          "bar": {
+            "gap": 0
+          },
           "label": {
             "visibility": true,
             "distance": "5",
@@ -2981,8 +3079,9 @@
             "size": 15,
             "align": "center"
           },
-          "bar": {
-            "gap": 0
+          "others": {
+            "barGap": 0,
+            "numberVisibleItems": 12
           }
         },
         "showTitles": true,
@@ -2990,7 +3089,7 @@
         "subtitle": "",
         "footnote": "",
         "showDetails": false,
-        "visualization": "customEChart",
+        "visualization": "customBarChart",
         "version": "1",
         "extensionMeta": {
           "translationKey": "",

@@ -1,4 +1,23 @@
 ///$tab Dimensões
+LEFT KEEP(FatPedidos)
+TabUltimaCompraClientes:
+LOAD
+    ClientePrincipal	as parceiroCRM,
+    CulturaUltimaCompra,
+    CicloUltimaCompra,
+    UltimoPedidoCliente,
+    DataUltimaCompra,
+    QtdAnosSemCompra,
+    ChaveCicloUltimaCompra,
+    QtdCiclosSemCompra,
+    ValorUltimaCompra,
+    QtdAtendimentosDesdeUltimaCompra,
+    DataUltimaVisitaRealizada,
+    DataUltimoAtendimento
+FROM [lib://1.Transform/CloverCRM/TabUltimaCompraClientes.qvd]
+(qvd);
+
+
 TabSegmentacaoParceiro:
 LOAD	DISTINCT
     %LinkSegmentacaoParceiro,
@@ -11,22 +30,8 @@ LOAD	DISTINCT
     '' 				AS %LinkSegmentacaoParceiro,
     'Não Segmenta'	as SegmentacaoShareCliente
 autogenerate
-	1
+1
 ;
-
-LEFT KEEP(LinkTable)
-
-TabCiclo:
-LOAD
-    CodCiclo,
-    ChaveCiclo,
-    Ciclo,
-    DataInicio,
-    DataFim,
-    Situacao,
-    OrdemCiclo
-FROM [lib://1.Transform/Siagri/TabCiclo.qvd]
-(qvd);
 
 
 
@@ -88,32 +93,6 @@ LOAD
 FROM [lib://1.Transform/Siagri/TabProduto.qvd]
 (qvd);
 
-LEFT KEEP(FatPedidos)
-TabUltimaCompraClientes:
-LOAD
-    ClientePrincipal	as parceiroCRM,
-    CulturaUltimaCompra,
-    CicloUltimaCompra,
-    UltimoPedidoCliente,
-    DataUltimaCompra,
-    QtdAnosSemCompra,
-    ChaveCicloUltimaCompra,
-    QtdCiclosSemCompra,
-    ValorUltimaCompra,
-    QtdAtendimentosDesdeUltimaCompra,
-    DataUltimaVisitaRealizada,
-    DataUltimoAtendimento
-FROM [lib://1.Transform/CloverCRM/TabUltimaCompraClientes.qvd]
-(qvd);
-
-LEFT KEEP(FatPedidos)
-tempTabArea:
-LOAD
-    %LinkArea,
-    ValorAreaSegmentacao
-FROM
-	[lib://1.Transform/CloverCRM/TabAreaSegmentacao.qvd]
-(qvd);
 
 TabParceiro:
 LOAD

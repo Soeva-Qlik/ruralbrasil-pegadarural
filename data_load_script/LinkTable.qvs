@@ -104,16 +104,15 @@ WHERE
 
 CONCATENATE
 LOAD
-	%LinkOrcamentoPorCTV,
+	%LinkOrcamento,
     ''	as %LinkSegmentacaoParceiro,
     Regional,
     Filial,
     GrupoProdutoPegada 	as GrupoProduto,
-    Data as DataEmissao,
-    Consultor,
+    DataEmissao,
     CodUnidade
 FROM
-	[lib://1.Transform/Orcamentos/FatOrcamentoPorCTV.qvd](qvd)
+	[lib://1.Transform/FatOrcamento.qvd](QVD)
 WHERE
 	$(vWhereOrçamento)	
 ;
@@ -122,6 +121,7 @@ LinkTable:
 LOAD
 	*,
     DataEmissao as %LinkData,
+    mid(Consultor,1,16)&'..' AS ConsultorReduzido,
     hash128(
     MapSubString('RemoveAcento_Map',upper(trim(Regional))),
     MapSubString('RemoveAcento_Map',upper(trim(Filial))),

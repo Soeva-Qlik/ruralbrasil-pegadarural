@@ -3,7 +3,7 @@
     "qIsHidden": true,
     "qIsSystem": true,
     "qName": "$Field",
-    "qCardinal": 74,
+    "qCardinal": 69,
     "qTags": [
       "$text",
       "$key",
@@ -16,7 +16,7 @@
     "qIsHidden": true,
     "qIsSystem": true,
     "qName": "$FieldNo",
-    "qCardinal": 17,
+    "qCardinal": 18,
     "qTags": [
       "$numeric",
       "$integer",
@@ -55,7 +55,7 @@
     "qIsHidden": true,
     "qIsSystem": true,
     "qName": "$Rows",
-    "qCardinal": 17,
+    "qCardinal": 15,
     "qTags": [
       "$numeric",
       "$integer",
@@ -68,7 +68,7 @@
     "qIsHidden": true,
     "qIsSystem": true,
     "qName": "$Table",
-    "qCardinal": 17,
+    "qCardinal": 15,
     "qTags": [
       "$text",
       "$ascii",
@@ -80,20 +80,18 @@
   },
   {
     "qName": "%LinkArea",
-    "qCardinal": 42136,
+    "qCardinal": 22172,
     "qTags": [
       "$text",
-      "$ascii",
-      "$key"
+      "$ascii"
     ],
     "qSrcTables": [
-      "LinkTable",
-      "tempTabArea"
+      "LinkTable"
     ]
   },
   {
     "qName": "%LinkAtendimento",
-    "qCardinal": 115200,
+    "qCardinal": 116591,
     "qTags": [
       "$numeric",
       "$integer",
@@ -116,8 +114,8 @@
     ]
   },
   {
-    "qName": "%LinkOrcamentoPorCTV",
-    "qCardinal": 600,
+    "qName": "%LinkOrcamento",
+    "qCardinal": 285,
     "qTags": [
       "$numeric",
       "$integer",
@@ -130,7 +128,7 @@
   },
   {
     "qName": "%LinkPedidos",
-    "qCardinal": 467962,
+    "qCardinal": 470543,
     "qTags": [
       "$key"
     ],
@@ -141,7 +139,7 @@
   },
   {
     "qName": "%LinkPerfilCompraParceiro",
-    "qCardinal": 11308,
+    "qCardinal": 11334,
     "qTags": [
       "$text",
       "$ascii",
@@ -169,7 +167,7 @@
   },
   {
     "qName": "%LinkSegmentacaoParceiro",
-    "qCardinal": 10838,
+    "qCardinal": 10862,
     "qTags": [
       "$text",
       "$ascii",
@@ -202,17 +200,6 @@
     ]
   },
   {
-    "qName": "ChaveCiclo",
-    "qCardinal": 9,
-    "qTags": [
-      "$text",
-      "$ascii"
-    ],
-    "qSrcTables": [
-      "TabCiclo"
-    ]
-  },
-  {
     "qName": "ChaveCicloUltimaCompra",
     "qCardinal": 9,
     "qTags": [
@@ -228,12 +215,10 @@
     "qCardinal": 17,
     "qTags": [
       "$text",
-      "$ascii",
-      "$key"
+      "$ascii"
     ],
     "qSrcTables": [
-      "LinkTable",
-      "TabCiclo"
+      "LinkTable"
     ]
   },
   {
@@ -248,19 +233,8 @@
     ]
   },
   {
-    "qName": "CodCiclo",
-    "qCardinal": 17,
-    "qTags": [
-      "$numeric",
-      "$integer"
-    ],
-    "qSrcTables": [
-      "TabCiclo"
-    ]
-  },
-  {
     "qName": "CodFornecedor",
-    "qCardinal": 3398,
+    "qCardinal": 3405,
     "qTags": [
       "$numeric",
       "$integer",
@@ -273,7 +247,7 @@
   },
   {
     "qName": "CodProduto",
-    "qCardinal": 3398,
+    "qCardinal": 3405,
     "qTags": [
       "$text",
       "$ascii",
@@ -303,7 +277,7 @@
   },
   {
     "qName": "Consultor",
-    "qCardinal": 386,
+    "qCardinal": 384,
     "qTags": [
       "$text"
     ],
@@ -314,6 +288,16 @@
   {
     "qName": "ConsultorAtivo",
     "qCardinal": 2,
+    "qTags": [
+      "$text"
+    ],
+    "qSrcTables": [
+      "LinkTable"
+    ]
+  },
+  {
+    "qName": "ConsultorReduzido",
+    "qCardinal": 369,
     "qTags": [
       "$text"
     ],
@@ -353,32 +337,6 @@
     ],
     "qSrcTables": [
       "MasterCalendar"
-    ]
-  },
-  {
-    "qName": "DataFim",
-    "qCardinal": 15,
-    "qTags": [
-      "$numeric",
-      "$integer",
-      "$timestamp",
-      "$date"
-    ],
-    "qSrcTables": [
-      "TabCiclo"
-    ]
-  },
-  {
-    "qName": "DataInicio",
-    "qCardinal": 16,
-    "qTags": [
-      "$numeric",
-      "$integer",
-      "$timestamp",
-      "$date"
-    ],
-    "qSrcTables": [
-      "TabCiclo"
     ]
   },
   {
@@ -453,7 +411,7 @@
   },
   {
     "qName": "Filial",
-    "qCardinal": 30,
+    "qCardinal": 29,
     "qTags": [
       "$text",
       "$ascii"
@@ -518,7 +476,7 @@
   },
   {
     "qName": "Fornecedor",
-    "qCardinal": 234,
+    "qCardinal": 233,
     "qTags": [
       "$text"
     ],
@@ -539,7 +497,7 @@
   },
   {
     "qName": "IdAgendamento",
-    "qCardinal": 46867,
+    "qCardinal": 47513,
     "qTags": [
       "$numeric",
       "$integer",
@@ -552,7 +510,7 @@
   },
   {
     "qName": "IdAtendimento",
-    "qCardinal": 108788,
+    "qCardinal": 110107,
     "qTags": [
       "$numeric",
       "$integer"
@@ -587,24 +545,13 @@
   },
   {
     "qName": "NumeroNotaFiscal",
-    "qCardinal": 53726,
+    "qCardinal": 54324,
     "qTags": [
       "$numeric",
       "$integer"
     ],
     "qSrcTables": [
       "FatPedidos"
-    ]
-  },
-  {
-    "qName": "OrdemCiclo",
-    "qCardinal": 17,
-    "qTags": [
-      "$numeric",
-      "$integer"
-    ],
-    "qSrcTables": [
-      "TabCiclo"
     ]
   },
   {
@@ -619,7 +566,7 @@
   },
   {
     "qName": "Produto",
-    "qCardinal": 3131,
+    "qCardinal": 3136,
     "qTags": [
       "$text"
     ],
@@ -662,7 +609,7 @@
   },
   {
     "qName": "QtdProdutoFaturado",
-    "qCardinal": 4728,
+    "qCardinal": 4745,
     "qTags": [
       "$numeric"
     ],
@@ -672,7 +619,7 @@
   },
   {
     "qName": "QtdProdutoSaldo",
-    "qCardinal": 751,
+    "qCardinal": 723,
     "qTags": [
       "$numeric"
     ],
@@ -725,17 +672,6 @@
     ]
   },
   {
-    "qName": "Situacao",
-    "qCardinal": 2,
-    "qTags": [
-      "$text",
-      "$ascii"
-    ],
-    "qSrcTables": [
-      "TabCiclo"
-    ]
-  },
-  {
     "qName": "SubGrupo",
     "qCardinal": 18,
     "qTags": [
@@ -744,6 +680,17 @@
     ],
     "qSrcTables": [
       "FatPedidos"
+    ]
+  },
+  {
+    "qName": "TipoAtendimento",
+    "qCardinal": 5,
+    "qTags": [
+      "$text",
+      "$ascii"
+    ],
+    "qSrcTables": [
+      "FatAtendimento"
     ]
   },
   {
@@ -758,18 +705,8 @@
     ]
   },
   {
-    "qName": "ValorAreaSegmentacao",
-    "qCardinal": 452,
-    "qTags": [
-      "$numeric"
-    ],
-    "qSrcTables": [
-      "tempTabArea"
-    ]
-  },
-  {
     "qName": "ValorMargemFaturado",
-    "qCardinal": 153795,
+    "qCardinal": 155429,
     "qTags": [
       "$numeric"
     ],
@@ -779,7 +716,7 @@
   },
   {
     "qName": "ValorMargemMovimento",
-    "qCardinal": 215028,
+    "qCardinal": 215801,
     "qTags": [
       "$numeric"
     ],
@@ -789,7 +726,7 @@
   },
   {
     "qName": "ValorMargemSaldo",
-    "qCardinal": 10133,
+    "qCardinal": 9371,
     "qTags": [
       "$numeric"
     ],
@@ -799,7 +736,7 @@
   },
   {
     "qName": "ValorOrcamento",
-    "qCardinal": 541,
+    "qCardinal": 184,
     "qTags": [
       "$numeric"
     ],
@@ -809,7 +746,7 @@
   },
   {
     "qName": "ValorPedidoMovimento",
-    "qCardinal": 83722,
+    "qCardinal": 83934,
     "qTags": [
       "$numeric"
     ],
@@ -819,7 +756,7 @@
   },
   {
     "qName": "ValorPedidoSaldo",
-    "qCardinal": 7448,
+    "qCardinal": 6953,
     "qTags": [
       "$numeric"
     ],
@@ -839,7 +776,7 @@
   },
   {
     "qName": "ValorReceitaFaturado",
-    "qCardinal": 60301,
+    "qCardinal": 60873,
     "qTags": [
       "$numeric"
     ],
@@ -859,7 +796,7 @@
   },
   {
     "qName": "idagenda",
-    "qCardinal": 46867,
+    "qCardinal": 47513,
     "qTags": [
       "$numeric",
       "$integer"
@@ -870,7 +807,7 @@
   },
   {
     "qName": "idagendaNãoRealizada",
-    "qCardinal": 9451,
+    "qCardinal": 9475,
     "qTags": [
       "$numeric",
       "$integer"
@@ -881,7 +818,7 @@
   },
   {
     "qName": "idagendaRealizada",
-    "qCardinal": 37416,
+    "qCardinal": 38038,
     "qTags": [
       "$numeric",
       "$integer"
@@ -892,7 +829,7 @@
   },
   {
     "qName": "numero_pedidoCRM",
-    "qCardinal": 55977,
+    "qCardinal": 56574,
     "qTags": [
       "$text",
       "$ascii"
@@ -903,7 +840,7 @@
   },
   {
     "qName": "parceiroCRM",
-    "qCardinal": 27836,
+    "qCardinal": 27894,
     "qTags": [
       "$text",
       "$ascii",

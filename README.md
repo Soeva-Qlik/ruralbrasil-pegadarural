@@ -8,7 +8,6 @@ Created By WedersonCD(Wederson Cabral Domingues) at Thu Nov 05 2020 10:05:22 GMT
 
 Sheet Title | Description
 ------------ | -------------
-Minha nova pasta|
 Painel Churn|
 Homologação|
 Painel Visitas ( Visão Gerencial )|

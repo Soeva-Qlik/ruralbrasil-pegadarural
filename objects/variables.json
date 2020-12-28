@@ -19,7 +19,9 @@
       "qId": "2c481df9-e192-418f-a1e9-f43a185fdc59",
       "qType": "variable"
     },
-    "qMetaDef": {},
+    "qMetaDef": {
+      "isBlueprintItem": true
+    },
     "qName": "vAnosSemCompraMaior",
     "qNumberPresentation": {
       "qType": "U",
@@ -48,7 +50,9 @@
       "qId": "43cbe344-17fd-4e42-a569-f02dd79acb58",
       "qType": "variable"
     },
-    "qMetaDef": {},
+    "qMetaDef": {
+      "isBlueprintItem": true
+    },
     "qName": "vOrdemAux",
     "qNumberPresentation": {
       "qType": "U",
@@ -63,7 +67,9 @@
       "qId": "441d4e32-5979-4a67-b03c-83fe11538f21",
       "qType": "variable"
     },
-    "qMetaDef": {},
+    "qMetaDef": {
+      "isBlueprintItem": true
+    },
     "qName": "vClassificaçãoDinâmicaAux",
     "qNumberPresentation": {
       "qType": "U",
@@ -78,7 +84,9 @@
       "qId": "5fac500b-f21f-48a6-b4a9-e2d866faf2e4",
       "qType": "variable"
     },
-    "qMetaDef": {},
+    "qMetaDef": {
+      "isBlueprintItem": true
+    },
     "qName": "sAnoOuSafra",
     "qNumberPresentation": {
       "qType": "U",
@@ -108,7 +116,9 @@
       "qId": "71828ad5-1e65-4a92-a7bd-46903a28a442",
       "qType": "variable"
     },
-    "qMetaDef": {},
+    "qMetaDef": {
+      "isBlueprintItem": true
+    },
     "qName": "vTipoVenda",
     "qNumberPresentation": {
       "qType": "U",
@@ -138,7 +148,9 @@
       "qId": "82ebcf7c-dac0-45f9-be85-25e24e8dd11d",
       "qType": "variable"
     },
-    "qMetaDef": {},
+    "qMetaDef": {
+      "isBlueprintItem": true
+    },
     "qName": "vAnoOuSafra",
     "qNumberPresentation": {
       "qType": "U",
@@ -153,7 +165,9 @@
       "qId": "8af89250-f496-443b-8630-a98cdf65b1b3",
       "qType": "variable"
     },
-    "qMetaDef": {},
+    "qMetaDef": {
+      "isBlueprintItem": true
+    },
     "qName": "vClassificaçãoDinâmica",
     "qNumberPresentation": {
       "qType": "U",
@@ -168,7 +182,9 @@
       "qId": "8d19fe93-f395-495c-8d6a-c06527137720",
       "qType": "variable"
     },
-    "qMetaDef": {},
+    "qMetaDef": {
+      "isBlueprintItem": true
+    },
     "qName": "vOrdenacaoGraficoVisitas",
     "qNumberPresentation": {
       "qType": "U",
@@ -183,7 +199,9 @@
       "qId": "9248b547-340e-4952-bc99-bf18be9be6a4",
       "qType": "variable"
     },
-    "qMetaDef": {},
+    "qMetaDef": {
+      "isBlueprintItem": true
+    },
     "qName": "vOrdem",
     "qNumberPresentation": {
       "qType": "U",
@@ -198,7 +216,9 @@
       "qId": "9858b770-8d77-4d73-85f0-9845d9a29b86",
       "qType": "variable"
     },
-    "qMetaDef": {},
+    "qMetaDef": {
+      "isBlueprintItem": true
+    },
     "qName": "vIcone",
     "qNumberPresentation": {
       "qType": "U",
@@ -225,25 +245,12 @@
   },
   {
     "qInfo": {
-      "qId": "bb07ac9f-244b-4566-bdb9-b9e51e8a4cf8",
-      "qType": "variable"
-    },
-    "qMetaDef": {},
-    "qName": "sAnoOuSafraVisitas",
-    "qNumberPresentation": {
-      "qType": "U",
-      "qnDec": 10,
-      "qUseThou": 0
-    },
-    "qDefinition": "=pick($(vAnoOuSafra),\r\n\t'Ano={\">=$(=year(Today()) - $(vAnosSemCompraMenor)) <= $(=Max(Ano) - $(vAnosSemCompraMaior))\"}',\n\t'Data={\">=$(=MIN({<OrdemCiclo={\">=$(=MAX(OrdemCiclo)-$(vAnosSemCompraMaior)*2)\"}>} DataInicio)) <= $(=MAX({<OrdemCiclo={\">=$(=MAX(OrdemCiclo)-$(vAnosSemCompraMenor)-1)\"}>} DataFim))\"}>}'\n )\n",
-    "tags": []
-  },
-  {
-    "qInfo": {
       "qId": "ce581e61-41a0-4cad-975a-f617f188bad4",
       "qType": "variable"
     },
-    "qMetaDef": {},
+    "qMetaDef": {
+      "isBlueprintItem": true
+    },
     "qName": "vTipoOrdenacaoDinamico",
     "qNumberPresentation": {
       "qType": "U",
@@ -273,7 +280,9 @@
       "qId": "d82049a0-3db4-4718-9382-1ca553392d00",
       "qType": "variable"
     },
-    "qMetaDef": {},
+    "qMetaDef": {
+      "isBlueprintItem": true
+    },
     "qName": "vCorTabelaDinamica",
     "qNumberPresentation": {
       "qType": "U",
@@ -288,7 +297,9 @@
       "qId": "dc6182c9-afea-417e-b9a8-8ded96da3477",
       "qType": "variable"
     },
-    "qMetaDef": {},
+    "qMetaDef": {
+      "isBlueprintItem": true
+    },
     "qName": "vOrdenacaoPainelVisitasAux",
     "qNumberPresentation": {
       "qType": "U",
@@ -303,7 +314,9 @@
       "qId": "e6b65729-bf72-4be1-a5ab-9cf8f4184d7e",
       "qType": "variable"
     },
-    "qMetaDef": {},
+    "qMetaDef": {
+      "isBlueprintItem": true
+    },
     "qName": "vAnosSemCompraMenor",
     "qNumberPresentation": {
       "qType": "U",
@@ -318,7 +331,9 @@
       "qId": "e798559d-cecd-4c5d-abf7-551fcbcb8707",
       "qType": "variable"
     },
-    "qMetaDef": {},
+    "qMetaDef": {
+      "isBlueprintItem": true
+    },
     "qName": "vOrdenacaoPainelVisitas",
     "qNumberPresentation": {
       "qType": "U",

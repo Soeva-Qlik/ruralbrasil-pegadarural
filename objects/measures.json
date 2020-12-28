@@ -1,6 +1,27 @@
 [
   {
     "qInfo": {
+      "qId": "0b2081df-ac10-48d3-b925-8d7230b68971",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "PercMargemFaturamentoESaldo",
+      "qDef": "(sum(ValorMargemFaturado) + sum(ValorMargemSaldo))\r\n/\n(sum(ValorReceitaFaturado) + sum(ValorPedidoSaldo))\n",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "qLabelExpression": "'% Margem Prevista CRM – Fat + Sl Carteira'",
+      "coloring": {}
+    },
+    "qMetaDef": {
+      "title": "PercMargemFaturamentoESaldo",
+      "description": "",
+      "tags": [],
+      "isBlueprintItem": true
+    }
+  },
+  {
+    "qInfo": {
       "qId": "15bab4e3-8785-4ab4-aec6-249220027dfd",
       "qType": "measure"
     },
@@ -21,7 +42,53 @@
     "qMetaDef": {
       "title": "ValorMovimento",
       "description": "",
-      "tags": []
+      "tags": [],
+      "isBlueprintItem": true
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "1fc8c4b2-228a-4d04-b819-a9f472f4044a",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "PercExecucaoVisitas",
+      "qDef": "Count(DISTINCT idagendaRealizada)\n/\nCount(DISTINCT idagenda)\n",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "qLabelExpression": "'Efetividade'",
+      "coloring": {
+        "baseColor": {
+          "color": "#b0afae",
+          "index": 12
+        },
+        "gradient": {
+          "colors": [
+            {
+              "color": "#5aff5a",
+              "index": -1
+            },
+            {
+              "color": "#276e27",
+              "index": 3
+            }
+          ],
+          "breakTypes": [
+            true
+          ],
+          "limits": [
+            0.5
+          ],
+          "limitType": "percent"
+        }
+      }
+    },
+    "qMetaDef": {
+      "title": "PercExecucaoVisitas",
+      "description": "",
+      "tags": [],
+      "isBlueprintItem": true
     }
   },
   {
@@ -41,7 +108,8 @@
     "qMetaDef": {
       "title": "QtdAtendimentosSemAgenda",
       "description": "",
-      "tags": []
+      "tags": [],
+      "isBlueprintItem": true
     }
   },
   {
@@ -66,7 +134,8 @@
     "qMetaDef": {
       "title": "QtdSaldo",
       "description": "",
-      "tags": []
+      "tags": [],
+      "isBlueprintItem": true
     }
   },
   {
@@ -91,7 +160,8 @@
     "qMetaDef": {
       "title": "QtdFaturamento",
       "description": "",
-      "tags": []
+      "tags": [],
+      "isBlueprintItem": true
     }
   },
   {
@@ -111,7 +181,8 @@
     "qMetaDef": {
       "title": "QtdClientesNaCarteira",
       "description": "",
-      "tags": []
+      "tags": [],
+      "isBlueprintItem": true
     }
   },
   {
@@ -136,7 +207,8 @@
     "qMetaDef": {
       "title": "VlrFaturamento",
       "description": "",
-      "tags": []
+      "tags": [],
+      "isBlueprintItem": true
     }
   },
   {
@@ -156,7 +228,8 @@
     "qMetaDef": {
       "title": "PercMargemFaturamento",
       "description": "",
-      "tags": []
+      "tags": [],
+      "isBlueprintItem": true
     }
   },
   {
@@ -176,7 +249,8 @@
     "qMetaDef": {
       "title": "QtdPedidos",
       "description": "",
-      "tags": []
+      "tags": [],
+      "isBlueprintItem": true
     }
   },
   {
@@ -220,7 +294,8 @@
     "qMetaDef": {
       "title": "QtdVisitasRealizadas",
       "description": "",
-      "tags": []
+      "tags": [],
+      "isBlueprintItem": true
     }
   },
   {
@@ -285,7 +360,8 @@
     "qMetaDef": {
       "title": "ValorOrcamento",
       "description": "",
-      "tags": []
+      "tags": [],
+      "isBlueprintItem": true
     }
   },
   {
@@ -325,7 +401,34 @@
     "qMetaDef": {
       "title": "QtdAtendimentos",
       "description": "",
-      "tags": []
+      "tags": [],
+      "isBlueprintItem": true
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "af2a64b3-28c8-4ca6-b74f-c297485988a8",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "VlrFaturamentoESaldo",
+      "qDef": "Sum(ValorReceitaFaturado) + sum({<Ano,Mes>}ValorPedidoSaldo)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "qLabelExpression": "'Fat + Saldo Carteira ( R$)'",
+      "coloring": {
+        "baseColor": {
+          "color": "#8dc782",
+          "index": -1
+        }
+      }
+    },
+    "qMetaDef": {
+      "title": "VlrFaturamentoESaldo",
+      "description": "",
+      "tags": [],
+      "isBlueprintItem": true
     }
   },
   {
@@ -345,27 +448,34 @@
     "qMetaDef": {
       "title": "QtdClientesAtendidos",
       "description": "",
-      "tags": []
+      "tags": [],
+      "isBlueprintItem": true
     }
   },
   {
     "qInfo": {
-      "qId": "e6dbd882-4200-4317-a2b8-d15de09ea9af",
+      "qId": "b98fdbfc-2a87-4149-b70b-bcc0c08a8923",
       "qType": "measure"
     },
     "qMeasure": {
-      "qLabel": "ValorMargemMovimento",
-      "qDef": "sum(ValorMargemMovimento)",
+      "qLabel": "QtdFaturadoESaldo",
+      "qDef": "sum(QtdProdutoFaturado)+Sum({<Ano,Mes>}QtdProdutoSaldo) ",
       "qGrouping": "N",
       "qExpressions": [],
       "qActiveExpression": 0,
-      "qLabelExpression": "'MARGEM'",
-      "coloring": {}
+      "qLabelExpression": "'Fat + Saldo Carteira ( Qtd )'",
+      "coloring": {
+        "baseColor": {
+          "color": "#4477aa",
+          "index": 6
+        }
+      }
     },
     "qMetaDef": {
-      "title": "ValorMargemMovimento",
+      "title": "QtdFaturadoESaldo",
       "description": "",
-      "tags": []
+      "tags": [],
+      "isBlueprintItem": true
     }
   },
   {
@@ -385,7 +495,8 @@
     "qMetaDef": {
       "title": "PercMargemMovimento",
       "description": "",
-      "tags": []
+      "tags": [],
+      "isBlueprintItem": true
     }
   },
   {
@@ -410,7 +521,8 @@
     "qMetaDef": {
       "title": "ValorSaldo",
       "description": "",
-      "tags": []
+      "tags": [],
+      "isBlueprintItem": true
     }
   },
   {
@@ -450,7 +562,8 @@
     "qMetaDef": {
       "title": "PercMargemSaldo",
       "description": "",
-      "tags": []
+      "tags": [],
+      "isBlueprintItem": true
     }
   },
   {
@@ -495,7 +608,8 @@
     "qMetaDef": {
       "title": "QtdVisitasAgendadas",
       "description": "",
-      "tags": []
+      "tags": [],
+      "isBlueprintItem": true
     }
   }
 ]

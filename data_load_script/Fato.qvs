@@ -59,6 +59,7 @@ LOAD
 	%LinkAtendimento,
    	FlagAtendimentoSemAgenda,
     AtividadeVisita,
+    TipoAtendimento,
     IdAtendimento,
     1		AS	FlagClienteAtendido
 FROM
@@ -69,10 +70,10 @@ WHERE
 
 FatOrcamento:
 LOAD
-	%LinkOrcamentoPorCTV,
+	%LinkOrcamento,
     ValorOrcamento
 FROM
-	[lib://1.Transform/Orcamentos/FatOrcamentoPorCTV.qvd](qvd)
+	[lib://1.Transform/FatOrcamento.qvd](qvd)
 WHERE
 	$(vWhereOrçamento)	
 ;

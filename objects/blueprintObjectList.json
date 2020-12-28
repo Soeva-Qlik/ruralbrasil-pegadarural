@@ -9,9 +9,24 @@
       "qType": "listbox"
     },
     {
+      "qId": "0b2081df-ac10-48d3-b925-8d7230b68971",
+      "qType": "measure",
+      "modifiedDate": "2020-12-16T13:13:03.095Z"
+    },
+    {
       "qId": "15bab4e3-8785-4ab4-aec6-249220027dfd",
       "qType": "measure",
-      "modifiedDate": "2020-12-10T18:10:27.103Z"
+      "modifiedDate": "2020-12-16T13:13:03.095Z"
+    },
+    {
+      "qId": "1d23e810-1f0d-4500-b59a-a1fad3bb2f60",
+      "qType": "masterobject",
+      "modifiedDate": "2020-12-16T13:13:03.095Z"
+    },
+    {
+      "qId": "1fc8c4b2-228a-4d04-b819-a9f472f4044a",
+      "qType": "measure",
+      "modifiedDate": "2020-12-16T13:13:03.095Z"
     },
     {
       "qId": "23d5aacf-f0d4-4528-8c0d-41fcd2084817",
@@ -26,29 +41,24 @@
       "qType": "listbox"
     },
     {
-      "qId": "395e8a88-f23e-4378-ac1b-cc32ce540200",
-      "qType": "sheet",
-      "modifiedDate": "2020-12-10T18:10:27.603Z"
-    },
-    {
       "qId": "3996bdaa-3175-4039-a1a8-fca36d3d37c2",
       "qType": "measure",
-      "modifiedDate": "2020-12-10T18:10:27.103Z"
+      "modifiedDate": "2020-12-16T13:13:03.095Z"
     },
     {
       "qId": "3c1939be-a8d6-4137-b78b-e60f6753e737",
       "qType": "dimension",
-      "modifiedDate": "2020-12-10T18:10:27.103Z"
+      "modifiedDate": "2020-12-16T13:13:03.095Z"
     },
     {
       "qId": "45579f08-1111-4e85-b225-ed3dc817802f",
       "qType": "dimension",
-      "modifiedDate": "2020-12-10T18:10:27.103Z"
+      "modifiedDate": "2020-12-16T13:13:03.095Z"
     },
     {
       "qId": "461f04ed-7be4-4f4f-9624-8a8da26d5144",
       "qType": "sheet",
-      "modifiedDate": "2020-12-10T18:10:27.103Z"
+      "modifiedDate": "2020-12-16T13:13:03.095Z"
     },
     {
       "qId": "465b014c-d896-49a7-8a1c-bbbc44d3bcef",
@@ -57,12 +67,12 @@
     {
       "qId": "47f1d326-fe66-425b-b48a-2f3312cb2772",
       "qType": "masterobject",
-      "modifiedDate": "2020-12-10T18:10:27.103Z"
+      "modifiedDate": "2020-12-16T13:13:03.095Z"
     },
     {
       "qId": "4990811c-2956-4fd3-84e9-02fd1b2d8ec5",
       "qType": "appprops",
-      "modifiedDate": "2020-12-10T18:10:27.103Z"
+      "modifiedDate": "2020-12-16T13:13:03.095Z"
     },
     {
       "qId": "4d80028d-5c5b-43aa-bc69-9d4bfd06bf5f",
@@ -75,7 +85,7 @@
     {
       "qId": "541b873e-da9f-4986-a374-5638a7007380",
       "qType": "measure",
-      "modifiedDate": "2020-12-10T18:10:27.103Z"
+      "modifiedDate": "2020-12-16T13:13:03.095Z"
     },
     {
       "qId": "556a3006-049c-4bcd-9dc0-c4dd614b1ce7",
@@ -84,17 +94,17 @@
     {
       "qId": "56ce8b7e-73af-4138-b7ad-33525d225ecc",
       "qType": "sheet",
-      "modifiedDate": "2020-12-10T18:10:27.103Z"
+      "modifiedDate": "2020-12-16T13:13:03.095Z"
     },
     {
       "qId": "5981dfb7-60d6-433c-a118-15f7c0342127",
       "qType": "dimension",
-      "modifiedDate": "2020-12-10T18:10:27.103Z"
+      "modifiedDate": "2020-12-16T13:13:03.095Z"
     },
     {
       "qId": "5d6af938-1afe-47a6-abfa-8494c60f0e60",
       "qType": "dimension",
-      "modifiedDate": "2020-12-10T18:10:27.103Z"
+      "modifiedDate": "2020-12-16T13:13:03.095Z"
     },
     {
       "qId": "5fb680f0-7d46-4711-a916-966297fb85fe",
@@ -103,12 +113,12 @@
     {
       "qId": "5fc3a5c6-71f9-4627-b6d2-0a2568db7357",
       "qType": "measure",
-      "modifiedDate": "2020-12-10T18:10:27.103Z"
+      "modifiedDate": "2020-12-16T13:13:03.095Z"
     },
     {
       "qId": "633af887-8c20-4179-87d5-78840b63033b",
       "qType": "masterobject",
-      "modifiedDate": "2020-12-10T18:10:27.103Z"
+      "modifiedDate": "2020-12-16T13:13:03.095Z"
     },
     {
       "qId": "6346ab16-6cff-4fc7-a70c-cfc453fed86c",
@@ -117,7 +127,7 @@
     {
       "qId": "71319554-7f42-48df-9a44-654637d81a42",
       "qType": "sheet",
-      "modifiedDate": "2020-12-10T18:10:27.103Z"
+      "modifiedDate": "2020-12-16T13:13:03.095Z"
     },
     {
       "qId": "745787a4-a357-495b-a000-89248e9d07b5",
@@ -126,7 +136,7 @@
     {
       "qId": "7d102dcf-7804-4bad-ad03-85d6dd03e3e7",
       "qType": "masterobject",
-      "modifiedDate": "2020-12-10T18:10:27.103Z"
+      "modifiedDate": "2020-12-16T13:13:03.095Z"
     },
     {
       "qId": "7ff32dca-9dd9-4080-bbb8-88e67b28c8cd",
@@ -135,7 +145,7 @@
     {
       "qId": "8b2975ff-76c8-4ecf-a484-2227fd7203a0",
       "qType": "story",
-      "modifiedDate": "2020-12-10T18:10:27.103Z"
+      "modifiedDate": "2020-12-16T13:13:03.095Z"
     },
     {
       "qId": "8e3505a1-6f07-41d5-88a1-ebfe25e706f1",
@@ -160,30 +170,30 @@
     {
       "qId": "9726c2d5-2fe7-4ef4-8c67-2046a52fba01",
       "qType": "measure",
-      "modifiedDate": "2020-12-10T18:10:27.103Z"
+      "modifiedDate": "2020-12-16T13:13:03.095Z"
     },
     {
       "qId": "97880d44-3fcd-491d-be13-d28ba96a9829",
       "qType": "dimension",
-      "modifiedDate": "2020-12-10T18:10:27.103Z"
+      "modifiedDate": "2020-12-16T13:13:03.095Z"
+    },
+    {
+      "qId": "97a8ce9c-406c-4b52-9752-6ada942622b6",
+      "qType": "piechart"
     },
     {
       "qId": "9a44f4bd-72e8-4bd4-aeb0-d0eedf65b3c1",
       "qType": "sheet",
-      "modifiedDate": "2020-12-10T18:10:27.103Z"
+      "modifiedDate": "2020-12-16T13:13:03.095Z"
     },
     {
       "qId": "AKbfQ",
       "qType": "qlik-button-for-navigation"
     },
     {
-      "qId": "BhsuJud",
-      "qType": "table"
-    },
-    {
       "qId": "CudrTWP",
       "qType": "measure",
-      "modifiedDate": "2020-12-10T18:10:27.103Z"
+      "modifiedDate": "2020-12-16T13:13:03.095Z"
     },
     {
       "qId": "CyWXE",
@@ -196,7 +206,11 @@
     {
       "qId": "DWFpej",
       "qType": "dimension",
-      "modifiedDate": "2020-12-10T18:10:27.603Z"
+      "modifiedDate": "2020-12-16T13:13:03.095Z"
+    },
+    {
+      "qId": "DbZ",
+      "qType": "customBarChart"
     },
     {
       "qId": "Djkjx",
@@ -205,12 +219,12 @@
     {
       "qId": "EGzZv",
       "qType": "dimension",
-      "modifiedDate": "2020-12-10T18:10:27.103Z"
+      "modifiedDate": "2020-12-16T13:13:03.095Z"
     },
     {
       "qId": "ENKurs",
       "qType": "dimension",
-      "modifiedDate": "2020-12-10T18:10:27.103Z"
+      "modifiedDate": "2020-12-16T13:13:03.095Z"
     },
     {
       "qId": "EmDsuNJ",
@@ -223,7 +237,7 @@
     {
       "qId": "GHuj",
       "qType": "dimension",
-      "modifiedDate": "2020-12-10T18:10:27.103Z"
+      "modifiedDate": "2020-12-16T13:13:03.095Z"
     },
     {
       "qId": "HuHbW",
@@ -254,10 +268,6 @@
       "qType": "LoadModel"
     },
     {
-      "qId": "LpJms",
-      "qType": "piechart"
-    },
-    {
       "qId": "LqkJem",
       "qType": "listbox"
     },
@@ -284,7 +294,7 @@
     {
       "qId": "NhwBnp",
       "qType": "dimension",
-      "modifiedDate": "2020-12-10T18:10:27.103Z"
+      "modifiedDate": "2020-12-16T13:13:03.095Z"
     },
     {
       "qId": "NrumnYM",
@@ -305,7 +315,7 @@
     {
       "qId": "PpXPQ",
       "qType": "measure",
-      "modifiedDate": "2020-12-10T18:10:27.103Z"
+      "modifiedDate": "2020-12-16T13:13:03.095Z"
     },
     {
       "qId": "QCLAkz",
@@ -316,17 +326,13 @@
       "qType": "kpi"
     },
     {
-      "qId": "Qzcpe",
-      "qType": "customEChart"
-    },
-    {
       "qId": "QzgWsm",
       "qType": "listbox"
     },
     {
       "qId": "RNSVY",
       "qType": "measure",
-      "modifiedDate": "2020-12-10T18:10:27.103Z"
+      "modifiedDate": "2020-12-16T13:13:03.095Z"
     },
     {
       "qId": "RNhS",
@@ -335,7 +341,11 @@
     {
       "qId": "Rjbt",
       "qType": "measure",
-      "modifiedDate": "2020-12-10T18:10:27.103Z"
+      "modifiedDate": "2020-12-16T13:13:03.095Z"
+    },
+    {
+      "qId": "RkXcg",
+      "qType": "container"
     },
     {
       "qId": "Sjmjkeq",
@@ -354,18 +364,22 @@
       "qType": "listbox"
     },
     {
+      "qId": "TapLNWk",
+      "qType": "customBarChart"
+    },
+    {
       "qId": "Tmpap",
       "qType": "action-button"
     },
     {
       "qId": "TvaTjT",
       "qType": "dimension",
-      "modifiedDate": "2020-12-10T18:10:27.103Z"
+      "modifiedDate": "2020-12-16T13:13:03.095Z"
     },
     {
       "qId": "Tzdfamu",
       "qType": "dimension",
-      "modifiedDate": "2020-12-10T18:10:27.103Z"
+      "modifiedDate": "2020-12-16T13:13:03.095Z"
     },
     {
       "qId": "UgArLm",
@@ -378,7 +392,7 @@
     {
       "qId": "VccauWN",
       "qType": "dimension",
-      "modifiedDate": "2020-12-10T18:10:27.103Z"
+      "modifiedDate": "2020-12-16T13:13:03.095Z"
     },
     {
       "qId": "VfPDF",
@@ -403,11 +417,15 @@
     {
       "qId": "WnHKDnE",
       "qType": "measure",
-      "modifiedDate": "2020-12-10T18:10:27.103Z"
+      "modifiedDate": "2020-12-16T13:13:03.095Z"
     },
     {
       "qId": "WwmLWz",
       "qType": "text-image"
+    },
+    {
+      "qId": "XJNuWU",
+      "qType": "customBarChart"
     },
     {
       "qId": "YXgutA",
@@ -420,22 +438,22 @@
     {
       "qId": "YhxVQ",
       "qType": "measure",
-      "modifiedDate": "2020-12-10T18:10:27.103Z"
+      "modifiedDate": "2020-12-16T13:13:03.095Z"
     },
     {
       "qId": "ZJkWKfh",
       "qType": "measure",
-      "modifiedDate": "2020-12-10T18:10:27.103Z"
+      "modifiedDate": "2020-12-16T13:13:03.095Z"
     },
     {
       "qId": "ZTehGfP",
       "qType": "measure",
-      "modifiedDate": "2020-12-10T18:10:27.103Z"
+      "modifiedDate": "2020-12-16T13:13:03.095Z"
     },
     {
       "qId": "a082d608-e985-4952-b550-0d3499432e82",
       "qType": "snapshot",
-      "modifiedDate": "2020-12-10T18:10:27.103Z"
+      "modifiedDate": "2020-12-16T13:13:03.095Z"
     },
     {
       "qId": "a0b17911-10b6-48ac-a2f5-ddeb1fd4f9b3",
@@ -444,16 +462,26 @@
     {
       "qId": "a7695cb0-fd32-447c-90b2-fe7f36bfeb9c",
       "qType": "dimension",
-      "modifiedDate": "2020-12-10T18:10:27.103Z"
+      "modifiedDate": "2020-12-16T13:13:03.095Z"
     },
     {
       "qId": "a9f45dde-1d80-4b11-bf0c-e8ad8ad2c013",
       "qType": "listbox"
     },
     {
+      "qId": "af2a64b3-28c8-4ca6-b74f-c297485988a8",
+      "qType": "measure",
+      "modifiedDate": "2020-12-16T13:13:03.095Z"
+    },
+    {
       "qId": "b772b59a-8bb4-4147-91a6-39938128828a",
       "qType": "measure",
-      "modifiedDate": "2020-12-10T18:10:27.103Z"
+      "modifiedDate": "2020-12-16T13:13:03.095Z"
+    },
+    {
+      "qId": "b98fdbfc-2a87-4149-b70b-bcc0c08a8923",
+      "qType": "measure",
+      "modifiedDate": "2020-12-16T13:13:03.095Z"
     },
     {
       "qId": "c599f8f0-b62d-43eb-8695-204feac8bfd0",
@@ -462,16 +490,20 @@
     {
       "qId": "c839a074-b2f6-4304-a85d-d8a3b96e6a0d",
       "qType": "sheet",
-      "modifiedDate": "2020-12-10T18:10:27.103Z"
+      "modifiedDate": "2020-12-16T13:13:03.095Z"
     },
     {
       "qId": "c979943d-b825-420b-92a1-2b04c78a9428",
       "qType": "dimension",
-      "modifiedDate": "2020-12-10T18:10:27.103Z"
+      "modifiedDate": "2020-12-16T13:13:03.095Z"
     },
     {
       "qId": "caUsWtw",
       "qType": "filterpane"
+    },
+    {
+      "qId": "d2d459f5-3f28-4c89-a77b-f3601b995a5b",
+      "qType": "piechart"
     },
     {
       "qId": "d525373a-f69c-4a65-af54-4d69fae5182c",
@@ -480,7 +512,7 @@
     {
       "qId": "d81ebfd0-c203-4225-8e5e-7c414a3eeb0a",
       "qType": "dimension",
-      "modifiedDate": "2020-12-10T18:10:27.103Z"
+      "modifiedDate": "2020-12-16T13:13:03.095Z"
     },
     {
       "qId": "db23bcb0-3ff6-4c63-a336-f082bd7a4307",
@@ -497,22 +529,22 @@
     {
       "qId": "dybUnTs",
       "qType": "dimension",
-      "modifiedDate": "2020-12-10T18:10:27.103Z"
+      "modifiedDate": "2020-12-16T13:13:03.095Z"
     },
     {
       "qId": "e4e614cb-e0da-4e2c-9a9d-b891c9a77348",
       "qType": "dimension",
-      "modifiedDate": "2020-12-10T18:10:27.103Z"
+      "modifiedDate": "2020-12-16T13:13:03.095Z"
     },
     {
       "qId": "e607d823-500a-4931-838f-2621ec6aadd0",
       "qType": "dimension",
-      "modifiedDate": "2020-12-10T18:10:27.103Z"
+      "modifiedDate": "2020-12-16T13:13:03.095Z"
     },
     {
-      "qId": "e6dbd882-4200-4317-a2b8-d15de09ea9af",
-      "qType": "measure",
-      "modifiedDate": "2020-12-10T18:10:27.103Z"
+      "qId": "e68d96a1-1d9f-4a86-ac0f-e1cd35723c03",
+      "qType": "masterobject",
+      "modifiedDate": "2020-12-16T13:13:03.095Z"
     },
     {
       "qId": "e878844b-a833-4a5a-ba4a-fd3c02f083fa",
@@ -521,7 +553,7 @@
     {
       "qId": "ec6e06d5-5668-4f2e-aa05-fa7605ae42df",
       "qType": "dimension",
-      "modifiedDate": "2020-12-10T18:10:27.103Z"
+      "modifiedDate": "2020-12-16T13:13:03.095Z"
     },
     {
       "qId": "exSvS",
@@ -534,7 +566,7 @@
     {
       "qId": "f23b5345-bc67-4870-92ec-3afcac29b455",
       "qType": "snapshot",
-      "modifiedDate": "2020-12-10T18:10:27.103Z"
+      "modifiedDate": "2020-12-16T13:13:03.095Z"
     },
     {
       "qId": "f36f7f92-4071-4005-bbba-fa74b6c024e4",
@@ -543,11 +575,16 @@
     {
       "qId": "f617b9cb-9e63-4599-875f-410eeb041ed2",
       "qType": "measure",
-      "modifiedDate": "2020-12-10T18:10:27.103Z"
+      "modifiedDate": "2020-12-16T13:13:03.095Z"
     },
     {
       "qId": "fpQQprB",
       "qType": "listbox"
+    },
+    {
+      "qId": "fxKxwn",
+      "qType": "dimension",
+      "modifiedDate": "2020-12-16T13:13:03.095Z"
     },
     {
       "qId": "gJJB",
@@ -556,7 +593,7 @@
     {
       "qId": "gQPhHY",
       "qType": "measure",
-      "modifiedDate": "2020-12-10T18:10:27.103Z"
+      "modifiedDate": "2020-12-16T13:13:03.095Z"
     },
     {
       "qId": "jCVkDR",
@@ -565,7 +602,7 @@
     {
       "qId": "jQbCKm",
       "qType": "dimension",
-      "modifiedDate": "2020-12-10T18:10:27.103Z"
+      "modifiedDate": "2020-12-16T13:13:03.095Z"
     },
     {
       "qId": "jjERG",
@@ -574,7 +611,7 @@
     {
       "qId": "jjMa",
       "qType": "dimension",
-      "modifiedDate": "2020-12-10T18:10:27.103Z"
+      "modifiedDate": "2020-12-16T13:13:03.095Z"
     },
     {
       "qId": "jqYvg",
@@ -599,12 +636,12 @@
     {
       "qId": "mVPsLUW",
       "qType": "measure",
-      "modifiedDate": "2020-12-10T18:10:27.103Z"
+      "modifiedDate": "2020-12-16T13:13:03.095Z"
     },
     {
       "qId": "maaPZ",
       "qType": "measure",
-      "modifiedDate": "2020-12-10T18:10:27.103Z"
+      "modifiedDate": "2020-12-16T13:13:03.095Z"
     },
     {
       "qId": "mqYtDfF",
@@ -625,7 +662,7 @@
     {
       "qId": "ngQDyxK",
       "qType": "dimension",
-      "modifiedDate": "2020-12-10T18:10:27.103Z"
+      "modifiedDate": "2020-12-16T13:13:03.095Z"
     },
     {
       "qId": "nhbGJj",
@@ -642,7 +679,7 @@
     {
       "qId": "pVfVjNY",
       "qType": "dimension",
-      "modifiedDate": "2020-12-10T18:10:27.103Z"
+      "modifiedDate": "2020-12-16T13:13:03.095Z"
     },
     {
       "qId": "pmZXtmn",
@@ -657,21 +694,13 @@
       "qType": "qlik-variable-input"
     },
     {
-      "qId": "rCcRJA",
-      "qType": "customEChart"
-    },
-    {
       "qId": "rZbf",
       "qType": "pivot-table"
     },
     {
       "qId": "sHmfXjJ",
       "qType": "dimension",
-      "modifiedDate": "2020-12-10T18:10:27.103Z"
-    },
-    {
-      "qId": "sMrQt",
-      "qType": "barchart"
+      "modifiedDate": "2020-12-16T13:13:03.095Z"
     },
     {
       "qId": "shjZBtJ",
@@ -679,7 +708,7 @@
     },
     {
       "qId": "svuWt",
-      "qType": "barchart"
+      "qType": "combochart"
     },
     {
       "qId": "tAXMxP",
@@ -704,12 +733,12 @@
     {
       "qId": "zgKuNp",
       "qType": "measure",
-      "modifiedDate": "2020-12-10T18:10:27.103Z"
+      "modifiedDate": "2020-12-16T13:13:03.095Z"
     },
     {
       "qId": "zmGLp",
       "qType": "measure",
-      "modifiedDate": "2020-12-10T18:10:27.103Z"
+      "modifiedDate": "2020-12-16T13:13:03.095Z"
     }
   ]
 }

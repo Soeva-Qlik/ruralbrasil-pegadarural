@@ -6,12 +6,13 @@
     },
     "qMetaDef": {
       "title": "Painel Churn",
-      "description": ""
+      "description": "",
+      "isBlueprintItem": true
     },
     "rank": 26,
     "thumbnail": {
       "qStaticContentUrlDef": {
-        "qUrl": "/appcontent/b1e5c531-6d90-470f-b742-3d2795482d6c/sheet_thumb_461f04ed-7be4-4f4f-9624-8a8da26d5144-0.9630216524280892.png"
+        "qUrl": "/appcontent/1b93735d-1059-42bb-9413-8913b4ab0e27/sheet_thumb_461f04ed-7be4-4f4f-9624-8a8da26d5144-0.9630216524280892.png"
       }
     },
     "columns": 24,

@@ -19,4 +19,4 @@ DashBoard ( Visão Gerencial )|
 
 Branch Name|Qlik application
 ---|---
-main|[https://bi.ruralbrasil.com/sense/app/b1e5c531-6d90-470f-b742-3d2795482d6c](https://bi.ruralbrasil.com/sense/app/b1e5c531-6d90-470f-b742-3d2795482d6c)
+main|[https://bi.ruralbrasil.com/sense/app/1b93735d-1059-42bb-9413-8913b4ab0e27](https://bi.ruralbrasil.com/sense/app/1b93735d-1059-42bb-9413-8913b4ab0e27)
